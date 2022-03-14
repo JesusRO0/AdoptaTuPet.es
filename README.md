@@ -6,8 +6,8 @@ Una página Web destinada a la adopción y al trato de nuestras mascotas felinas
 La página web estará estructurada en distintos apartados:
 
   - Un home donde veremos noticias relacionadas con el mundo animal.
-  - Un apartado de adopción donde apareceran en columnas con datos de los animales y sus fotos, tambíen se podrá subir los datos de un usuario si esta regisrado (Main theme).
-  - Otro apartado de anuncios donde los usuarios verán mensajes de otros usuarios sobre información de los animales tales como busquedas, desapariciones y su información de contacto.
+  - Un apartado de adopción donde aparecerán en columnas los datos de los animales y sus fotos, tambíen se podrá subir anuncios de adopción de un animal del usuario si esta regisrado (Main theme).
+  - Otro apartado de anuncios generales donde los usuarios verán mensajes de otros usuarios sobre información de los animales tales como busquedas, desapariciones y su información de contacto.
   - Información sobre la pagína en general con información propia.
   - Por último una tienda donde se encontrarán accesorios y juguetes para ellos (Esto puede cambiar).
 
