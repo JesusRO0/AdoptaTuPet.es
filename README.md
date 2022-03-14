@@ -11,4 +11,9 @@ La página web estará estructurada en distintos apartados:
   - Infomración sobre la pagína en general con información propia.
   - Por último una tienda donde se encontrarán accesorios y juguetes para ellos (Esto puede cambiar).
 
-La idea surge de la página https://www.adoptapet.com/, la modificaremos para mejorarla incluyendo el apartado de noticias y anuncios que pueden ser interesantes a la hora de interactuar con el usuario.
+La idea surge de la página https://www.adoptapet.com/, la modificaremos para mejorarla incluyendo el apartado de noticias y anuncios que pueden ser interesantes a la hora de interactuar con el usuario, se usarán dos apis con imágenes de animales.
+
+#### Horario
+
+- Prácticas de 8:00 a 14:00.
+- Proyecto: 2h al día de Lunes a Jueves, información, investigación y programación.
