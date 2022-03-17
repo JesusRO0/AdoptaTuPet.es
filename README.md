@@ -54,3 +54,24 @@ El ciclo de desarrollo constará de seis fases:
   5. Fase de prueba y despliegue: Nos aseguramos del correcto funcionamiento del proyecto en su ubicación definitiva teniendo en cuenta dependencias y versiones necesarias entre todos los componentes involucrados.
   6. Fase de ampliacion: En esta fase solo se tendrá en cuenta los cambios que se podrían haber realizado a la hora de hacer el proyecto o bíen los que se quedaron por el camino.
 
+### Análisis software
+
+- Requisitos funcionales
+
+El sistema tendrá usuario registrado, y no registrado.
+Constará de autenticación a la hora de registrarse e iniciar sesión.
+El usuario tendrá privilegios para subir posts.
+El usuario tendrá que estar registrado si quiere interactuar con los posts de los demás usuarios.
+El usuario registrado y no registrado podrá acceder a toda la información.
+Los anuncios o posts tendrán un tiempo de vida.
+
+- Requisitos no funcionales
+
+Cuando el usuario se identifique saldrá una notificación de bienvenida (o esa es la idea).
+El sistema será intuitivo para cualquier usuario.
+Los colores y animación serán los descritos en diseño (colores en proceso).
+Cuando el usuario intente subir algun post y no está registrado el sistema le avisará automaticamente.
+
+- Caso de uso.
+
+El caso de uso albergará todos los objetivos posibles que tendra nuestra página web.
