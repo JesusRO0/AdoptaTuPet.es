@@ -26,4 +26,6 @@ Referencias: https://www.adoptapet.com/, https://adopcionanimal.es/ y https://ba
 
 - Pros.
 
-Nuestra página tendra unos apartados adicionales que las páginas mencionadas anteriormente no tienen, como por ejemplo, el foro que será nuestro home page. Los uarios verán una serie de posts relaccionadas con el mundo animal, fotos, momnetos que quieran compartir con sus animales, comentarios, tambíen se podrá comentar y votar esos hilos para expresar si te ha gustado ese post, este apartado estará enfocado a la interacción del usuario.
+Nuestra página tendra unos apartados adicionales que las páginas mencionadas anteriormente no tienen, como por ejemplo, el foro que será nuestro home page. Los usuarios verán una serie de posts relaccionadas con el mundo animal, fotos, momentos que quieran compartir con sus animales, comentarios, tambíen se podrá comentar y votar esos hilos para expresar si te ha gustado ese post, este apartado estará enfocado a la interacción del usuario.
+
+También habrá otro apartado solo de anuncios, este apartado constará de varios apartados como por ejemplo,
