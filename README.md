@@ -74,4 +74,4 @@ Cuando el usuario intente subir algun post y no está registrado el sistema le a
 
 - Caso de uso.
 
-El caso de uso albergará todos los objetivos posibles que tendra nuestra página web.
+![Caso de Uso](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/Casodeuso.png){width='300px'}
