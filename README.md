@@ -78,6 +78,6 @@ Cuando el usuario intente subir algun post y no está registrado el sistema le a
 
 ### Diseño lógico
 
-- Arquitextura MVC
+- Arquitectura MVC
 
 ![Caso de Uso](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/ModeloMVC.png)
