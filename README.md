@@ -75,3 +75,9 @@ Cuando el usuario intente subir algun post y no está registrado el sistema le a
 - Caso de uso
 
 ![Caso de Uso](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/Casodeuso.png)
+
+### Diseño lógico
+
+- Arquitextura MVC
+
+![Caso de Uso](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/ModeloMVC.png)
