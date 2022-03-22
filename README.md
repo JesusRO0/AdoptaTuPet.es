@@ -80,8 +80,12 @@ Cuando el usuario intente subir algun post y no está registrado el sistema le a
 
 - Arquitectura MVC
 
-![Caso de Uso](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/ModeloMVC.png)
+![MVC](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/ModeloMVC.png)
 
 - Diagrama de Clases
 
-![Caso de Uso](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/UML.png)
+![UML](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/UML.png)
+
+- Diagrama Entidad-Relación
+
+![E-R](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/E-R.png)
