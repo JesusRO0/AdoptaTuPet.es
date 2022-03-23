@@ -89,3 +89,9 @@ Cuando el usuario intente subir algun post y no está registrado el sistema le a
 - Diagrama Entidad-Relación
 
 ![E-R](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/E-R.png)
+
+### Diseño de interfaces / Diseño Centrado en el Usuario (DCU)
+
+- Gama cromática
+
+
