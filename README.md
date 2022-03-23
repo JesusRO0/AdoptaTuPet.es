@@ -94,4 +94,4 @@ Cuando el usuario intente subir algun post y no está registrado el sistema le a
 
 - Gama cromática
 
-
+![GamaCromática](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/GamaCrom%C3%A1tica.png)
