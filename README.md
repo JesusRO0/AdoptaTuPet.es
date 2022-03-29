@@ -96,3 +96,8 @@ Cuando el usuario intente subir algun post y no está registrado el sistema le a
 
 Para los colores usaremos una gama de azul para dar sensación de libertad con un tono adicional marron complementario típico en mascotas esto hará que sea más "familiar".
 ![GamaCromática](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/GamaCrom%C3%A1ticaBuena.png)
+
+- Letras
+
+Títulos: Handlee, Mali o Aleo.
+Cuerpo: Montserrat, Raleway o Quicksand.
