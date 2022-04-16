@@ -101,3 +101,7 @@ Para los colores usaremos una gama de azul para dar sensación de libertad con u
 
 Títulos: Handlee, Mali o Aleo.
 Cuerpo: Montserrat, Raleway o Quicksand.
+
+- Icono de la Página
+
+![Icono](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/iconoadoptatupet.png)
