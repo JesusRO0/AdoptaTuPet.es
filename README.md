@@ -105,3 +105,7 @@ Cuerpo: Montserrat, Raleway o Quicksand.
 - Icono de la Página
 
 ![Icono](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/iconoadoptatupet.png)
+
+- Mockup, diseño de alta fidelidad (Sujeto a cambios)
+
+![Mockup](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/mockupadoptatupet.pdf)
