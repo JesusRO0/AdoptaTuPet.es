@@ -108,4 +108,4 @@ Cuerpo: Montserrat, Raleway o Quicksand.
 
 - Mockup, diseño de alta fidelidad (Sujeto a cambios)
 
-![Mockup](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/mockupadoptatupet.pdf)
+![Mockup](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/Mockupadoptatupet.pdf)
