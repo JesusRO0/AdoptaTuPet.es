@@ -88,7 +88,11 @@ Cuando el usuario intente subir algun post y no está registrado el sistema le a
 
 - Diagrama Entidad-Relación
 
-![E-R](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/E-R.png)
+![E-R](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/E-R%20AdoptaTuPet.es.png)
+
+- Grafo Relacional.
+
+![Grafo](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/Grafo%20Relacional%20ATP.es.pdf)
 
 ### Diseño de interfaces / Diseño Centrado en el Usuario (DCU)
 
@@ -108,4 +112,4 @@ Cuerpo: Montserrat, Raleway o Quicksand.
 
 - Mockup, diseño de alta fidelidad (Sujeto a cambios)
 
-![Mockup](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/Mockupadoptatupet.pdf)
+![Mockup](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/MockupAdoptaTuPet_es.pdf)
