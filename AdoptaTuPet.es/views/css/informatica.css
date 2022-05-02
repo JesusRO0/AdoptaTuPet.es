@@ -1,0 +1,283 @@
+/*CSS Mobile First*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Electrolize', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+/*Título principal*/
+header h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    width: 40vw;
+    padding-left: 20px;
+}
+header h1:hover{
+    background-color: rgb(133, 74, 141);
+}
+/*Navegador*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(94, 19, 87);
+    color: white;
+}
+/*Los ciclos*/
+.clases{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.clases h2{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding:0 10px;
+    border-left: 1px solid rgb(207, 207, 202);
+}
+.clases:last-child{
+    border-right: 1px solid rgb(207, 207, 202);
+}
+.clases h2:hover{
+    background-color: rgb(133, 74, 141);
+}
+.menu h1{
+    cursor: pointer;
+    font-size: 2.8em;
+}
+input{
+    display: none;
+}
+img{
+    width: 100%;
+}
+/*Contenedor Principal*/
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+/*Cada contenido de las clases*/
+.bloque{
+    width: 80%;
+    background-color: rgba(14, 3, 14, 0.8);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+}
+.bloque p{
+    font-size: 1.2em;
+    margin:10px
+}
+.bloque h2{
+    font-size: 2.5em;
+}
+.bloque img{
+    width: 50%;
+    margin: 20px;
+    border-radius: 10px;
+}
+/*Contenedor Principal de cada clase*/
+.sector1{
+    background-image: url(img/foto1.jpg);
+    background-size: cover;
+    padding: 58px;
+    padding-bottom: 30vh;
+    display: grid;
+    justify-items: center;
+}
+.sector2{
+    background-image: url(img/foto2.jpg);
+    background-size: cover;
+    display: grid;
+    padding: 67px;
+    padding-bottom: 30vh;
+    justify-items: center;
+    display: none;
+}
+.sector3{
+    background-image: url(img/foto3.jpg);
+    background-size: cover;
+    padding: 68px;
+    padding-bottom: 20vh;
+    display: grid;
+    justify-items: center;
+    display: none;
+}
+.sector4{
+    background-image: url(img/foto4.jpg);
+    background-size: cover; 
+    display: grid;
+    padding: 67px;
+    padding-bottom: 26vh;
+    justify-items: center;
+    display: none;
+}
+.sector5{
+    background-image: url(img/foto5.jpg);
+    background-size: cover;
+    padding: 22px;
+    padding-bottom: 26vh;
+    display: grid;
+    justify-items: center;
+    display: none;
+}
+.sector6{
+    background-image: url(img/foto6.jpg);
+    background-size: cover;
+    padding: 22px;
+    padding-bottom: 26vh;
+    display: grid;
+    justify-items: center;
+    display: none;
+}
+/*Clase que cambia de estado*/
+.visible{
+    display: grid;
+    justify-items: center;
+}
+.invisible{
+    display: none;
+}
+.portada{
+    display: none;
+}
+footer{
+    display: grid;
+    justify-items: center;
+    background-color: rgb(94, 19, 87);
+    color: white;
+    position: fixed;
+    bottom: 0%;
+    padding: 5px;
+    width: 100%;
+}
+@media screen and (max-width:800px) {
+    
+    /*Navegador*/
+    .menu h1{
+        display: none;
+    }
+    /*Menu cambiante*/
+    .menuDesplegado{
+        position: absolute;
+        top:0px;
+        width: 100%;
+        transition: all 0.5s linear;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(94, 19, 87);
+        color: white;
+    }
+    .menuPlegado {
+        position: absolute;
+        top:-325px;
+        width: 100%;
+        transition: all 0.5s linear;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(94, 19, 87);
+        color: white;
+    }
+    .clases{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .clases h2{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        cursor: pointer;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border: 0px solid white;
+    }
+    .clases h2:hover{
+        width: 100%;
+        background-color: rgb(133, 74, 141);
+    }
+    .portada h2:hover{
+        background-color: rgb(133, 74, 141);
+    }
+    .portada{
+        display: block;
+        width: 100%;
+    }
+    .portada hr{
+        width: 100%;
+        color: rgb(207, 207, 202);
+    }
+    .sector1{
+        padding-bottom: 32vh;
+    }
+    .sector2{
+        padding-bottom: 30vh;   
+     }
+    .sector3{
+        padding-bottom: 30vh;    
+    }
+    .sector4{
+        padding-bottom: 30vh;   
+     }
+    .sector5{
+        padding-bottom: 30vh;
+    }
+    .sector6{
+        padding-bottom: 30vh;   
+     }
+    .contenedorLineas{
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        width: 50px;
+        height: 50px;
+        z-index: 15;
+    }
+    
+    /*Propiedades de todas las líneas*/
+    .linea1,.linea2,.linea3{
+        position: relative;
+        background-color: white;
+        border-radius: 5px;
+        width: 50px;
+        height: 5px;
+        transition: all 0.3s linear;
+    }
+    /*Espacio entre ellas*/
+    .linea1,.linea2{
+        margin-bottom: 8px;
+    }
+    /*Animación de las líneas*/
+    .linea2{
+        background-color: transparent;
+    }
+    .linea1{
+        transform: translatey(20px) rotatez(45deg);
+    }
+    .linea3{
+        transform: translatey(-5px) rotatez(-45deg);
+    }
+    .borde2{
+        background-color: white;
+    }
+    .borde1{
+        transform: translatey(0px) rotatez(0deg);
+    }
+    .borde3{
+        transform: translatey(0px) rotatez(0deg);
+    }
+}
