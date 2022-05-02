@@ -39,7 +39,6 @@
         </div>
     </header>
     <main>
-
     </main>
     <footer>
         <div class="pie">IES "Puertas del Campo" - DIW</div>
