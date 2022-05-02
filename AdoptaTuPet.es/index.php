@@ -36,7 +36,6 @@
             <h1>AdoptaTuPet.es</h1>
         </div>
         <div class="menu">
-
         </div>
     </header>
     <main>
