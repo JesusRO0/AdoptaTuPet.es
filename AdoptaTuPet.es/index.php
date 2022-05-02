@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Cilos de Informática</title>
-    <link rel="stylesheet" href="informatica.css">
+    <link rel="stylesheet" href="./views/css/informatica.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"> 
@@ -21,13 +21,12 @@
                 <div class="linea3 icono_cruz borde3"></div>
         </div>
         <div class="menu menuDesplegado menuPlegado">
-            <h1 class="inicio">Inicio</h1>
+            <h1 class="inicio">AdoptaTuPet.es</h1>
             <div class="clases">
-                <h2 class="boton_smr">SMR</h2>
-                <h2 class="boton_asir">ASIR</h2>
-                <h2 class="boton_daw">Desarrollo Web</h2>
-                <h2 class="boton_dam">Desarrollo Multiplataforma</h2>
-                <h2 class="boton_cyber">Ciberseguridad</h2>
+                <h2 class="boton_smr">Inicio</h2>
+                <h2 class="boton_asir">Adopta</h2>
+                <h2 class="boton_daw">Foro</h2>
+                <h2 class="boton_dam">Contactos</h2>
                 <div class="portada">
                     <hr>
                     <h2 class="volver">Volver a la portada</h2>
@@ -80,13 +79,7 @@
             </div>
         </div>
         
-        <div class="sector6 lienzocib invisible">
-            <div class="bloque">
-                <h2>Curso de Ciberseguridad</h2>
-                <img src="img/foto12.jpg">
-                <p>El Curso de Especialización en Ciberseguridad en Entornos de las Tecnologías de la Información, al que podrás acceder después de finalizar cualquier Ciclo de Grado Superior de la Familia Profesional de Informática, es una reciente novedad en nuestro Centro. En él aprenderás todas las tecnologías relacionadas con la Ciberseguridad, como el análisis forense, el hacking ético o el bastionado de sistemas. La ciberseguridad es un sector en alza, por lo que este curso es un gran complemento para tu formación.</p> 
-            </div>
-        </div>
+
 
     </div>
 
@@ -101,14 +94,12 @@
                 $(this).parents().find('.lienzoasir').removeClass('visible');
                 $(this).parents().find('.lienzodaw').removeClass('visible');
                 $(this).parents().find('.lienzodam').removeClass('visible');
-                $(this).parents().find('.lienzocib').removeClass('visible');
 
                 $(this).parents().find('.lienzoinicio').addClass('invisible');
                 $(this).parents().find('.lienzosmr').removeClass('invisible');
                 $(this).parents().find('.lienzoasir').addClass('invisible');
                 $(this).parents().find('.lienzodaw').addClass('invisible');
                 $(this).parents().find('.lienzodam').addClass('invisible');
-                $(this).parents().find('.lienzocib').addClass('invisible');
 
                 $(this).parents().find('.contenedornavegacion').toggleClass('menu_desplegado menu_plegado');
                 $(this).parents().find('.contenedor_icono_burger').toggleClass('icono_barras icono_cruz');
@@ -120,14 +111,12 @@
                 $(this).parents().find('.lienzoasir').addClass('visible');
                 $(this).parents().find('.lienzodaw').removeClass('visible');
                 $(this).parents().find('.lienzodam').removeClass('visible');
-                $(this).parents().find('.lienzocib').removeClass('visible');
 
                 $(this).parents().find('.lienzoinicio').addClass('invisible');
                 $(this).parents().find('.lienzosmr').addClass('invisible');
                 $(this).parents().find('.lienzoasir').removeClass('invisible');
                 $(this).parents().find('.lienzodaw').addClass('invisible');
                 $(this).parents().find('.lienzodam').addClass('invisible');
-                $(this).parents().find('.lienzocib').addClass('invisible');
 
                 $(this).parents().find('.contenedornavegacion').toggleClass('menu_desplegado menu_plegado');
                 $(this).parents().find('.contenedor_icono_burger').toggleClass('icono_barras icono_cruz');
@@ -139,14 +128,12 @@
                 $(this).parents().find('.lienzoasir').removeClass('visible');
                 $(this).parents().find('.lienzodaw').addClass('visible');
                 $(this).parents().find('.lienzodam').removeClass('visible');
-                $(this).parents().find('.lienzocib').removeClass('visible');
 
                 $(this).parents().find('.lienzoinicio').addClass('invisible');
                 $(this).parents().find('.lienzosmr').addClass('invisible');
                 $(this).parents().find('.lienzoasir').addClass('invisible');
                 $(this).parents().find('.lienzodaw').removeClass('invisible');
                 $(this).parents().find('.lienzodam').addClass('invisible');
-                $(this).parents().find('.lienzocib').addClass('invisible');
 
                 $(this).parents().find('.contenedornavegacion').toggleClass('menu_desplegado menu_plegado');
                 $(this).parents().find('.contenedor_icono_burger').toggleClass('icono_barras icono_cruz');
@@ -158,14 +145,12 @@
                 $(this).parents().find('.lienzoasir').removeClass('visible');
                 $(this).parents().find('.lienzodaw').removeClass('visible');
                 $(this).parents().find('.lienzodam').addClass('visible');
-                $(this).parents().find('.lienzocib').removeClass('visible');
 
                 $(this).parents().find('.lienzoinicio').addClass('invisible');
                 $(this).parents().find('.lienzosmr').addClass('invisible');
                 $(this).parents().find('.lienzoasir').addClass('invisible');
                 $(this).parents().find('.lienzodaw').addClass('invisible');
                 $(this).parents().find('.lienzodam').removeClass('invisible');
-                $(this).parents().find('.lienzocib').addClass('invisible');
 
                 $(this).parents().find('.contenedornavegacion').toggleClass('menu_desplegado menu_plegado');
                 $(this).parents().find('.contenedor_icono_burger').toggleClass('icono_barras icono_cruz');
@@ -177,14 +162,12 @@
                 $(this).parents().find('.lienzoasir').removeClass('visible');
                 $(this).parents().find('.lienzodaw').removeClass('visible');
                 $(this).parents().find('.lienzodam').removeClass('visible');
-                $(this).parents().find('.lienzocib').addClass('visible');
 
                 $(this).parents().find('.lienzoinicio').addClass('invisible');
                 $(this).parents().find('.lienzosmr').addClass('invisible');
                 $(this).parents().find('.lienzoasir').addClass('invisible');
                 $(this).parents().find('.lienzodaw').addClass('invisible');
                 $(this).parents().find('.lienzodam').addClass('invisible');
-                $(this).parents().find('.lienzocib').removeClass('invisible');
 
                 $(this).parents().find('.contenedornavegacion').toggleClass('menu_desplegado menu_plegado');
                 $(this).parents().find('.contenedor_icono_burger').toggleClass('icono_barras icono_cruz');
@@ -196,14 +179,12 @@
                 $(this).parents().find('.lienzoasir').removeClass('visible');
                 $(this).parents().find('.lienzodaw').removeClass('visible');
                 $(this).parents().find('.lienzodam').removeClass('visible');
-                $(this).parents().find('.lienzocib').removeClass('visible');
 
                 $(this).parents().find('.lienzoinicio').removeClass('invisible');
                 $(this).parents().find('.lienzosmr').addClass('invisible');
                 $(this).parents().find('.lienzoasir').addClass('invisible');
                 $(this).parents().find('.lienzodaw').addClass('invisible');
                 $(this).parents().find('.lienzodam').addClass('invisible');
-                $(this).parents().find('.lienzocib').addClass('invisible');
 
                 $(this).parents().find('.contenedornavegacion').toggleClass('menu_desplegado menu_plegado');
                 $(this).parents().find('.contenedor_icono_burger').toggleClass('icono_barras icono_cruz');
@@ -215,14 +196,12 @@
                 $(this).parents().find('.lienzoasir').removeClass('visible');
                 $(this).parents().find('.lienzodaw').removeClass('visible');
                 $(this).parents().find('.lienzodam').removeClass('visible');
-                $(this).parents().find('.lienzocib').removeClass('visible');
 
                 $(this).parents().find('.lienzoinicio').removeClass('invisible');
                 $(this).parents().find('.lienzosmr').addClass('invisible');
                 $(this).parents().find('.lienzoasir').addClass('invisible');
                 $(this).parents().find('.lienzodaw').addClass('invisible');
                 $(this).parents().find('.lienzodam').addClass('invisible');
-                $(this).parents().find('.lienzocib').addClass('invisible');
 
                 $(this).parents().find('.contenedornavegacion').toggleClass('menu_desplegado menu_plegado');
                 $(this).parents().find('.contenedor_icono_burger').toggleClass('icono_barras icono_cruz');
@@ -233,12 +212,6 @@
                 $(".menuDesplegado").toggleClass('menuPlegado');
                 $(".menuPlegado").toggleClass('menuDesplegado');
             });
-
-            //SPOILER LA ANIMACION DE LAS BARRAS SALE MAL.
-            /*$('.contenedorLineas').on('click', function(){
-                $(this).parents().find('.borde1 .borde2 .borde3').toggleClass('.linea1 .linea2 .linea3 ');
-                $(this).parents().find('.linea1 .linea2 .linea3').toggleClass('.borde1 .borde2 .borde3');
-            });*/
         });
     </script>  
 </body>
