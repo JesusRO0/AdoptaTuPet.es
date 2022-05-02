@@ -80,8 +80,36 @@ Cuando el usuario intente subir algun post y no está registrado el sistema le a
 
 - Arquitectura MVC
 
-![Caso de Uso](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/ModeloMVC.png)
+![MVC](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/ModeloMVC.png)
 
 - Diagrama de Clases
 
-![Caso de Uso](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/UML.png)
+![UML](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/UML.png)
+
+- Diagrama Entidad-Relación
+
+![E-R](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/E-R%20AdoptaTuPet.es.png)
+
+- Grafo Relacional.
+
+![Grafo](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/Grafo%20Relacional%20ATP.es.pdf)
+
+### Diseño de interfaces / Diseño Centrado en el Usuario (DCU)
+
+- Gama cromática
+
+Para los colores usaremos una gama de azul para dar sensación de libertad con un tono adicional naranja que sobresalta bastante y le da un toque de emoción y personalidad. #E7F6FC , #87DDFF y #ED7F05.
+![GamaCromática](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/GamaCromatica.png)
+
+- Letras
+
+Títulos: Handlee, Mali o Aleo.
+Cuerpo: Montserrat, Raleway o Quicksand.
+
+- Icono de la Página
+
+![Icono](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/iconoadoptatupet.png)
+
+- Mockup, diseño de alta fidelidad (Sujeto a cambios)
+
+![Mockup](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/AdoptaTuPetes.pdf)
