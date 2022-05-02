@@ -58,7 +58,7 @@
 
         <div class="sector3 lienzoasir invisible">
             <div class="bloque">
-                <h2>Administración de Sistemas Informáticos en Red</h2>
+                <h2>Administración de Sistemas</h2>
                 <img src="img/foto9.jpg">
                 <p>El Ciclo Formativo de Grado Superior en Administración de Sistemas Informáticos en Red es muy completo; podrás trabajar como administrador de sistemas, responsable de Informática, técnico en servicios de Internet, técnico de telecomunicaciones, técnico de mensajería electrónica, técnico en teleasistencia, personal de apoyo y soporte técnico, técnico en administración de base de datos, técnico de redes, técnico en entornos web y supervisor de sistemas.</p>
             </div>
