@@ -15,31 +15,34 @@
 <body>
 
     <header>
-        <div class="contenedorLineas">
-                <div class="linea1 icono_cruz borde1"></div>
-                <div class="linea2 icono_cruz borde2"></div>
-                <div class="linea3 icono_cruz borde3"></div>
-        </div>
-        <div class="menu menuDesplegado menuPlegado">
-            <h1 class="inicio">Inicio</h1>
-            <div class="clases">
-                <h2 class="boton_smr">SMR</h2>
-                <h2 class="boton_asir">ASIR</h2>
-                <h2 class="boton_daw">Desarrollo Web</h2>
-                <h2 class="boton_dam">Desarrollo Multiplataforma</h2>
-                <h2 class="boton_cyber">Ciberseguridad</h2>
-                <div class="portada">
-                    <hr>
-                    <h2 class="volver">Volver a la portada</h2>
-                </div>
-            </div>
-        </div>
+            <div class="menu">
 
-        
+                <div class="titulo">
+                    <img src="./views/img/iconoadoptatupet.png">
+                    <h1 class="inicio">AdoptaTuPet.es</h1>
+                </div>
+
+                <div class="secciones">
+                    <h2 class="home">Inicio</h2>
+                    <h2 class="adopta">Adopta</h2>
+                    <h2 class="foro">Foro</h2>
+                    <h2 class="contacto">Contacto</h2>
+                </div>
+
+                <div class="redes">
+                    <img src="./views/img/logotipo-de-twitter.png">
+                    <img src="./views/img/facebook.png">
+                    <img src="./views/img/instagram.png">
+                </div>
+
+                <h2 class="entra">Entra</h2>
+            </div>
+
     </header>
 
+    
     <div class="contenedor">
-
+    <img src="./views/img/headerperro.jpg">
         <div class="sector1 lienzoinicio visible">
             <div class="bloque">
                 <h2>Ciclos Formativos de Informática</h2>
