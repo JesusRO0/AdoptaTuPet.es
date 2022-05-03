@@ -45,7 +45,7 @@
     <img src="./views/img/headerperro.jpg">
         <div class="sector1 lienzoinicio visible">
             <div class="bloque">
-                <h2>Ciclos Formativos de Informática</h2>
+                <h2>Adopta</h2>
                 <img src="img/logo.jpg">
                 <p>¿Te apasiona la Informática? Si es así, te invitamos a descubrir los Ciclos Formativos que ofertamos en nuestro Centro. Sin duda podrás encontrar el que más se adapte a tus intereses y comenzar a prepararte para un brillante futuro profesional. Haz clic en el menú de arriba para saber más.</p>
             </div>
