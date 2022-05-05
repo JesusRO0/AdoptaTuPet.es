@@ -5,14 +5,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Electrolize', sans-serif;
+    /* Letras:
+    
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Fredoka One', cursive;
+    */
 }
-
 
 /*img{
     width: 5%;
 }*/
-
+body{
+    font-family: 'Fredoka One', cursive;
+}
 header{
+    position: relative;
     background-color: aqua;
 }
 .titulo{
@@ -51,9 +58,21 @@ header{
     padding: 10px;
 }
 .bannerperro{
-    position: relative;
+    position: absolute;
     z-index: -5;
 }
 .contenedor{
-    position: absolute;
+    margin: auto 0;
 }
+.primerbanner{
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    font-size: 2em;
+    width: 800px;
+    text-align: center;
+}
+.primerbanner h1{
+    padding-bottom: 20px;
+}
+

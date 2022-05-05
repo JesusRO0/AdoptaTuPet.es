@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -44,20 +50,17 @@
     
         <div class="contenedor">
             <img class="bannerperro" src="./views/img/bannerperro.jpg">
-                <div class="sector1 lienzoinicio visible">
-                    <div class="bloque">
-                        <h2>Adopta</h2>
-                        <img src="img/logo.jpg">
-                        <p>¿Te apasiona la Informática? Si es así, te invitamos a descubrir los Ciclos Formativos que ofertamos en nuestro Centro. Sin duda podrás encontrar el que más se adapte a tus intereses y comenzar a prepararte para un brillante futuro profesional. Haz clic en el menú de arriba para saber más.</p>
-                    </div>
+                <div class="primerbanner">
+                    <h1>Adopta</h1>
+                    <h2>Salva dos vidas, la del animal que adoptas y la del que ocupa su lugar en nuestro centro de adopción.</h2>
                 </div>
         </div>
 
     </main>
 
-    <footer>
+    <!-- <footer>
         <h2>Diseño de Interfaces Web - 2DAW. Ceuta.</h2>
-    </footer>
+    </footer> -->
     <script>
         
     </script>  
