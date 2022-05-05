@@ -4,32 +4,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Electrolize', sans-serif;
     /* Letras:
     
     font-family: 'Raleway', sans-serif;
     font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka', sans-serif;
+    
+    Colores:
+
+    #E7F6FC azul claro, #87DDFF celeste y #ED7F05 naranja.
+    
     */
 }
 
-/*img{
-    width: 5%;
-}*/
 body{
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka', sans-serif;
 }
 header{
-    position: relative;
-    background-color: aqua;
+    background-color: #E7F6FC;
 }
 .titulo{
+    color: #87DDFF;
+    text-shadow: 0px 2px 2px black;
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items:center;
+    width: 300px;
 }
 .titulo img{
-    width: 70px;
+    padding-right: 10px;
+    width: 30%;
 }
 .menu{
     display: flex;
@@ -38,11 +44,12 @@ header{
     align-items:center;
 }
 .secciones{
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
-    width: 400px;
+    width: 500px;
 }
 .redes{
     display: flex;
@@ -54,8 +61,27 @@ header{
     padding-right: 20px;
 }
 .redes img{
-    width: 100%;
+    width: 40%;
     padding: 10px;
+}
+.home,.adopta,.foro,.contacto{
+    border-radius: 10px;
+    background-color: #ED7F05;
+    color: #E7F6FC;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 0px 2px black;
+}
+.entra{
+    border-radius: 10px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-shadow: 0px 0px 2px black;
 }
 .bannerperro{
     position: absolute;
@@ -65,14 +91,23 @@ header{
     margin: auto 0;
 }
 .primerbanner{
-    position: absolute;
-    left: 800px;
-    top: 300px;
-    font-size: 2em;
-    width: 800px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
 }
 .primerbanner h1{
     padding-bottom: 20px;
+}
+.separador{
+    width: 22vw;
+}
+.textoprimerbanner{
+    font-family: 'Raleway', sans-serif;
+    color: #ED7F05;
+    margin-top: 120px;
+    font-size: 2em;
+    width: 800px;
+    text-align: center;
 }
 
