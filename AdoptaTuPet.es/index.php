@@ -45,12 +45,72 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="./views/img/instagram.png"></a>
                 </div>
 
-                <h2 class="entra">Entra</h2>
+                <h2 class="entra boton inicioSesion" id="openDL">Entra</h2>
             </div>
 
     </header>
 
     <main>
+
+    <div class="edit" id="divPerf">
+            <form method="POST" action="perfil.php">
+                <input type="submit" class="miPerfil" id="miPerf" value="Mi Perfil"></input>
+            </form>
+            <hr>
+            <form method="POST" action="#">
+                <input name="closeSesion" type="submit" class="cerrar" id="cerSes" value="Cerrar Sesión"></input>
+            </form>
+        </div>
+
+        <div class="Registro" id="divReg">
+
+            <!--Posicionar arriba a la derecha para cuando se pulse el botón-->
+            <!--Lo de aparecer o desaparecer va con js-->
+
+                <p>
+                    <label for="correoRegistro">Correo electrónico: </label><br>
+                    <input type="text" name="correoRegistro" placeholder="micorreo@correo.com" class="inserta" id="correoRegistro">
+                </p>
+
+                <p>
+                    <label for="nombreRegistro">Nombre: </label><br>
+                    <input type="text" name="nombreRegistro" placeholder="Inserta tu nombre" class="inserta" id="nombreRegistro">
+                </p>
+
+                <p>
+                    <label for="passRegistro">Contraseña: </label><br>
+                    <input type="password" name="passRegistro" placeholder="Tu contraseña" class="inserta" id="passRegistro">
+                </p>
+                <p>
+                    <input type="submit" name="completarRegistro" value="Registrate" class="completaRegistro" id="botonRegistro">
+                </p>
+                <p id="errorR"></p>
+
+        </div>
+
+        <!--Posicionar arriba a la derecha para cuando se pulse el botón-->
+        <!--Lo de aparecer o desaparecer va con js-->
+        <div class="login" id="divL">
+
+            <form action="#" method="POST">
+                <p>
+                    <label for="correoSesion">Correo electrónico: </label><br>
+                    <input type="text" name="correoSesion" placeholder="micorreo@correo.com" class="inserta inicioS" id="emailLog">
+                </p>
+
+                <p>
+                    <label for="passSesion">Contraseña: </label><br>
+                    <input type="password" name="passSesion" placeholder="password" class="inserta inicioS" id="passLog">
+                </p>
+                <p>
+                    <input type="submit" name="completarLogin" value="IniciarSesion" class="completaLogin" id="botonLogin" >
+                </p>
+
+
+            </form>
+
+
+        </div>
     
         <div class="contenedor">
             <img class="bannerperro" src="./views/img/bannerperro.jpg">

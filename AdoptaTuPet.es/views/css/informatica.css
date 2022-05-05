@@ -86,6 +86,211 @@ header{
     box-shadow: 0px 0px 2px black;
 }
 
+/*Registro y Login*/
+.flecha {
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    color: #EEEEEE;
+    border: 1px solid #10A3EB;
+    padding: 1px;
+    margin-top: 20px;
+    float: left;
+}
+
+.fotoPerfilTop {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.perfil {
+    display: none;
+    margin-right: 15px;
+}
+
+.fotoPerfil {
+    width: 75%;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#h3User {
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/*Botones de registrarse y iniciar sesión*/
+
+.sesion {
+    display: none;
+    flex-flow: row;
+    margin-right: 40px;
+}
+
+/*Capa de registro*/
+
+.Registro {
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+    background-color: #EEEEEE;
+    text-shadow: 1px 2px 2px #10A3EB;
+    box-shadow: 3px 4px 6px black;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 2em;
+    right: 10%;
+    top: -20px;
+    height: 530px;
+    display: none;
+    z-index: 5;
+}
+
+
+/*Texto y label de registro*/
+
+.Registro input {
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    margin: 10px;
+    margin-right: 30px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+}
+
+
+/*Botón de registro final*/
+
+.Registro .completaRegistro {
+    background-color: black;
+    color: #EEEEEE;
+    font-size: 1.1em;
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 95px;
+    margin-top: 10px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 3px 5px 5px #10A3EB;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/*Error de falta datos*/
+
+.Registro p:last-child {
+    margin-left: 92px;
+    color: red;
+}
+
+
+/*Capa de login (como la de registro)*/
+
+.login {
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+    background-color: #EEEEEE;
+    text-shadow: 1px 2px 2px #10A3EB;
+    box-shadow: 3px 4px 6px black;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 2em;
+    right: 2%;
+    top: -20px;
+    height: 390px;
+    display: none;
+    z-index: 5;
+}
+
+.edit {
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+    background-color: #EEEEEE;
+    text-shadow: 1px 2px 2px #10A3EB;
+    box-shadow: 3px 4px 6px black;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 2em;
+    right: 2%;
+    top: -20px;
+    height: 200px;
+    display: none;
+    z-index: 10;
+}
+
+.miPerfil {
+    height: 60px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 1px 2px 2px #10A3EB;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 15px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cerrar {
+    background-color: black;
+    color: #EEEEEE;
+    font-size: 1em;
+    width: 260px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    box-shadow: 3px 5px 5px #10A3EB;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/*Texto y label de login*/
+
+.login input {
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    margin: 10px;
+    margin-right: 30px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+}
+
+
+/*Botón de login final*/
+
+.login .completaLogin {
+    background-color: black;
+    color: #EEEEEE;
+    font-size: 1.1em;
+    width: 250px;
+    height: 80px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 70px;
+    margin-top: 5px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 3px 5px 5px #10A3EB;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
 /*-------------------------------- FIN HEADER ------------------------------*/
 
 
