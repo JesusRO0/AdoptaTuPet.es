@@ -50,8 +50,10 @@ header{
     width: 100%;
     padding: 10px;
 }
+.bannerperro{
+    position: relative;
+    z-index: -5;
+}
 .contenedor{
-    background-image: url("./views/img/headerperro.jpg");
-    background-size: cover;
-    width: 100%;
+    position: absolute;
 }
