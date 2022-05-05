@@ -20,6 +20,8 @@
 body{
     font-family: 'Fredoka', sans-serif;
 }
+
+/*-------------------------------- HEADER ------------------------------*/
 header{
     background-color: #E7F6FC;
 }
@@ -56,13 +58,13 @@ header{
     flex-direction: row;
     justify-content: flex-end;
     align-items:center;
-    width: 200px;
+    width: 250px;
     padding-left: 20px;
     padding-right: 20px;
 }
 .redes img{
-    width: 40%;
-    padding: 10px;
+    width: 100%;
+    padding: 5px;
 }
 .home,.adopta,.foro,.contacto{
     border-radius: 10px;
@@ -83,6 +85,10 @@ header{
     padding-right: 35px;
     box-shadow: 0px 0px 2px black;
 }
+
+/*-------------------------------- FIN HEADER ------------------------------*/
+
+
 .bannerperro{
     position: absolute;
     z-index: -5;

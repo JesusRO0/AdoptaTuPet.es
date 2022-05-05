@@ -40,9 +40,9 @@
                 </div>
 
                 <div class="redes">
-                    <img src="./views/img/logotipo-de-twitter.png">
-                    <img src="./views/img/facebook.png">
-                    <img src="./views/img/instagram.png">
+                    <a href="https://twitter.com/home?lang=es" target="_blank"><img src="./views/img/logotipo-de-twitter.png"></a>
+                    <a href="https://es-es.facebook.com/" target="_blank"><img src="./views/img/facebook.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./views/img/instagram.png"></a>
                 </div>
 
                 <h2 class="entra">Entra</h2>
