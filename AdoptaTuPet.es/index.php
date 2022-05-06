@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>AdoptaTuPet.es</title>
     <link rel="icon" href="./views/img/iconoadoptatupet.png">
-    <link rel="stylesheet" href="./views/css/informatica.css">
+    <link rel="stylesheet" href="./views/css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"> 
@@ -128,9 +128,21 @@
     <!-- <footer>
         <h2>Diseño de Interfaces Web - 2DAW. Ceuta.</h2>
     </footer> -->
-    <script>
-        
-    </script>  
+
+    <script src="./js/ajax.js"></script>
+    <script src="./js/cambiaDatos.js"></script>
+    <script src="./js/clear.js"></script>
+    <script src="./js/enter.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/loginAjax.js"></script>
+    <script src="./js/openDivs.js"></script>
+    <script src="./js/registerAjax.js"></script>
+
+
+    <?php
+        creaHeader();
+
+    ?> 
 </body>
 
 </html>

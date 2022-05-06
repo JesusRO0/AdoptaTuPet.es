@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Letra 
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Raleway', sans-serif;
+    Colores:
+    #10A3EB
+    #EEEEEE
+    */
+}
+
+
+/********* Empieza encabezado **********/
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEEEEE;
+    font-family: 'Comfortaa', cursive;
+}
+
+.logo img {
+    width: 100px;
+}
+
+hr {
+    border: 1.5px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*La camara y el titulo Galor*/
+
+.logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.logo h1 {
+    text-shadow: 0px 5px 5px #10A3EB;
+    font-size: 3.5em;
+    margin-left: 10px;
+}
+
+
+/*Usuario y foto de perfil cuando se inicia sesión*/
+
+.flecha {
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    color: #EEEEEE;
+    border: 1px solid #10A3EB;
+    padding: 1px;
+    margin-top: 20px;
+    float: left;
+}
+
+.fotoPerfilTop {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.perfil {
+    display: none;
+    margin-right: 15px;
+}
+
+.fotoPerfil {
+    width: 75%;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#h3User {
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/*Botones de registrarse y iniciar sesión*/
+
+.sesion {
+    display: flex;
+    flex-flow: row;
+    margin-right: 40px;
+}
+
+img {
+    width: 100%;
+}
+
+
+/******** Fin de encabezado *********/
+
+
+/********* Cuerpo ***********/
+
+.edit {
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+    background-color: #EEEEEE;
+    text-shadow: 1px 2px 2px #10A3EB;
+    box-shadow: 3px 4px 6px black;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 2em;
+    right: 2%;
+    top: -20px;
+    height: 200px;
+    display: none;
+    z-index: 10;
+}
+
+.miPerfil {
+    height: 60px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: whitesmoke;
+    box-shadow: 1px 2px 2px #10A3EB;
+    margin-bottom: 15px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.foto{
+    margin-right: 2vw
+}
+
+.cerrar {
+    background-color: black;
+    color: #EEEEEE;
+    font-size: 1em;
+    width: 260px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    box-shadow: 3px 5px 5px #10A3EB;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.relleno {
+    background-color: black;
+    position: relative;
+    top: 0;
+    opacity: 50%;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 3;
+    position: absolute;
+}
+
+body {
+    height: 96%;
+}
+
+html {
+    height: 96%;
+}
+
+main {
+    position: relative;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 96%;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40%;
+    height: 96%;
+    margin-top: 10px;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+.cambiarNombre {
+    top: 20px;
+    right: 125px;
+    position: relative;
+    width: 15vw;
+    border: 0;
+    border-bottom: 1px solid black;
+    height: 30px;
+    background-color: #EEEEEE;
+    margin-left: 8vw;
+    margin-bottom: 10px;
+}
+
+#h2Perf{
+    font-size: 1.1em;
+}
+
+.cambiarNombre:focus-visible {
+    outline: 0;
+}
+
+.cambiaFoto {
+    background-color: black;
+    box-shadow: 0 2px 2px #10A3EB;
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 0.8em;
+    width: 160px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.correo {
+    font-family: 'Comfortaa', cursive;
+    border-radius: 10px;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.correo h3 {
+    background-color: white;
+    box-shadow: 0 2px 2px #10A3EB;
+    text-align: center;
+    width: 160px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inputCorreo {
+    width: 100%;
+    height: 30px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 5px;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: #EEEEEE;
+}
+
+.inputCorreo:focus-visible {
+    outline: 0;
+}
+
+.guardarCorreo{
+    background-color: black;
+    color: #EEEEEE;
+    font-size: 0.8em;
+    width: 230px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.guardarNombre{
+    background-color: black;
+    color: #EEEEEE;
+    font-size: 0.6em;
+    width: 310px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 30px;
+}
+
+#menosMargen {
+    margin-top: -20px;
+}
+
+
+/********* Fin del Cuerpo ***********/
+
+
+/*Pie de página*/
+
+footer {
+    font-family: 'Comfortaa', cursive;
+    background-color: #10A3EB;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer hr {
+    width: 100%;
+    position: fixed;
+    bottom: 40px;
+}

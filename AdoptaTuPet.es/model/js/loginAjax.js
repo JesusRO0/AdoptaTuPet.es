@@ -1,3 +1,4 @@
+
 function login(email, pass) {
     if (email ==''|| pass  ==''){
 		paR.innerHTML = 'Faltan datos.'

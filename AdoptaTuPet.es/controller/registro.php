@@ -1,3 +1,4 @@
+
 <?php
 
     require_once('crud.php');
@@ -7,3 +8,6 @@
         $name = $_GET['name'];
 
     creaUser($name, $email, $pass); 
+
+    
+
