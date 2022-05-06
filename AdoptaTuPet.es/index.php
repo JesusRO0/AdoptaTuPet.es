@@ -45,14 +45,14 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="./views/img/instagram.png"></a>
                 </div>
 
-                <h2 class="entra boton inicioSesion" id="openDL">Entra</h2>
+                <h2 class="entra" id="divEntrada">Entra</h2>
             </div>
 
     </header>
 
     <main>
 
-    <div class="edit" id="divPerf">
+    <!-- <div class="edit" id="divPerf">
             <form method="POST" action="perfil.php">
                 <input type="submit" class="miPerfil" id="miPerf" value="Mi Perfil"></input>
             </form>
@@ -60,57 +60,59 @@
             <form method="POST" action="#">
                 <input name="closeSesion" type="submit" class="cerrar" id="cerSes" value="Cerrar Sesión"></input>
             </form>
-        </div>
+    </div> -->
 
-        <div class="Registro" id="divReg">
-
-            <!--Posicionar arriba a la derecha para cuando se pulse el botón-->
-            <!--Lo de aparecer o desaparecer va con js-->
-
-                <p>
-                    <label for="correoRegistro">Correo electrónico: </label><br>
-                    <input type="text" name="correoRegistro" placeholder="micorreo@correo.com" class="inserta" id="correoRegistro">
-                </p>
-
-                <p>
-                    <label for="nombreRegistro">Nombre: </label><br>
-                    <input type="text" name="nombreRegistro" placeholder="Inserta tu nombre" class="inserta" id="nombreRegistro">
-                </p>
-
-                <p>
-                    <label for="passRegistro">Contraseña: </label><br>
-                    <input type="password" name="passRegistro" placeholder="Tu contraseña" class="inserta" id="passRegistro">
-                </p>
-                <p>
-                    <input type="submit" name="completarRegistro" value="Registrate" class="completaRegistro" id="botonRegistro">
-                </p>
-                <p id="errorR"></p>
-
-        </div>
-
-        <!--Posicionar arriba a la derecha para cuando se pulse el botón-->
-        <!--Lo de aparecer o desaparecer va con js-->
+    <div class="contenedorDIV">
         <div class="login" id="divL">
+
+            <img src="./views/img/perro (1).png">
+            <h3>Iniciar Sesión</h3>
+            <hr>
 
             <form action="#" method="POST">
                 <p>
-                    <label for="correoSesion">Correo electrónico: </label><br>
-                    <input type="text" name="correoSesion" placeholder="micorreo@correo.com" class="inserta inicioS" id="emailLog">
+                    <input type="text" name="correoSesion" placeholder="Email" class="inserta inicioS" id="emailLog">
                 </p>
 
                 <p>
-                    <label for="passSesion">Contraseña: </label><br>
-                    <input type="password" name="passSesion" placeholder="password" class="inserta inicioS" id="passLog">
+                    <input type="password" name="passSesion" placeholder="Contraseña" class="inserta inicioS" id="passLog">
                 </p>
                 <p>
                     <input type="submit" name="completarLogin" value="IniciarSesion" class="completaLogin" id="botonLogin" >
                 </p>
 
+                <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta Regístrate</p>
 
             </form>
 
 
         </div>
+
+        <div class="registro" id="divR">
+
+            <img src="./views/img/perro (1).png">
+            <h3>Regístrate</h3>
+            <hr>
+
+            <form action="#" method="POST">
+                <p>
+                    <input type="text" name="correoSesion" placeholder="Email" class="inserta inicioS" id="emailLog">
+                </p>
+
+                <p>
+                    <input type="password" name="passSesion" placeholder="Contraseña" class="inserta inicioS" id="passLog">
+                </p>
+                <p>
+                    <input type="submit" name="completarLogin" value="IniciarSesion" class="completaLogin" id="botonLogin" >
+                </p>
+
+                <p class="botonLogin" id="botonLogin">Si ya tienes una cuenta Entra</p>
+
+            </form>
+
+
+        </div>
+    </div>
     
         <div class="contenedor">
             <img class="bannerperro" src="./views/img/bannerperro.jpg">
@@ -129,20 +131,15 @@
         <h2>Diseño de Interfaces Web - 2DAW. Ceuta.</h2>
     </footer> -->
 
-    <script src="./js/ajax.js"></script>
-    <script src="./js/cambiaDatos.js"></script>
-    <script src="./js/clear.js"></script>
-    <script src="./js/enter.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/loginAjax.js"></script>
-    <script src="./js/openDivs.js"></script>
-    <script src="./js/registerAjax.js"></script>
+    <script src="/model/js/ajax.js"></script>
+    <script src="/model/js/cambiaDatos.js"></script>
+    <script src="/model/js/clear.js"></script>
+    <script src="/model/js/enter.js"></script>
+    <script src="/model/js/index.js"></script>
+    <script src="/model/js/loginAjax.js"></script>
+    <script src="./model/js/openDivs.js"></script>
+    <script src="/model/js/registerAjax.js"></script>
 
-
-    <?php
-        creaHeader();
-
-    ?> 
 </body>
 
 </html>
