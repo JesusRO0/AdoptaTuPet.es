@@ -25,7 +25,7 @@
 <body>
 
     <header>
-            <div class="menu">
+            <div class="menu" id="Menu">
 
                 <div class="titulo">
                     <img src="./views/img/iconoadoptatupet.png">
@@ -81,7 +81,7 @@
                     <input type="submit" name="completarLogin" value="IniciarSesion" class="completaLogin" id="botonLogin" >
                 </p>
 
-                <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta Regístrate</p>
+                <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
 
             </form>
 
@@ -106,7 +106,7 @@
                     <input type="submit" name="completarLogin" value="IniciarSesion" class="completaLogin" id="botonLogin" >
                 </p>
 
-                <p class="botonLogin" id="botonLogin">Si ya tienes una cuenta Entra</p>
+                <p class="botonLogin" id="botonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>
 
             </form>
 
@@ -114,7 +114,7 @@
         </div>
     </div>
     
-        <div class="contenedor">
+        <div class="contenedor" id="Contenedor">
             <img class="bannerperro" src="./views/img/bannerperro.jpg">
                 <div class="primerbanner">
                     <div class="separador"></div>

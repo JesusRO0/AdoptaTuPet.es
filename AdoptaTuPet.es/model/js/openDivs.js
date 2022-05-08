@@ -37,6 +37,7 @@
 //     }
 // });
 
+//Evento de login
 document.getElementById("divEntrada").addEventListener('click', function(ev){
     
     let login = document.getElementById('divL');
@@ -52,17 +53,50 @@ document.getElementById("divEntrada").addEventListener('click', function(ev){
     ev.preventDefault();
 });
 
-document.getElementById("divEntrada").addEventListener('click', function(ev){
+//Evento de registro
+document.getElementById("registro").addEventListener('click', function(ev){
     
+    let registro = document.getElementById('divR');
     let login = document.getElementById('divL');
 
-    if (login.style.display == 'block') {
-        login.style.display = 'none';
+    login.style.display = 'none';
+
+    if (registro.style.display == 'block') {
+        registro.style.display = 'none';
 
     } else {
-        login.style.display = 'block';
+        registro.style.display = 'block';
 
     }
+
+
+    ev.preventDefault();
+});
+
+//Volver al login
+document.getElementById("Entra").addEventListener('click', function(ev){
+    
+    let login2 = document.getElementById('divL');
+    let registro2 = document.getElementById('divR');
+    registro2.style.display = 'none';
+
+    if (login2.style.display == 'block') {
+        login2.style.display = 'none';
+
+    } else {
+        login2.style.display = 'block';
+    }
+
+    ev.preventDefault();
+});
+
+//Cerrar el login o el registro si se clickea fuera
+document.getElementById("Contenedor").addEventListener('click', function(ev){
+    
+    let login3 = document.getElementById('divL');
+    let registro3 = document.getElementById('divR');
+    registro3.style.display = 'none';
+    login3.style.display = 'none';
 
     ev.preventDefault();
 });
