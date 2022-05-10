@@ -52,7 +52,66 @@
 
     <main>
 
+    <div class="contenedorDIV">
+        <div class="login" id="divL">
+
+            <img src="./img/perro (1).png">
+            <h3>Iniciar Sesión</h3>
+            <hr>
+
+            <form action="#" method="POST">
+                <p>
+                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog">
+                </p>
+
+                <p>
+                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog">
+                </p>
+                <p>
+                    <input type="submit" name="completarLogin" value="Entra" class="completaLogin" id="botonLogin" >
+                </p>
+
+                <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
+
+            </form>
+
+
+        </div>
+
+        <div class="registro" id="divR">
+
+            <img src="./img/perro (1).png">
+            <h3>Regístrate</h3>
+            <hr>
+
+            <form action="#" method="POST">
+                <p>
+                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog">
+                </p>
+
+                <p>
+                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog">
+                </p>
+
+                <p>
+                    <input type="password" name="passSesionRep" placeholder="  Repetir Contraseña" class="inserta inicioS" id="passLog">
+                </p>
+
+                <p>
+                    <input type="submit" name="completarLogin" value="Regístrate" class="completaLogin" id="botonLogin" >
+                </p>
+
+                <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>
+
+            </form>
+
+
+        </div>
+    </div>
+    <div class="contenedor" id="Contenedor">
     <h1>Foro</h1>
+    </div>
+    
 
     </main>
 
