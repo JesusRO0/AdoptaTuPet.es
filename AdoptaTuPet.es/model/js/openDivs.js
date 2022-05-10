@@ -41,6 +41,8 @@
 document.getElementById("divEntrada").addEventListener('click', function(ev){
     
     let login = document.getElementById('divL');
+    let registro = document.getElementById('divR');
+    registro.style.display = 'none';
 
     if (login.style.display == 'block') {
         login.style.display = 'none';

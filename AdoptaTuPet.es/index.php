@@ -33,10 +33,10 @@
                 </div>
 
                 <div class="secciones">
-                    <h2 class="home">Inicio</h2>
-                    <h2 class="adopta">Adopta</h2>
-                    <h2 class="foro">Foro</h2>
-                    <h2 class="contacto">Contacto</h2>
+                    <a href="./index.php"><h2 class="home">Inicio</h2></a>
+                    <a href="./views/adopta.php"><h2 class="adopta">Adopta</h2></a>
+                    <a href="./views/foro.php"><h2 class="foro">Foro</h2></a>
+                    <a href="./views/contacto.php"><h2 class="contacto">Contacto</h2></a>
                 </div>
 
                 <div class="redes">
@@ -71,14 +71,14 @@
 
             <form action="#" method="POST">
                 <p>
-                    <input type="text" name="correoSesion" placeholder="Email" class="inserta inicioS" id="emailLog">
+                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog">
                 </p>
 
                 <p>
-                    <input type="password" name="passSesion" placeholder="Contraseña" class="inserta inicioS" id="passLog">
+                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog">
                 </p>
                 <p>
-                    <input type="submit" name="completarLogin" value="IniciarSesion" class="completaLogin" id="botonLogin" >
+                    <input type="submit" name="completarLogin" value="Entra" class="completaLogin" id="botonLogin" >
                 </p>
 
                 <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
@@ -96,17 +96,22 @@
 
             <form action="#" method="POST">
                 <p>
-                    <input type="text" name="correoSesion" placeholder="Email" class="inserta inicioS" id="emailLog">
+                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog">
                 </p>
 
                 <p>
-                    <input type="password" name="passSesion" placeholder="Contraseña" class="inserta inicioS" id="passLog">
-                </p>
-                <p>
-                    <input type="submit" name="completarLogin" value="IniciarSesion" class="completaLogin" id="botonLogin" >
+                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog">
                 </p>
 
-                <p class="botonLogin" id="botonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>
+                <p>
+                    <input type="password" name="passSesionRep" placeholder="  Repetir Contraseña" class="inserta inicioS" id="passLog">
+                </p>
+
+                <p>
+                    <input type="submit" name="completarLogin" value="Regístrate" class="completaLogin" id="botonLogin" >
+                </p>
+
+                <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>
 
             </form>
 
@@ -127,9 +132,40 @@
 
     </main>
 
-    <!-- <footer>
-        <h2>Diseño de Interfaces Web - 2DAW. Ceuta.</h2>
-    </footer> -->
+    <footer>
+        <div class="piedepagina">
+            <div class="pie1">
+                <img src="./views/img/iconoadoptatupet.png">
+                <h1 class="tituloPie">AdoptaTuPet.es</h1>
+            
+            <ol>
+                <li><p>Apartado de Correos 9</p></li>
+                <li><p>9 Grupos Rocío</p></li>
+                <li><p>Ceuta (España)</p></li>
+                <li><p> XXX XXX XXX</p></li>
+                <li><p>adoptatupet@adoptatupet.es</p></li>
+            </ol>
+                <div class="redesPie">
+                            <a href="https://twitter.com/home?lang=es" target="_blank"><img src="./views/img/logotipo-de-twitter.png"></a>
+                            <a href="https://es-es.facebook.com/" target="_blank"><img src="./views/img/facebook.png"></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="./views/img/instagram.png"></a>
+                </div>
+            </div>
+            <div class="pie2">
+                <ol>
+                    <li><p>Inicio</p></li>
+                    <li><p>Adopta</p></li>
+                    <li><p>Foro</p></li>
+                    <li><p>Contacto</p></li>
+                </ol>
+            </div>
+            <div class="pie3">
+                <h2>Localización</h2>
+                <img src="./views/img/map.png">
+            </div>
+        </div>
+        <div class="textoPie"><p>© 2022 AdoptaTuPet. Todos los derechos reservados. Aviso legal, Política de privacidad y protección de datos personales.</p></div>
+    </footer>
 
     <script src="/model/js/ajax.js"></script>
     <script src="/model/js/cambiaDatos.js"></script>
