@@ -185,6 +185,12 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
+.contenedor{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
 .animal{
     background-color: cornflowerblue;
     display: flex;
@@ -210,6 +216,9 @@ input{
 }
 .compartir{
     text-align: center;
+}
+.descripcion{
+    width: 1000px;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/

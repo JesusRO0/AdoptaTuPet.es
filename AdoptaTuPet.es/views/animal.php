@@ -142,6 +142,14 @@
             </div>
 
         </div>
+        <div class="descripcion">
+            <h2>Descripción</h2>
+            <p>Esta preciosidad se llama Miel y tiene 11 meses aprox. Fue abandonada cerca de Barcelona siendo solo una cachorrita. Entró con muchísimo miedo y desorientada…pero seguro que lo peor ya ha pasado y pronto encontraremos un buen hogar para ella.
+
+            Cómo podéis ver, más bonita no puede ser. 
+
+            Por favor ayudarme a difundirla; a ver si entre todos conseguimos que cambie su suerte y tengo una familia pronto. Miel está sana y se entrega esterilizada, debidamente vacunada y desparasitada. Míel está en una protectora cerca de Barcelona pero puede viajar a cualquier punto de la península. Podéis contactar conmigo aquí para ampliar información: 646 958 099 juancarcasta@gmail.com . Abrazos y gracias.</p>
+        </div>
     </div>
     
     
