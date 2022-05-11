@@ -1,0 +1,265 @@
+/*CSS Mobile First*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Letras:
+    
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka', sans-serif;
+    
+    Colores:
+
+    #E7F6FC azul claro, #87DDFF celeste y #ED7F05 naranja.
+    
+    */
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;
+}
+
+/*-------------------------------- HEADER ------------------------------*/
+header{
+    background-color: #E7F6FC;
+}
+.titulo{
+    color: #87DDFF;
+    text-shadow: 0px 2px 2px black;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    width: 300px;
+}
+.titulo img{
+    padding-right: 10px;
+    width: 30%;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+}
+.secciones{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    width: 500px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.redes img{
+    width: 100%;
+    padding: 5px;
+}
+.home,.adopta,.foro,.contacto{
+    border-radius: 10px;
+    background-color: #ED7F05;
+    color: #E7F6FC;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 0px 2px black;
+}
+.entra{
+    border-radius: 10px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-shadow: 0px 0px 2px black;
+}
+
+#divL{
+    display: none;
+    position: absolute;
+    top: 300px;
+    background-color: #87DDFF;
+    text-align: center;
+    width: 380px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px black;
+}
+#divL img{
+    width: 25%;
+    margin: 10px;
+}
+#divR{
+    display: none;
+    position: absolute;
+    top: 300px;
+    background-color: #87DDFF;
+    text-align: center;
+    width: 380px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px black;
+}
+#divR img{
+    width: 25%;
+    margin: 10px;
+}
+.contenedorDIV {
+    background: #EEE;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.login hr{
+    width: 80%;
+    margin-left: 38px;
+    border: 0.3px solid black;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.login h3{
+    color: #E7F6FC;
+    font-size: 2em;
+    text-shadow: 0px 0px 2px black;
+}
+.inicioS {
+    font-size: 1.6em;
+    margin: 5px;
+}
+.completaLogin{
+    color:#E7F6FC;
+    background-color: #ED7F05;
+    height: 70px;
+    width: 300px;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0px 0px 8px black;
+}
+input{
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Fredoka One', cursive;
+}
+.Registrate{
+    text-shadow: 0px 0px 2px black;
+    font-size: 1.2em;
+    color: #E7F6FC;
+}
+.Registrate a{
+    color: #E7F6FC;
+}
+.registro h3{
+    color: #E7F6FC;
+    font-size: 2em;
+    text-shadow: 0px 0px 2px black;
+}
+.registro hr{
+    width: 80%;
+    margin-left: 38px;
+    border: 0.3px solid black;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.textobotonLogin{
+    text-shadow: 0px 0px 2px black;
+    font-size: 1.2em;
+    color: #E7F6FC;
+}
+.textobotonLogin a{
+    color: #E7F6FC;
+}
+
+/*-------------------------------- FIN HEADER ------------------------------*/
+
+.animal{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.perfilAnimal{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: azure;
+    width: 800px;
+    height: 400px;
+    padding: 10px;
+}
+.adoptar{
+    background-color:#ED7F05;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.compartir{
+    text-align: center;
+}
+
+/*-------------------------------- FOOTER ------------------------------*/
+
+footer{
+    display: flex;
+    flex-flow: column;
+}
+.piedepagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    background-color:#E7F6FC;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+.pie1{
+    color: #87DDFF;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.tituloPie{
+    text-shadow: 0px 2px 2px black;
+}
+.pie1 img{
+    padding-right: 10px;
+    width: 70px;
+}
+.redesPie img{
+    margin: 20px;
+    width: 50px;
+}
+li{
+    list-style:none;
+    color: black;
+    font-size: 1.2em;
+}
+.pie2{
+    margin: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.pie3 h2{
+    font-weight: 100;
+}
+.textoPie{
+    background-color: #002b3c;
+    padding: 30px;
+    text-align: center;
+    color: #E7F6FC;
+}
