@@ -126,6 +126,7 @@
                     <div class="textoprimerbanner">
                         <h1>¡Adopta!</h1>
                         <h2>Salva dos vidas, la del animal que adoptas y la del que ocupa su lugar en nuestro centro de adopción.</h2>
+                        <a href="./views/contacto.php" target="_blank"><h2 class="botoncontacto">MÁS INFORMACIÓN</h2></a>
                     </div>
                 </div>
         </div>

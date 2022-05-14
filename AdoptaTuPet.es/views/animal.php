@@ -109,7 +109,6 @@
         </div>
     </div>
     <div class="contenedor" id="Contenedor">
-    <h1>Adopta</h1>
 
         <div class="animal">
 
@@ -118,10 +117,10 @@
             </div>
 
             <div class="perfilAnimal">
-                <h2>Perro</h2>
+                <h1>Perro</h1>
                 <p>Asturias</p>
                 <hr>
-                <h3>Detalles</h3>
+                <h2>Detalles</h2>
                 <ol>
                     <li><p>Raza Mestizo</p></li>
                     <li><p>Sexo Macho</p></li>
@@ -132,7 +131,7 @@
                     <button>¡QUIERO ADOPTAR!</button>
                     <div class="compartir">
                         <p>Compartir este animal puede salvarle la vida</p>
-                        <div class="redesPie">
+                        <div class="redesCompartir">
                             <a href="https://twitter.com/home?lang=es" target="_blank"><img src="./img/logotipo-de-twitter.png"></a>
                             <a href="https://es-es.facebook.com/" target="_blank"><img src="./img/facebook.png"></a>
                             <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"></a>
@@ -150,9 +149,18 @@
 
             Por favor ayudarme a difundirla; a ver si entre todos conseguimos que cambie su suerte y tengo una familia pronto. Miel está sana y se entrega esterilizada, debidamente vacunada y desparasitada. Míel está en una protectora cerca de Barcelona pero puede viajar a cualquier punto de la península. Podéis contactar conmigo aquí para ampliar información: 646 958 099 juancarcasta@gmail.com . Abrazos y gracias.</p>
         </div>
+        <div>
+            <h1>API</h1>
+        </div>
+        <div class="similares">
+            <h2>Animales similares</h2>
+            <div class="animalesSimilares">
+                <img src="./img/perro (1).png">
+                <img src="./img/perro (1).png">
+                <img src="./img/perro (1).png">
+            </div>
+        </div>
     </div>
-    
-    
     </main>
 
     <footer>
