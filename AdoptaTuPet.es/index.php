@@ -120,6 +120,7 @@
     </div>
     
         <div class="contenedor" id="Contenedor">
+
             <img class="bannerperro" src="./views/img/bannerperro.jpg">
                 <div class="primerbanner">
                     <div class="separador"></div>
@@ -129,6 +130,32 @@
                         <a href="./views/contacto.php" target="_blank"><h2 class="botoncontacto">MÁS INFORMACIÓN</h2></a>
                     </div>
                 </div>
+
+            <div class="perroygato">
+                <div class="anuncioPerro">
+                    <img class="fotoperro" src="./views/img/perro2.png">
+                    <div class="infoPerro">
+                        <h1>Adopta un perro</h1>
+                        <p>Al adoptar un perro adulto o un cachorro en AdoptaTuPet, te lo llevarás a
+                        casa vacunado, desparasitado, con análisis de leishmaniosis, con
+                        chip y esterilizado.
+                        </p>
+                        <a href="./views/adopta.php" target="_blank"><h2 class="botonVerPerro">VER PERROS</h2></a>
+                    </div>
+                    
+                </div>
+                <div class="anuncioGato">
+                    <img class="fotogato" src="./views/img/gato2.png">
+                    <div class="infoGato">
+                        <h1>Adopta un gato</h1>
+                        <p>Al adoptar un perro adulto o un cachorro en AdoptaTuPet, te lo llevarás
+                            a casa vacunado, desparasitado, con análisis de leishmaniosis,
+                            con chip y esterilizado.
+                        </p>
+                        <a href="./views/adopta.php" target="_blank"><h2 class="botonVerGato">VER GATOS</h2></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>

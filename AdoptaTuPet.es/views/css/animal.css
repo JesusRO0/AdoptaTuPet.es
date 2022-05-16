@@ -26,6 +26,9 @@ body{
 header{
     background-color: #E7F6FC;
 }
+header a{
+    text-decoration: none;
+}
 .titulo{
     color: #87DDFF;
     text-shadow: 0px 2px 2px black;
