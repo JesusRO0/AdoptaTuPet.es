@@ -19,6 +19,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -198,14 +201,14 @@
         <div class="textoPie"><p>© 2022 AdoptaTuPet. Todos los derechos reservados. Aviso legal, Política de privacidad y protección de datos personales.</p></div>
     </footer>
 
-    <script src="../model/js/ajax.js"></script>
-    <script src="../model/js/cambiaDatos.js"></script>
-    <script src="../model/js/clear.js"></script>
-    <script src="../model/js/enter.js"></script>
-    <script src="../model/js/index.js"></script>
-    <script src="../model/js/loginAjax.js"></script>
-    <script src="../model/js/openDivs.js"></script>
-    <script src="../model/js/registerAjax.js"></script>
+    <!-- <script src="/model/js/ajax.js"></script>
+    <script src="/model/js/cambiaDatos.js"></script>
+    <script src="/model/js/clear.js"></script>
+    <script src="/model/js/enter.js"></script>
+    <script src="/model/js/index.js"></script>
+    <script src="/model/js/loginAjax.js"></script> -->
+    <script src="./model/js/openDivs.js"></script>
+    <!-- <script src="/model/js/registerAjax.js"></script> -->
 
 </body>
 

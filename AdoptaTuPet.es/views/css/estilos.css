@@ -125,6 +125,7 @@ header a{
     display: flex;
     justify-content: center;
     height: 100%;
+    z-index: 10;
 }
 .login hr{
     width: 80%;
@@ -188,15 +189,20 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
+.contenedor{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .bannerperro{
     position: absolute;
     z-index: -5;
     width: 1903px;
-    min-width: 1000px;
 }
 .contenedor{
-    position: relative;
     margin: auto 0;
+}
+.contenedor a {
+    text-decoration: none;
 }
 .primerbanner{
     display: flex;
@@ -206,6 +212,7 @@ input{
 }
 .primerbanner h1{
     padding-bottom: 20px;
+    font-weight: 500;
 }
 .separador{
     width: 22vw;
@@ -217,10 +224,14 @@ input{
     justify-content: center;
     align-items:center;
     color: #ED7F05;
-    margin-top: 120px;
+    margin-top: 90px;
     font-size: 2em;
     width: 800px;
     text-align: center;
+    margin-bottom: 100px;
+}
+.textoprimerbanner h2{
+    font-weight: 300;
 }
 .botoncontacto{
     border-radius: 10px;
@@ -230,12 +241,9 @@ input{
     padding-bottom: 25px;
     padding-left: 45px;
     padding-right: 45px;
-    box-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 5px black;
     margin: 30px;
     font-size: 0.8em;
-}
-.textoprimerbanner a{
-    text-decoration: none;
 }
 .perroygato{
     display: flex;
@@ -244,7 +252,6 @@ input{
     align-items:center;
     background-color: #E7F6FC;
     padding: 30px;
-    margin-top: 5px;
 }
 .perroygato p{
     font-size: 1.5em;
@@ -252,24 +259,38 @@ input{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.perroygato a{
-    text-decoration: none;
+.anuncioPerro a{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 300px;
+}
+.anuncioGato a{
+    width: 300px;
 }
 .perroygato h1{
     color: #87DDFF;
+    text-shadow: 1px 1px 1px black;
 }
 .anuncioPerro{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .anuncioGato{
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 20px;
+    align-items: center;
 }
 .infoGato,.infoPerro{
     display: flex;
     flex-direction: column;
+}
+.infoPerro{
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: flex-end;
 }
 .botonVerPerro,.botonVerGato{
     text-align: center;
@@ -280,8 +301,62 @@ input{
     padding-bottom: 10px;
     width: 300px;
     box-shadow: 0px 0px 2px black;
-    margin: 30px;
     font-size: 1.4em;
+    text-shadow: 0px 0px 2px black;
+}
+.headergato{
+    width: 1903px;
+    position: absolute;
+    z-index: -5;
+    /* width: 1903px;
+    min-width: 1000px; */
+}
+.segundobanner{
+    font-family: 'Raleway', sans-serif;
+    color: #E7F6FC;
+    font-size: 1.2em;
+    text-align: center;
+    width: 900px;
+}
+.textosegundobanner{
+    margin: 30px 0px 25px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.textosegundobanner h1{
+    margin: 20px;
+    text-shadow: 0px 0px 10px black;
+}
+.textosegundobanner h2{
+    font-weight: 300;
+    text-shadow: 0px 0px 10px black;
+}
+.botonbannergato{
+    border-radius: 10px;
+    background-color:#ED7F05;
+    color:#E7F6FC;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    box-shadow: 0px 0px 10px black;
+    margin: 30px;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.tercerbanner{
+    font-family: 'Raleway', sans-serif;
+    background-color: #E7F6FC;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.tercerbanner h1{
+    color: #ED7F05;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/

@@ -19,6 +19,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -96,19 +99,19 @@
 
             <form action="#" method="POST">
                 <p>
-                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog">
+                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog2">
                 </p>
 
                 <p>
-                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog">
+                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog2">
                 </p>
 
                 <p>
-                    <input type="password" name="passSesionRep" placeholder="  Repetir Contraseña" class="inserta inicioS" id="passLog">
+                    <input type="password" name="passSesionRep" placeholder="  Repetir Contraseña" class="inserta inicioS" id="passLog3">
                 </p>
 
                 <p>
-                    <input type="submit" name="completarLogin" value="Regístrate" class="completaLogin" id="botonLogin" >
+                    <input type="submit" name="completarLogin" value="Regístrate" class="completaLogin" id="botonRegistro" >
                 </p>
 
                 <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>
@@ -127,7 +130,7 @@
                     <div class="textoprimerbanner">
                         <h1>¡Adopta!</h1>
                         <h2>Salva dos vidas, la del animal que adoptas y la del que ocupa su lugar en nuestro centro de adopción.</h2>
-                        <a href="./views/contacto.php" target="_blank"><h2 class="botoncontacto">MÁS INFORMACIÓN</h2></a>
+                        <a href="./views/contacto.php" target="_blank"><h1 class="botoncontacto">MÁS INFORMACIÓN</h1></a>
                     </div>
                 </div>
 
@@ -144,6 +147,7 @@
                     </div>
                     
                 </div>
+
                 <div class="anuncioGato">
                     <img class="fotogato" src="./views/img/gato2.png">
                     <div class="infoGato">
@@ -154,6 +158,23 @@
                         </p>
                         <a href="./views/adopta.php" target="_blank"><h2 class="botonVerGato">VER GATOS</h2></a>
                     </div>
+                </div>
+            </div>
+
+            <img class="headergato" src="./views/img/headergato.jpg">
+                <div class="segundobanner">
+                    <div class="textosegundobanner">
+                        <h1>Centro de Adopción</h1>
+                        <h2>Llevamos más de 1 mes luchando por los animales y por conseguir un mundo mas justo para ellos. Desde entonces, hemos ayudado a más de 30.000 animales
+                            y hemos conseguido que nuestro Centro de Adopción, pionero en España, sea un espacio global de protección animal que recibe más de 2.000 animales abandonados al año.</h2>
+                        <a href="./views/contacto.php" target="_blank"><h1 class="botonbannergato">¡CONTÁCTANOS!</h1></a>
+                    </div>
+                </div>
+
+            <div class="tercerbanner">
+                <div class="contenidotercerbanner">
+                    <h1>Últimos anuncios en nuestro FORO</h1>
+                    <div>ANUNCIOS</div>
                 </div>
             </div>
         </div>
@@ -195,14 +216,14 @@
         <div class="textoPie"><p>© 2022 AdoptaTuPet. Todos los derechos reservados. Aviso legal, Política de privacidad y protección de datos personales.</p></div>
     </footer>
 
-    <script src="/model/js/ajax.js"></script>
+    <!-- <script src="/model/js/ajax.js"></script>
     <script src="/model/js/cambiaDatos.js"></script>
     <script src="/model/js/clear.js"></script>
     <script src="/model/js/enter.js"></script>
     <script src="/model/js/index.js"></script>
-    <script src="/model/js/loginAjax.js"></script>
+    <script src="/model/js/loginAjax.js"></script> -->
     <script src="./model/js/openDivs.js"></script>
-    <script src="/model/js/registerAjax.js"></script>
+    <!-- <script src="/model/js/registerAjax.js"></script> -->
 
 </body>
 
