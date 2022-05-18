@@ -112,7 +112,130 @@
         </div>
     </div>
     <div class="contenedor" id="Contenedor">
-    <h1>Contacto</h1>
+        <div class="definicion">
+            <img src="./img/iconoadoptatupet.png">
+            <h1>AdoptaTuPet.es es una plataforma de adopción de animales, cuyo fin es ayudar a las
+            protectoras a dar visibilidad en internet a sus animales. Trabajamos por y para los animales sin
+            hogar.</h1>
+        </div>
+        <div class="atributos">
+            <div>
+                <h1>Adopción</h1>
+                <p>No compres, adopta. Ese es
+                    nuestro lema y nunca nos
+                    cansaremos de repetirlo. Miles
+                    de animales son abandonados
+                    cada año en España.</p>
+            </div>
+            <div>
+                <h1>Equipo</h1>
+                <p>AdoptaTuPet está formada por
+                    voluntarios de varias
+                    protectoras y conocemos de
+                    primera mano las necesidades
+                    de las asociaciones.</p>
+            </div>
+            <div>
+                <h1>Amor</h1>
+                <p>Nuestro amor por los animales
+                    es lo que mueve este proyecto.
+                    Queremos ayudar a los
+                    animales abandonados a
+                    encontrar una familia.</p>
+            </div>
+            <div>
+                <h1>Esterilización</h1>
+                <p>Una sola perra sin esterilizar y
+                    su descendencia pueden
+                    producir 67.000 cachorros en
+                    sólo seis años. Esterilizar salva
+                    vidas.</p>
+            </div>
+            <div>
+                <h1>Familia</h1>
+                <p>Nuestros animales son familia
+                    y como tal deben ser tratados.
+                    Debemos cuidarlos y acudir al
+                    veterinario periódicamente.</p>
+            </div>
+            <div>
+                <h1>Abuelitos</h1>
+                <p>Sabemos que los cachorros son
+                    monísimos, pero hay muchos
+                    viejecitos esperando una
+                    oportunidad, recuerda que te lo
+                    agradecerán toda la vida.</p>
+            </div>
+        </div>
+        <div class="tituloPreguntas">
+            <h1></h1>
+            <a href="#tituloPreguntasFrecuentes"><h2 class="botonPreguntas">PREGUNTAS FRECUENTES</h2></a>
+        </div>
+        <div class="pasosAdoptar">
+            <h1>Si quieres adoptar</h1>
+            <div class="pasos">
+                <div class="paso1">
+                    <img src="./img/paso1.svg">
+                    <h1>1. Busca</h1>
+                    <p>Nuestra web tiene: perros, gatos.
+                    Con nuestro filtro puedes afinar tu
+                    búsqueda, para que se adapte a tus
+                    necesidades.</p>
+                </div>
+                <div class="paso2">
+                    <img src="./img/paso2.svg">
+                    <h1>2. Contacta</h1>
+                    <p>¿Ya has encontrado el animal que te
+                    enamora? Clica en adoptar y contactarás
+                    directamente con la protectora (debes
+                    estar registrado para enviar mensajes).
+                    Recuerda que haciendo clic en el icono de
+                    corazón del animal, quedará añadido a
+                    favoritos.</p>
+                </div>
+                <div class="paso3">
+                    <img src="./img/paso3.svg">
+                    <h1>3. Adopta</h1>
+                    <p>Una vez enviado el mensaje, la
+                    protectora contactará contigo para
+                    indicarte como adoptar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactar">
+            <h1>Contacta con el equipo de AdoptaTuPet.es</h1>
+            <p>El equipo de adoptauperro.es responderá encantado a tus dudas, comentarios o propuestas, aún así, te recordamos que nuestro
+                portal sirve como soporte para que las protectoras y refugios publiquen sus anuncios, por lo que si lo que deseas es recibir
+                información sobre alguno de los anuncios publicados, te recomendamos contactar directamente con los anunciantes.</p>
+            <form action="#" method="POST">
+                <p>
+                    <input type="text" name="nombre" placeholder="  Nombre" class="nombre" id="Nombre">
+                    <input type="text" name="email" placeholder="  Email" class="email" id="Email">
+                </p>
+
+                <p>
+                    <input type="text" name="asunto" placeholder="  Asunto" class="asunto" id="Asunto">
+                </p>
+
+                <p>
+                    <input type="textarea" name="mensaje" placeholder="  Mensaje" class="mensaje" id="Mensaje">
+                </p>
+
+                <p>
+                    <input type="submit" name="botonEnviar" value="Enviar" class="enviar" id="Enviar" >
+                </p>
+
+            </form>
+
+        </div>
+        <div class="preguntas">
+            <h1 id="tituloPreguntasFrecuentes">Preguntas Frecuentes</h1>
+            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
+                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
+
+            </select>
+            <h1>Ayuda y Soporte</h1>
+        </div>
     </div>
     
    

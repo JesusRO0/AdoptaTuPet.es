@@ -18,6 +18,7 @@
 }
 
 body{
+    background-color: #87DDFF;
     font-family: 'Fredoka', sans-serif;
 }
 
@@ -188,34 +189,49 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
-.bannerperro{
-    position: absolute;
-    z-index: -5;
-}
-.contenedor{
-    margin: auto 0;
-}
-.primerbanner{
+.definicion{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
+    flex-flow: column;
+    align-items: center;
 }
-.primerbanner h1{
-    padding-bottom: 20px;
-}
-.separador{
-    width: 22vw;
-}
-.textoprimerbanner{
-    font-family: 'Raleway', sans-serif;
-    color: #ED7F05;
-    margin-top: 120px;
-    font-size: 2em;
-    width: 800px;
+.definicion h1{
+    text-shadow: 0 0 1px #E7F6FC;
     text-align: center;
+    color:#ED7F05;
+    width: 1300px;
 }
-
+.definicion img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #E7F6FC;
+    border-radius: 10px;
+    width: 300px;
+}
+.atributos{
+    display: grid;
+    grid-template-areas: "a1 a2 a3" "a4 a5 a6";
+    grid-gap: 50px;
+    margin: 20px;
+}
+.atributos div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #E7F6FC;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 40px;
+}
+.atributos h1{
+    text-shadow: 1px 1px 1px black;
+    color: #87DDFF;
+    margin-bottom: 20px;
+}
+.atributos p{
+    color:#ED7F05;
+    font-size: 1.5em;
+}
 /*-------------------------------- FOOTER ------------------------------*/
 
 footer{
