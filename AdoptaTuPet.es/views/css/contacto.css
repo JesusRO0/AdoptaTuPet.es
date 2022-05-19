@@ -189,6 +189,9 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
+a{
+    text-decoration: none;
+}
 .definicion{
     display: flex;
     flex-flow: column;
@@ -222,6 +225,7 @@ input{
     text-align: center;
     font-size: 1.4em;
     line-height: 40px;
+    border-radius: 10px;
 }
 .atributos h1{
     text-shadow: 1px 1px 1px black;
@@ -231,6 +235,102 @@ input{
 .atributos p{
     color:#ED7F05;
     font-size: 1.5em;
+}
+.tituloPreguntas{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.tituloPreguntas h1{
+    text-shadow: 0 0 1px #E7F6FC;
+    text-align: center;
+    color:#ED7F05;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.botonPreguntas{
+    border-radius: 10px;
+    background-color: #ED7F05;
+    color: #E7F6FC;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 0px 0px 5px black;
+    font-size: 2em;
+}
+.pasosAdoptar{
+    background-color: #ED7F05;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 1.4em;
+    color: #E7F6FC;
+}
+.pasosAdoptar p{
+font-size: 2.5em;
+}
+.pasos{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    color: #ED7F05;
+}
+.pasos p{
+    font-size: 1.2em;
+    padding-top: 15px;
+}
+.paso1,.paso2,.paso3{
+    background-color:#E7F6FC;
+    width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px;
+    padding: 30px;
+}
+.paso2 img{
+    width: 465px;
+}
+.paso3 img{
+    padding-top: 10px;
+}
+.contactar{
+    background-color: #E7F6FC;
+    padding-top: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #ED7F05;
+}
+.contactar h1{
+    font-size: 2.5em;
+}
+.informacion{
+    font-size: 1.4em;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+form input{
+    width: 600px;
+    box-shadow: 0 0 2px black;
+    margin-bottom: 40px;
+}
+.asunto,.mensaje{
+    width: 100%;
+}
+.preguntas{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #87DDFF;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #ED7F05;
+    font-size: 1.2em;
 }
 /*-------------------------------- FOOTER ------------------------------*/
 

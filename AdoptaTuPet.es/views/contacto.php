@@ -168,16 +168,17 @@
             </div>
         </div>
         <div class="tituloPreguntas">
-            <h1></h1>
+            <h1>Si necesitas más información o tienes alguna duda, accede a nuestras preguntas frecuentes</h1>
             <a href="#tituloPreguntasFrecuentes"><h2 class="botonPreguntas">PREGUNTAS FRECUENTES</h2></a>
         </div>
         <div class="pasosAdoptar">
             <h1>Si quieres adoptar</h1>
+            <p>☆</p>
             <div class="pasos">
                 <div class="paso1">
                     <img src="./img/paso1.svg">
                     <h1>1. Busca</h1>
-                    <p>Nuestra web tiene: perros, gatos.
+                    <p>Nuestra web tiene: perros y gatos.
                     Con nuestro filtro puedes afinar tu
                     búsqueda, para que se adapte a tus
                     necesidades.</p>
@@ -204,7 +205,7 @@
         </div>
         <div class="contactar">
             <h1>Contacta con el equipo de AdoptaTuPet.es</h1>
-            <p>El equipo de adoptauperro.es responderá encantado a tus dudas, comentarios o propuestas, aún así, te recordamos que nuestro
+            <p class="informacion">El equipo de adoptauperro.es responderá encantado a tus dudas, comentarios o propuestas, aún así, te recordamos que nuestro
                 portal sirve como soporte para que las protectoras y refugios publiquen sus anuncios, por lo que si lo que deseas es recibir
                 información sobre alguno de los anuncios publicados, te recomendamos contactar directamente con los anunciantes.</p>
             <form action="#" method="POST">
@@ -218,11 +219,11 @@
                 </p>
 
                 <p>
-                    <input type="textarea" name="mensaje" placeholder="  Mensaje" class="mensaje" id="Mensaje">
+                    <textarea name="mensaje" placeholder="  Mensaje" class="mensaje" id="Mensaje" rows="10" cols="50"></textarea>
                 </p>
 
                 <p>
-                    <input type="submit" name="botonEnviar" value="Enviar" class="enviar" id="Enviar" >
+                    <input type="submit" name="botonEnviar" value="Enviar" class="enviar" id="Enviar">
                 </p>
 
             </form>
@@ -232,9 +233,23 @@
             <h1 id="tituloPreguntasFrecuentes">Preguntas Frecuentes</h1>
             <select name="preguntasFrecuentes" id="preguntasFrecuentes">
                 <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
-
+            </select>
+            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
+                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
+            </select>
+            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
+                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
             </select>
             <h1>Ayuda y Soporte</h1>
+            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
+                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
+            </select>
+            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
+                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
+            </select>
+            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
+                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
+            </select>
         </div>
     </div>
     
