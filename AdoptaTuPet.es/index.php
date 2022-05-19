@@ -39,7 +39,7 @@
                     <a href="./index.php"><h2 class="home">Inicio</h2></a>
                     <a href="./views/adopta.php"><h2 class="adopta">Adopta</h2></a>
                     <a href="./views/foro.php"><h2 class="foro">Foro</h2></a>
-                    <a href="./views/contacto.php"><h2 class="contacto">Contacto</h2></a>
+                    <a href="./views/contacto.php"><h2 class="contacto">Contacto</h2></a>s
                 </div>
 
                 <div class="redes">
@@ -156,7 +156,7 @@
                             a casa vacunado, desparasitado, con análisis de leishmaniosis,
                             con chip y esterilizado.
                         </p>
-                        <a href="./views/adopta.php" target="_blank"><h2 class="botonVerGato">VER GATOS</h2></a>
+                        <a href="./views/adopta.php">HOLA</a>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
             <div class="tercerbanner">
                 <div class="contenidotercerbanner">
                     <h1>Últimos anuncios en nuestro FORO</h1>
-                    <div>ANUNCIOS</div>
+                    <div>ANUNCIOS </div>
                 </div>
             </div>
         </div>

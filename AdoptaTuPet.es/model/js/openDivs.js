@@ -100,5 +100,4 @@ document.getElementById("Contenedor").addEventListener('click', function(ev){
     registro3.style.display = 'none';
     login3.style.display = 'none';
 
-    ev.preventDefault();
 });
