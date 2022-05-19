@@ -119,7 +119,10 @@ Cuerpo: Montserrat, Raleway o Quicksand.
 - No se va ha usar boostrap, solo vanilla css.
 - Tampoco se utilizará Laravel por falta de tiempo.
 
-Se ha realizado cambios en el color y la letra en algunos apartados tales como en el index y contacto, se ha terminado el header que compartirán todos los apartados más el footer, dentro del header se ha creado los bloques de iniciar sesión y regístrate mediante javascript.
-El apartado de index.php y contacto.php está terminado, falta implementar más estilos e animaciones pero más adelamnte, además del diseño de móvil. El siguinete punto es crear un usuario administrador en la base de datos y darle permisos solo a él para poder subir datos de los animales a la página, también se insertarán 20 mascotas que podrán verse en el apartado adopta.php.
-En adopta.php se verán todas las mascotas que se podrán adoptar y poder guardarlas en favoritos, entre el día 19/05 20/0 debería estar implementado, se usará mysqli para ello.
+Se ha realizado cambios en el color y la letra en algunos apartados tales como en el index y contacto, se ha terminado el header que compartirán todos los apartados más el footer, dentro del header se ha creado los bloques de iniciar sesión y regístrate mediante javascript.  
+
+El apartado de index.php y contacto.php está terminado, falta implementar más estilos e animaciones pero más adelamnte, además del diseño de móvil. El siguiente punto es crear un usuario administrador en la base de datos y darle permisos solo a él para poder subir datos de los animales a la página, también se insertarán 20 mascotas que podrán verse en el apartado adopta.php.  
+
+En adopta.php se verán todas las mascotas que se podrán adoptar y poder guardarlas en favoritos, entre el día 19/05 20/05 debería estar implementado, se usará mysqli para ello.  
+
 El siguiente paso sería modificar el animal.php que se trata del mismo perfil de un animal cuando se ha clickeado, allí se verá un perfil y el botón para poder adoptarlo, a parte tendremos acceso a una API donde nos recomendará tips para nuestras mascotas. Una vez que se realice la adopción normalmente se le comunica al usuario un mensaje/mail donde obtiene toda la información sobre la protectora que tiene a esa mascota, se interntará mandar ese correo o mensaje.
