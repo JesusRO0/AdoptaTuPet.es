@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>AdoptaTuPet.es</title>
     <link rel="icon" href="./img/iconoadoptatupet.png">
-    <link rel="stylesheet" href="./css/foro.css">
+    <link rel="stylesheet" href="./css/perfil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"> 
@@ -116,7 +116,7 @@
         </div>
     </div>
     <div class="contenedor" id="Contenedor">
-    <h1>Foro</h1>
+    <h1>Perfil</h1>
     </div>
     
 

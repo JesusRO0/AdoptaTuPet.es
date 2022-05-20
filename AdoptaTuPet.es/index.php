@@ -39,7 +39,7 @@
                     <a href="./index.php"><h2 class="home">Inicio</h2></a>
                     <a href="./views/adopta.php"><h2 class="adopta">Adopta</h2></a>
                     <a href="./views/foro.php"><h2 class="foro">Foro</h2></a>
-                    <a href="./views/contacto.php"><h2 class="contacto">Contacto</h2></a>s
+                    <a href="./views/contacto.php"><h2 class="contacto">Contacto</h2></a>
                 </div>
 
                 <div class="redes">
@@ -109,6 +109,10 @@
 
                 <p>
                     <input type="password" name="passSesionRep" placeholder="  Repetir Contraseña" class="inserta inicioS" id="passLog3">
+                </p>
+
+                <p>
+                    <input type="text" name="usuario" placeholder="  Nombre Usuario" class="inserta inicioS" id="Usuario">
                 </p>
 
                 <p>
@@ -223,7 +227,7 @@
     <script src="/model/js/enter.js"></script>
     <script src="/model/js/index.js"></script>
     <script src="/model/js/loginAjax.js"></script> -->
-    <script src="./model/js/openDivs.js"></script>
+    <script src="./js/openDivs.js"></script>
     <!-- <script src="/model/js/registerAjax.js"></script> -->
 
 </body>

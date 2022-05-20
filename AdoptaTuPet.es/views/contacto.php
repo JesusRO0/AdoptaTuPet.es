@@ -99,6 +99,10 @@
                 <p>
                     <input type="password" name="passSesionRep" placeholder="  Repetir Contraseña" class="inserta inicioS" id="passLog">
                 </p>
+                
+                <p>
+                    <input type="text" name="usuario" placeholder="  Nombre Usuario" class="inserta inicioS" id="Usuario">
+                </p>
 
                 <p>
                     <input type="submit" name="completarLogin" value="Regístrate" class="completaLogin" id="botonLogin" >
@@ -297,7 +301,7 @@
     <script src="/model/js/enter.js"></script>
     <script src="/model/js/index.js"></script>
     <script src="/model/js/loginAjax.js"></script> -->
-    <script src="./model/js/openDivs.js"></script>
+    <script src="./js/openDivs.js"></script>
     <!-- <script src="/model/js/registerAjax.js"></script> -->
 
 </body>

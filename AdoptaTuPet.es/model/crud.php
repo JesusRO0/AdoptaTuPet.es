@@ -4,7 +4,7 @@ ini_set("display_errors", 1);
 
         try{
 
-            $db = new mysqli('localhost', "administrador", "admin", "adoptatupet");
+            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
 
             if($db->connect_errno){
 
@@ -17,6 +17,8 @@ ini_set("display_errors", 1);
             echo $ex->getMessage(), "<br>";
 
         }
+
+        echo "Hemos ganado";
 
         class User{
 
@@ -205,7 +207,7 @@ ini_set("display_errors", 1);
                 //Usar <img width='100' src='data:image/png;base64, ".base64_encode($res->fotoPerfil)."'></img> para visualizar la imagen+
     
                 $muestra = array(
-                    "nombre" => $res->nombreUser,
+                    "nombre" => $res->usuario,
                     "email" => $email,
                     'foto' => $res->fotoPerfil
                 );
