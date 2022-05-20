@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -27,6 +31,31 @@
 
 <body>
 
+    <?php
+
+    require_once "./controller/ControllerUserIndex.php";
+
+    if(isset($_POST['completarRegistro'])){
+
+        $email = $_POST['email'];
+        $usuario = $_POST['usuario'];
+        $contraseña = $_POST['contraseña'];
+        $repContraseña = $_POST['Repcontraseña'];
+
+        UserController::creaUserController($email, $usuario, $contraseña, $repContraseña);
+    }
+
+    if(isset($_POST['completarLogin'])){
+
+        $email = $_POST['correoSesion'];
+        $contraseña = $_POST['passSesion'];
+
+        UserController::iniciarUser($email, $contraseña);
+        echo $_SESSION['email'];
+    }
+
+    ?>
+
     <header>
             <div class="menu" id="Menu">
 
@@ -48,17 +77,39 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"></a>
                 </div>
 
-                <h2 class="entra" id="divEntrada">Entra</h2>
+                    <?php
+
+                    if(isset($_SESSION['email'])){
+                        
+                        echo "<div class='sesionIniciada'> 
+                        ".UserController::recogerFoto($_SESSION['email'])."
+                        </div>";
+                    }else{
+
+                        echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
+                    }
+
+                ?>
             </div>
 
     </header>
 
     <main>
 
+    <!-- <div class="edit" id="divPerf">
+            <form method="POST" action="perfil.php">
+                <input type="submit" class="miPerfil" id="miPerf" value="Mi Perfil"></input>
+            </form>
+            <hr>
+            <form method="POST" action="#">
+                <input name="closeSesion" type="submit" class="cerrar" id="cerSes" value="Cerrar Sesión"></input>
+            </form>
+    </div> -->
+
     <div class="contenedorDIV">
         <div class="login" id="divL">
 
-            <img src="./img/perro (1).png">
+            <img src="./views/img/perro (1).png">
             <h3>Iniciar Sesión</h3>
             <hr>
 
@@ -75,6 +126,7 @@
                 </p>
 
                 <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
+                <p class="errorL"></p>
 
             </form>
 
@@ -83,7 +135,7 @@
 
         <div class="registro" id="divR">
 
-            <img src="./img/perro (1).png">
+            <img src="./views/img/perro (1).png">
             <h3>Regístrate</h3>
             <hr>
 
@@ -105,17 +157,12 @@
                 </p>
 
                 <p>
-                    <input type="submit" name="completarLogin" value="Regístrate" class="completaLogin" id="botonRegistro" >
-                </p>
-
-                <p>
-                    <input type="submit" name="completarLogin" value="Regístrate" class="completaLogin" id="botonLogin" >
+                    <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro" >
                 </p>
 
                 <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>
 
             </form>
-
 
         </div>
     </div>

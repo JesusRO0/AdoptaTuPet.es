@@ -39,7 +39,7 @@ ini_set("display_errors", 1);
                 $this->contrasena = $contrasena;
             }
 
-        function creaUser($email, $usuario,$contrasena){
+        function creaUser($email, $usuario, $contraseña){
 
             //Intentamos iniciar la conexión en la base de datos
             try{
@@ -62,7 +62,11 @@ ini_set("display_errors", 1);
     
             //Comprobamos que se pueda realizar la consulta
             try{
-                $consulta = $db->query("SELECT usuario FROM usuario WHERE $email = '$email'");
+
+                echo $email;
+                echo $usuario;
+                echo $contraseña;
+                $consulta = $db->query("SELECT usuario FROM usuario WHERE email = '$email'");
     
                 if($consulta->fetch_object()){
     
@@ -71,7 +75,7 @@ ini_set("display_errors", 1);
     
                 }else{
     
-                    $db->query("INSERT INTO usuario (email, usuario, contrasena) VALUES ('$email','$usuario','$contrasena')");
+                    $db->query("INSERT INTO usuario (email, usuario, contrasena) VALUES ('$email','$usuario','$contraseña')");
     
                 }
     
@@ -112,22 +116,17 @@ ini_set("display_errors", 1);
             }
     
             //Realizamos la consulta para comprobar que la contraseña sea la misma
-            $consulta = $db->query("SELECT email, contraseña FROM user WHERE email = '$email';");
+            $consulta = $db->query("SELECT email, contrasena FROM usuario WHERE email = '$email';");
     
             if($recorreConsulta = $consulta->fetch_object()){
                  //Comprobación
-                if($recorreConsulta->contraseña == $contraseña){
-                    if (!isset($_SESSION['on'])) {
-                        $_SESSION['on']=true;
-                    }
+                if($recorreConsulta->contrasena == $contraseña){
     
-                    if (!isset($_SESSION['email'])&&!isset($_SESSION['pass'])) {
+                    if (!isset($_SESSION['email'])) {
                         $_SESSION['email']='';
-                        $_SESSION['pass']='';
                     }
     
                     $_SESSION['email']=$recorreConsulta->email;
-                    $_SESSION['pass']=$recorreConsulta->contraseña;
                 }
     
                 else{
@@ -214,6 +213,59 @@ ini_set("display_errors", 1);
     
                 return $muestra;
             }
+        }
+
+        function cambiaUsuario($usuario, $localidad, $email, $idUsuario){
+
+            try{
+                $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
+    
+                if($db->connect_errno){
+    
+                    throw new Exception("No se ha podido acceder a la basede datos");
+    
+                }
+            }catch(Exception $ex){
+    
+                echo $ex->getMessage(), "<br>";
+    
+            }
+
+            $db -> query("UPDATE usuario SET usuario = '$usuario', localidad='$localidad', email='$email' WHERE idUsuario = $idUsuario");
+
+        }
+
+        function fotoPerfil($email){
+
+            try{
+                $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
+    
+                if($db->connect_errno){
+    
+                    throw new Exception("No se ha podido acceder a la basede datos");
+    
+                }
+            }catch(Exception $ex){
+    
+                echo $ex->getMessage(), "<br>";
+    
+            }
+
+            $consulta = $db -> query("SELECT fotoPerfil FROM usuario WHERE email = '$email'");
+
+            if($imagen = $consulta -> fetch_object()){
+
+                if(is_null($imagen->fotoPerfil)){
+
+                    $fotoPerfil = "<img src='../views/img/usuario.png' width='80px'>";   
+
+                }else{
+
+                    $fotoPerfil = "<img src='data:image/png;base64, ".base64_encode($imagen->fotoPerfil)."'>";
+                }
+
+            }
+            return $fotoPerfil;
         }
     }
 ?>

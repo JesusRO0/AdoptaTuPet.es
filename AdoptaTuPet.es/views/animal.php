@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -27,6 +31,31 @@
 
 <body>
 
+    <?php
+
+    require_once "./controller/ControllerUserIndex.php";
+
+    if(isset($_POST['completarRegistro'])){
+
+        $email = $_POST['email'];
+        $usuario = $_POST['usuario'];
+        $contraseña = $_POST['contraseña'];
+        $repContraseña = $_POST['Repcontraseña'];
+
+        UserController::creaUserController($email, $usuario, $contraseña, $repContraseña);
+    }
+
+    if(isset($_POST['completarLogin'])){
+
+        $email = $_POST['correoSesion'];
+        $contraseña = $_POST['passSesion'];
+
+        UserController::iniciarUser($email, $contraseña);
+        echo $_SESSION['email'];
+    }
+
+    ?>
+
     <header>
             <div class="menu" id="Menu">
 
@@ -48,7 +77,19 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"></a>
                 </div>
 
-                <h2 class="entra" id="divEntrada">Entra</h2>
+                <?php
+
+                    if(isset($_SESSION['email'])){
+                        
+                        echo "<div class='sesionIniciada'> 
+                        ".UserController::recogerFoto($_SESSION['email'])."
+                        </div>";
+                    }else{
+
+                        echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
+                    }
+
+                ?>
             </div>
 
     </header>
@@ -105,11 +146,7 @@
                 </p>
 
                 <p>
-                    <input type="submit" name="completarLogin" value="Regístrate" class="completaLogin" id="botonRegistro" >
-                </p>
-
-                <p>
-                    <input type="submit" name="completarLogin" value="Regístrate" class="completaLogin" id="botonLogin" >
+                    <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro" >
                 </p>
 
                 <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>

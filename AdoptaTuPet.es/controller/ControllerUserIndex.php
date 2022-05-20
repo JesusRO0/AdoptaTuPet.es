@@ -1,7 +1,6 @@
 <?php
 
-require_once "../model/userModel.php";
-require_once "./sesiones.php";
+require_once "./model/UserModel.php";
 
 class UserController{
 
@@ -11,13 +10,20 @@ class UserController{
         @see UserModel/registroUser
     
     */
-    public static function creaUserController($email, $usuario,$contrasena){
+    public static function creaUserController($email, $usuario, $contraseña, $repContraseña){
 
-        $usuario = new User();
+        if($contraseña == $repContraseña){
 
-        $resultado = $usuario->registroUser($email, $usuario,$contrasena);
+            $creaUsuario = new User();
 
-        return $resultado;
+            $resultado = $creaUsuario->creaUser($email, $usuario,$contraseña);
+
+            return $resultado;
+
+        }else{
+
+            throw new Exception("La contraseña no coincide.");
+        }
 
     }
 
@@ -73,11 +79,11 @@ class UserController{
         @see UserModel/cambiarDatos
     
     */
-    public static function cambiarDatos($nombreNew, $aliasNew, $correoNew, $idUser){
+    public static function cambiarDatos($usuario, $localidad, $email, $idUsuario){
 
         $user = new User();
 
-        $user->cambiaDatosUser($nombreNew, $aliasNew, $correoNew, $idUser);
+        $user->cambiaUsuario($usuario, $localidad, $email, $idUsuario);
 
     }
     
@@ -87,23 +93,21 @@ class UserController{
         @see UserModel/inicioSesion
     
     */
-    public static function iniciarUser($correo, $passwd){
+    public static function iniciarUser($email, $contraseña){
 
         $user = new User();
 
-        $idUser = $user->inicioSesion($correo, $passwd);
+        $idUser = $user->iniciarSesion($email, $contraseña);
 
     }
 
-    /**
-     * 
-     * Po lo mismos que el del UserController normal, pero para el index, porque es especialito
-     * 
-     */
-    public static function userIniciado($idUser){
+    public static function recogerFoto($email){
+        
+        $usuario = new User();
 
-        montaHeaderPerfil($idUser);
+        $imagen = $usuario -> fotoPerfil($email);
 
+        return $imagen;
     }
 
 }
