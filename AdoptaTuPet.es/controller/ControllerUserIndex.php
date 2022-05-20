@@ -1,6 +1,6 @@
 <?php
 
-require_once "../model/crud.php";
+require_once "../model/userModel.php";
 require_once "./sesiones.php";
 
 class UserController{
@@ -11,13 +11,13 @@ class UserController{
         @see UserModel/registroUser
     
     */
-    public static function creaUserController($nombre, $alias, $correo, $passwd){
+    public static function creaUserController($email, $usuario,$contrasena){
 
         $usuario = new User();
 
-        $respuesta = $usuario->registroUser($nombre, $alias, $correo, $passwd);
+        $resultado = $usuario->registroUser($email, $usuario,$contrasena);
 
-        return $respuesta;
+        return $resultado;
 
     }
 
@@ -59,11 +59,11 @@ class UserController{
         @see UserModel/fotoPerfil
     
     */
-    public static function subeFotoPerfil($idUser, $image){
+    public static function subeFotoPerfil($idUsuario, $fotoPerfil){
 
         $user = new User();
 
-        $user->fotoPerfil($idUser, $image);
+        $user->fotoPerfil($idUsuario, $fotoPerfil);
 
     }
 

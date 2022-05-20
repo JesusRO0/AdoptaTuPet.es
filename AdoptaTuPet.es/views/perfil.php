@@ -120,7 +120,40 @@
         </div>
     </div>
     <div class="contenedor" id="Contenedor">
-    <h1>Perfil</h1>
+        <div class="menu">
+        <a href="./contacto.php"><img src="./img/chat.png"></a>
+        <a href="./favorito.php"><img src="./img/amor.png"></a>
+        <a href="./contacto.php"><img src="./img/engranaje.png"></a>
+        <a href="./contacto.php"><img src="./img/salida.png"></a>
+        </div>
+        <div class="perfil">
+            <h1>Mi Perfil</h1>
+            <form action="#" method="POST">
+                <div class="cambiosUsuario">
+                    <p>
+                        <input type="text" name="usuario" placeholder="  usuario" class="inserta inicioS" id="usuario">
+                    </p>
+
+                    <p>
+                        <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="email">
+                    </p>
+
+                    <p>
+                        <input type="text" name="direccion" placeholder="  Direccion" class="inserta inicioS" id="direccion">
+                    </p>
+                </div>
+                <div>
+                    imagen
+                    <input type="submit" name="subirImagen" value="Subir imagen" class="subirImagen" id="subirImagen" >
+                </div>
+
+                <p>
+                    <input type="submit" name="Guardar" value="Guardar" class="Guardar" id="Guardar" >
+                </p>
+
+            </form>
+        </div>
+        <div class="cambio"></div>
     </div>
     
 

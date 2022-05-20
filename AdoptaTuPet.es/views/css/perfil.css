@@ -188,32 +188,26 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
-.bannerperro{
-    position: absolute;
-    z-index: -5;
-}
-.contenedor{
-    margin: auto 0;
-}
-.primerbanner{
+.menu{
     display: flex;
-    flex-direction: row;
+    flex-flow: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-.primerbanner h1{
-    padding-bottom: 20px;
+.perfil{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
-.separador{
-    width: 22vw;
+.cambiosUsuario{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
 }
-.textoprimerbanner{
-    font-family: 'Raleway', sans-serif;
-    color: #ED7F05;
-    margin-top: 120px;
-    font-size: 2em;
-    width: 800px;
-    text-align: center;
+img{
+    width: 20%;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/
