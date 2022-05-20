@@ -7,6 +7,8 @@ class FavoritosModel{
 
     function favorito($idUsuario,$idAnimal){
 
+        $favorito = false;
+
         try{
             $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
 
@@ -21,6 +23,21 @@ class FavoritosModel{
             echo $ex->getMessage(), "<br>";
 
         }
+
+        $comprueba = $db -> query("SELECT idAnimal, idUsuario FROM favoritos WHERE idUsuario = $idUsuario AND idAnimal = $idAnimal");
+
+        if($comprueba -> fetch_object()){
+
+            $db -> query("DELETE FROM favoritos WHERE idUsuario = $idUsuario AND idAnimal = $idAnimal");
+
+        }else{
+
+            $db -> query("INSERT INTO favoritos (idUsuario, idAnimal) VALUES($idUsuario, $idAnimal)");
+
+            $favorito = true;
+        }
+
+        return $favorito;
     }
 
 }
