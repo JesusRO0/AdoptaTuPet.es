@@ -100,19 +100,19 @@
 
             <form action="#" method="POST">
                 <p>
-                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog2">
+                    <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="email">
                 </p>
 
                 <p>
-                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog2">
+                    <input type="password" name="contraseña" placeholder="  Contraseña" class="inserta inicioS" id="contraseña">
                 </p>
 
                 <p>
-                    <input type="password" name="passSesionRep" placeholder="  Repetir Contraseña" class="inserta inicioS" id="passLog3">
+                    <input type="password" name="Repcontraseña" placeholder="  Repetir Contraseña" class="inserta inicioS" id="Repcontraseña">
                 </p>
 
                 <p>
-                    <input type="text" name="usuario" placeholder="  Nombre Usuario" class="inserta inicioS" id="Usuario">
+                    <input type="text" name="usuario" placeholder="  Nombre Usuario" class="inserta inicioS" id="usuario">
                 </p>
 
                 <p>

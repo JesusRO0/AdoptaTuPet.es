@@ -29,7 +29,7 @@ ini_set("display_errors", 1);
             private $localidad;
             private $contrasena;
         
-            public function __construct($idUsuario = '', $nombre = '', $email = '', $usuario = '', $localidad = '', $contrasena = ''){
+            public function __construct($idUsuario = '', $nombre = 'null', $email = '', $usuario = '', $localidad = 'null', $contrasena = ''){
         
                 $this->idUsuario = $idUsuario;
                 $this->nombre = $nombre;
@@ -39,11 +39,11 @@ ini_set("display_errors", 1);
                 $this->contrasena = $contrasena;
             }
 
-        function creaUser($idUsuario, $nombre, $email, $usuario, $localidad, $contrasena){
+        function creaUser($email, $usuario,$contrasena){
 
             //Intentamos iniciar la conexión en la base de datos
             try{
-                $db = new mysqli('localhost', "administrador", "admin", "adoptatupet");
+                $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
     
                 if($db->connect_errno){
     
@@ -62,7 +62,7 @@ ini_set("display_errors", 1);
     
             //Comprobamos que se pueda realizar la consulta
             try{
-                $consulta = $db->query("SELECT usuario FROM user WHERE $email = '$email'");
+                $consulta = $db->query("SELECT usuario FROM usuario WHERE $email = '$email'");
     
                 if($consulta->fetch_object()){
     
@@ -71,7 +71,7 @@ ini_set("display_errors", 1);
     
                 }else{
     
-                    $db->query("INSERT INTO user(idUsuario, nombre, email, usuario, localidad, contrasena) VALUES ('$idUsuario', '$nombre', '$email','$usuario','$localidad','$contrasena')");
+                    $db->query("INSERT INTO usuario (email, usuario, contrasena) VALUES ('$email','$usuario','$contrasena')");
     
                 }
     
@@ -98,7 +98,7 @@ ini_set("display_errors", 1);
         function iniciarSesion($email, $contraseña){
             
             try{
-                $db = new mysqli('localhost', "administrador", "admin", "adoptatupet");
+                $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
     
                 if($db->connect_errno){
     
@@ -136,7 +136,7 @@ ini_set("display_errors", 1);
             }
     
             else{
-                echo '<script>document.getElementById("errorL").innerHTML="El$email no existe.";</script>';
+                echo '<script>document.getElementById("errorL").innerHTML="El email no existe.";</script>';
             }
     
            
@@ -156,7 +156,7 @@ ini_set("display_errors", 1);
     
             //Comprobamos que la conexión se realice con éxito
             try{
-                $db = new mysqli('localhost', "administrador", "admin", "adoptatupet");
+                $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
     
                 if($db->connect_errno){
     
@@ -170,7 +170,7 @@ ini_set("display_errors", 1);
             }
     
             //Borramos el usuario con el$email indicado
-            $db->query("DELETE FROM user WHERE$email = '$email'");
+            $db->query("DELETE FROM usuario WHERE email = '$email'");
     
         }
     
@@ -185,7 +185,7 @@ ini_set("display_errors", 1);
     
             //Comprobamos que la conexión se realice con éxito
             try{
-                $db = new mysqli('localhost', "administrador", "admin", "adoptatupet");
+                $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
     
                 if($db->connect_errno){
     
@@ -199,7 +199,7 @@ ini_set("display_errors", 1);
             }
     
             //Seleccionamos los valores desde la base de datos para mostrarlos en la página
-            $datos = $db->query("SELECT nombreUser, fotoPerfil FROM user WHERE$emailUser = '$email'");
+            $datos = $db->query("SELECT usuario, fotoPerfil FROM usuario WHERE email = '$email'");
             
             if($res = $datos->fetch_object()){
                 

@@ -12,11 +12,11 @@
     *@param $passwd es la contraseña para acceder al usuario
     *
     */
-    function creaUser($nombre, $correo, $passwd){
+    function crearUsuario($nombre, $correo, $passwd){
 
         //Intentamos iniciar la conexión en la base de datos
         try{
-            $db = new mysqli('localhost', "ahmed", "123456", "galorDB");
+            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
 
             if($db->connect_errno){
 
@@ -71,7 +71,7 @@
     function iniciarSesion($correo, $passwd){
         
         try{
-            $db = new mysqli('localhost', "ahmed", "123456", "galorDB");
+            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
 
             if($db->connect_errno){
 
@@ -129,7 +129,7 @@
 
         //Comprobamos que la conexión se realice con éxito
         try{
-            $db = new mysqli('localhost', "ahmed", "123456", "galorDB");
+            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
 
             if($db->connect_errno){
 
@@ -158,7 +158,7 @@
 
         //Comprobamos que la conexión se realice con éxito
         try{
-            $db = new mysqli('localhost', "ahmed", "123456", "galorDB");
+            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
 
             if($db->connect_errno){
 
@@ -229,7 +229,7 @@
 
         //Comprobamos que la conexión se realice con éxito
         try{
-            $db = new mysqli('localhost', "ahmed", "123456", "galorDB");
+            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
 
             if($db->connect_errno){
 
