@@ -33,7 +33,7 @@ session_start();
 
     <?php
 
-    require_once "./controller/ControllerUserIndex.php";
+    require_once "../controller/ControllerUserIndex.php";
 
     if(isset($_POST['completarRegistro'])){
 
