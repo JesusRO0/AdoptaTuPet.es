@@ -85,6 +85,7 @@
                 </p>
 
                 <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
+                <p class="errorL"></p>
 
             </form>
 
