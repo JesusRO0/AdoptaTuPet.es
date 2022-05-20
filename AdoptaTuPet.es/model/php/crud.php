@@ -11,6 +11,12 @@ class Conexion{
 
 
 function bbdd($servername, $username, $password, $database){
+
+    if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
+        echo 'We don\'t have mysqli!!!';
+    } else {
+        echo 'Phew we have it!';
+    }
         try{
 
             $db = new mysqli($servername, $username, $password, $database);
