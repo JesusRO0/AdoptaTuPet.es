@@ -2,24 +2,16 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-class Conexion{
 
-// public $servername = "localhost";
-// public $database = "adoptatupet";
-// public $username = "admin";
-// public $password = "admin";
+$servername = "localhost";
+$database = "adoptatupet";
+$username = "administrador";
+$password = "admin";
 
 
-function bbdd($servername, $username, $password, $database){
-
-    if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
-        echo 'We don\'t have mysqli!!!';
-    } else {
-        echo 'Phew we have it!';
-    }
         try{
 
-            $db = new mysqli($servername, $username, $password, $database);
+            $db = new mysqli('localhost', "administrador", "admin", "adoptatupet");
 
             if($db->connect_errno){
 
@@ -32,12 +24,4 @@ function bbdd($servername, $username, $password, $database){
             echo $ex->getMessage(), "<br>";
 
         }
-    }
-}
-
-$prueba = new Conexion();
-// phpinfo();
-$prueba -> bbdd("localhost", "admin", "admin", "adoptatupet");
-
-
 ?>
