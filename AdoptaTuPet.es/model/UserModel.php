@@ -257,7 +257,7 @@ ini_set("display_errors", 1);
 
                 if(is_null($imagen->fotoPerfil)){
 
-                    $fotoPerfil = "<img src='./views/img/usuario.png' width='80px'>";   
+                    $fotoPerfil = "<img width='80px' src='./views/img/usuario.png'>";   
 
                 }else{
 
