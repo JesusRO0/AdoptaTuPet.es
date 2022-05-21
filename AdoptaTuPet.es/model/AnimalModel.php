@@ -134,5 +134,153 @@ class AnimalModel{
         $db -> query("UPDATE animal SET idUsuario = $idUsuario WHERE idAnimal = $idAnimal");
     }
 
+    function filtro($edad = '',$especie = '',$localidad='',$raza='',$sexo='',$tamaño=''){
+
+        $animales = [];
+        $contador = 0;
+
+        try{
+            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
+
+            if($db->connect_errno){
+
+                //Error al soltar un error la función
+                throw new Exception("No se ha podido acceder a la basede datos");
+
+            }
+        }catch(Exception $ex){
+            //Otro tipo de error
+            echo $ex->getMessage(), "<br>";
+
+        }
+
+        if($edad == '' && $especie == '' && $localidad == '' && $raza == '' && $sexo == '' && $tamaño == ''){
+
+            $filtro = $db -> query("SELECT imagen, nombre, localidad FROM animal");
+            
+        }else{
+
+            $consulta = 'SELECT imagen, nombre, localidad FROM animal WHERE ';
+            $varios = false;
+
+            if($edad != ''){
+
+                $consulta .= "edad = '$edad'";
+                $varios = true;
+            }
+
+            if($especie != ''){
+
+                if($varios){
+
+                    $consulta .= "AND especie = '$especie' ";
+
+                }else{
+
+                    $consulta .= "especie = '$especie'";
+                    $varios = true;
+                }
+            }
+            
+            if($localidad != ''){
+
+                if($varios){
+
+                    $consulta .= "AND localidad = '$localidad' ";
+                }else{
+
+                    $consulta .= "localidad = '$localidad'";
+                    $varios = true;
+                }
+            }
+            if($raza != ''){
+
+                if($varios){
+
+                    $consulta .= "AND raza = '$raza' ";
+
+                }else{
+
+                    $consulta .= "raza = '$raza'";
+                    $varios = true;
+                }
+            }
+            if($sexo != ''){
+
+                if($varios){
+
+                    $consulta .= "AND sexo = '$sexo' ";
+
+                }else{
+
+                    $consulta .= "sexo = '$sexo'";
+                    $varios = true;
+                }
+            }
+            if($tamaño != ''){
+
+                if($varios){
+
+                    $consulta .= "AND tamano = '$tamaño' ";
+
+                }else{
+
+                    $consulta .= "tamano = '$tamaño'";
+                    $varios = true;
+                }
+            }
+
+            $resultado = $db -> query($consulta);
+
+            while($animal = $resultado -> fetch_object()){
+
+                $animales[$contador] = array(
+                    'nombre' => $animal -> nombre,
+                    'imagen' => $animal -> imagen,
+                    'localidad' => $animal -> localidad,
+                );
+
+                $contador++;
+
+            }
+
+            return $animales;
+        }
+
+    }
+
+    function filtraRaza(){
+
+        $razas = [];
+        $contador = 0;
+
+        try{
+            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
+
+            if($db->connect_errno){
+
+                //Error al soltar un error la función
+                throw new Exception("No se ha podido acceder a la basede datos");
+
+            }
+        }catch(Exception $ex){
+            //Otro tipo de error
+            echo $ex->getMessage(), "<br>";
+
+        }
+
+        $filtraRaza =  $db -> query("SELECT raza FROM animal");
+
+        while($raza = $filtraRaza -> fetch_object()){
+
+            $razas[$contador] = "$raza -> raza";
+            $contador++;
+
+        }
+
+        return $razas;
+
+    }
+
 }
 ?>

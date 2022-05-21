@@ -189,32 +189,11 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
-.bannerperro{
-    position: absolute;
-    z-index: -5;
-}
-.contenedor{
-    margin: auto 0;
-}
-.primerbanner{
+.filtro{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items:center;
-}
-.primerbanner h1{
-    padding-bottom: 20px;
-}
-.separador{
-    width: 22vw;
-}
-.textoprimerbanner{
-    font-family: 'Raleway', sans-serif;
-    color: #ED7F05;
-    margin-top: 120px;
-    font-size: 2em;
-    width: 800px;
-    text-align: center;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/

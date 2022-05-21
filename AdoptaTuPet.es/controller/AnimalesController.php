@@ -34,6 +34,39 @@ class AnimalesController{
 
     }
 
+    public static function filtarAnimales($edad = '',$especie = '',$localidad='',$raza='',$sexo='',$tamaño=''){
+
+        $filtrar = new AnimalModel();
+        
+        $resultado = $filtrar -> filtro($edad, $especie, $localidad , $raza, $sexo, $tamaño);
+
+        for($i = 0; $i < count($resultado); $i++){
+
+            echo "<div class='animal'>
+                <div class='fotoAnimal'>
+                    <img src='data:image/png;base64, ".base64_encode($resultado[$i]['imagen'])."'>
+                </div>
+                <div class='informacionAnimal'>
+                    <p class='nombreAnimal'>".$resultado[$i]['nombre']."</p>
+                    <p class='localidadAnimal'>".$resultado[$i]['localidad']."</p>
+                </div>
+            </div>";
+        }
+
+    }
+
+    public static function filtarRazas(){
+
+        $filtrarRaza = new AnimalModel();
+        
+        $resultado = $filtrarRaza -> filtraRaza();
+
+        for($i = 0; $i < count($resultado); $i++){
+
+            echo "<option value='$resultado[$i]'>$resultado[$i]</option>";
+        }
+
+    }
 }
 
 ?>

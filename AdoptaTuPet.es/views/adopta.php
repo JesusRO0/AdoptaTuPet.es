@@ -22,6 +22,7 @@ session_start();
     <?php
 
     require_once "../controller/ControllerUser.php";
+    require_once "../controller/AnimalesController.php";
 
     if(isset($_POST['completarRegistro'])){
 
@@ -163,11 +164,88 @@ session_start();
         </div>
     </div>
     <div class="contenedor" id="Contenedor">
-        <div>
-            Filtrar 
-            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
-                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
+        <div class="filtro">
+            <h2>Filtrar</h2> 
+            <select name="especie" id="especie">
+                <option value="perros">Perros</option>
+                <option value="gatos">Gatos</option>
             </select>
+            <input type="text" name="localidad" id="localidad" placeholder="Localidad">
+            <select name="raza" id="raza">
+                <option value="raza" disabled selected>Raza</option>
+                <?php
+                    AnimalesController::filtrarRazas();
+                ?>
+            </select>
+            <select name="sexo" id="sexo">
+                <option value="sexo" disabled selected>Sexo</option>
+                <option value="hembra">Hembra</option>
+                <option value="Macho">Macho</option>
+            </select>
+            <select name="edad" id="edad">
+                <option value="edad" disabled selected>Edad</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="adulto">Adulto</option>
+                <option value="senior">Sénior</option>
+            </select>
+            <select name="tamaño" id="tamaño">
+                <option value="Tamaño" disabled selected>Tamaño</option>
+                <option value="pequeño">Pequeño</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+            </select>
+        </div>
+        
+        <div>
+
+            <?php
+
+                if(isset($_POST['especie'])){
+
+                    $especie = $_POST['especie'];
+                }else{
+
+                    $especie = '';
+                }
+                if(isset($_POST['localidad'])){
+
+                    $localidad = $_POST['localidad'];
+                }else{
+
+                    $localidad = '';
+                }
+                if(isset($_POST['sexo'])){
+
+                    $sexo = $_POST['sexo'];
+                }else{
+
+                    $sexo = '';
+                }
+                if(isset($_POST['edad'])){
+
+                    $edad = $_POST['edad'];
+                }else{
+
+                    $edad = '';
+                }
+                if(isset($_POST['tamaño'])){
+
+                    $tamaño = $_POST['tamaño'];
+                }else{
+
+                    $tamaño = '';
+                }
+                if(isset($_POST['raza'])){
+
+                    $raza = $_POST['raza'];
+                }else{
+
+                    $raza = '';
+                }
+                AnimalesController::filtarAnimales($edad, $especie, $localidad , $raza, $sexo, $tamaño);
+
+            ?>
+
         </div>
     </div>
     
