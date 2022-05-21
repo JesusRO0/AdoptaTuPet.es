@@ -1,4 +1,4 @@
-/*CSS Contacto*/
+/*CSS Mobile First*/
 
 * {
     margin: 0;
@@ -18,7 +18,6 @@
 }
 
 body{
-    background-color: #87DDFF;
     font-family: 'Fredoka', sans-serif;
 }
 
@@ -126,6 +125,7 @@ header a{
     display: flex;
     justify-content: center;
     height: 100%;
+    z-index: 10;
 }
 .login hr{
     width: 80%;
@@ -315,9 +315,9 @@ font-size: 2.5em;
     margin-right: 50px;
 }
 form input{
-    width: 600px;
+    width: 300px;
     box-shadow: 0 0 2px black;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 .asunto,.mensaje{
     width: 100%;

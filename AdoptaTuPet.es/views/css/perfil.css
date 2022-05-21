@@ -1,4 +1,4 @@
-/*CSS Perfil*/
+/*CSS Mobile First*/
 
 * {
     margin: 0;
@@ -125,6 +125,7 @@ header a{
     display: flex;
     justify-content: center;
     height: 100%;
+    z-index: 10;
 }
 .login hr{
     width: 80%;

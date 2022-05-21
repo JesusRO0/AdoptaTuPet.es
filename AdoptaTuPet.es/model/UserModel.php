@@ -257,7 +257,40 @@ ini_set("display_errors", 1);
 
                 if(is_null($imagen->fotoPerfil)){
 
-                    $fotoPerfil = "<img src='../views/img/usuario.png' width='80px'>";   
+                    $fotoPerfil = "<img src='./views/img/usuario.png' width='80px'>";   
+
+                }else{
+
+                    $fotoPerfil = "<img src='data:image/png;base64, ".base64_encode($imagen->fotoPerfil)."'>";
+                }
+
+            }
+            return $fotoPerfil;
+        }
+
+        function fotoPerfilViews($email){
+
+            try{
+                $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
+    
+                if($db->connect_errno){
+    
+                    throw new Exception("No se ha podido acceder a la basede datos");
+    
+                }
+            }catch(Exception $ex){
+    
+                echo $ex->getMessage(), "<br>";
+    
+            }
+
+            $consulta = $db -> query("SELECT fotoPerfil FROM usuario WHERE email = '$email'");
+
+            if($imagen = $consulta -> fetch_object()){
+
+                if(is_null($imagen->fotoPerfil)){
+
+                    $fotoPerfil = "<img src='./img/usuario.png' width='80px'>";   
 
                 }else{
 
