@@ -186,6 +186,26 @@ input{
 .textobotonLogin a{
     color: #E7F6FC;
 }
+.sesionIniciada{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.sesionIniciada input{
+    border-radius: 10px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px black;
+}
+.sesionIniciada img{
+    border-radius: 50%;
+}
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
@@ -314,11 +334,11 @@ font-size: 2.5em;
     margin-left: 50px;
     margin-right: 50px;
 }
-form input{
+/*form input{
     width: 300px;
     box-shadow: 0 0 2px black;
     margin-bottom: 16px;
-}
+}*/
 .asunto,.mensaje{
     width: 100%;
 }

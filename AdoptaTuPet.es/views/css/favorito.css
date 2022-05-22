@@ -186,6 +186,26 @@ input{
 .textobotonLogin a{
     color: #E7F6FC;
 }
+.sesionIniciada{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.sesionIniciada input{
+    border-radius: 10px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px black;
+}
+.sesionIniciada img{
+    border-radius: 50%;
+}
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
@@ -193,8 +213,6 @@ input{
     font-family: 'Fredoka', sans-serif;
     display: flex;
     flex-flow: row;
-    align-items: center;
-    justify-content: center;
 }
 .navegador{
     display: flex;
@@ -207,14 +225,14 @@ input{
     border-radius: 20px;
     box-shadow: 0px 0px 2px black;
 }
-.chat,.favorito,.salir{
+.chat,.ajustes,.salir{
     background-color: #87DDFF;
     border-radius: 50%;
     padding: 20px;
     box-shadow: 0px 0px 2px black;
     margin: 10px;
 }
-.ajustes{
+.favorito{
     background-color: #ED7F05;
     border-radius: 50%;
     padding: 20px;
@@ -222,6 +240,18 @@ input{
 }
 .navegador img{
     width: 50px;
+}
+.misFavoritos{
+    background-color: #E7F6FC;
+    margin:10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px black;
+    padding: 20px;
+    width: 100%;
+}
+.misFavoritos hr{
+    margin-bottom: 30px;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/

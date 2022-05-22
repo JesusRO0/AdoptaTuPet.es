@@ -10,7 +10,7 @@ session_start();
     <meta charset="utf-8">
     <title>AdoptaTuPet.es</title>
     <link rel="icon" href="./img/iconoadoptatupet.png">
-    <link rel="stylesheet" href="./css/perfil.css">
+    <link rel="stylesheet" href="./css/mensajes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
@@ -42,6 +42,11 @@ session_start();
         echo $_SESSION['email'];
     }
 
+    if(isset($_POST['cerrarSesion'])){
+
+        unset($_SESSION['email']);
+    }
+
     ?>
 
     <header>
@@ -71,6 +76,9 @@ session_start();
                         
                         echo "<div class='sesionIniciada'> 
                         ".UserController::recogerFoto($_SESSION['email'])."
+                        <form method='POST' action='#'>
+                            <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
+                        </form>
                         </div>";
                     }else{
 
@@ -151,6 +159,13 @@ session_start();
                 <a class="salir" href="../index.php"><img src="./img/salida.png"></a>
             </div>
 
+            <div class="misMensajes">
+                <h1>Mis Mensajes</h1>
+                <hr>
+                <div>
+                    No tienes mensajes actualmente.
+                </div>
+            </div>
         </div>
     </main>
 

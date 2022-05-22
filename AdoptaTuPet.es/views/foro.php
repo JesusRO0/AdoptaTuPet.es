@@ -41,6 +41,11 @@ session_start();
         echo $_SESSION['email'];
     }
 
+    if(isset($_POST['cerrarSesion'])){
+
+        unset($_SESSION['email']);
+    }
+
     ?>
 
     <header>
@@ -70,6 +75,9 @@ session_start();
                         
                         echo "<div class='sesionIniciada'> 
                         ".UserController::recogerFoto($_SESSION['email'])."
+                        <form method='POST' action='#'>
+                            <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
+                        </form>
                         </div>";
                     }else{
 

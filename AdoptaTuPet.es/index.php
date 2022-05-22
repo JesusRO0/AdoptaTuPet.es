@@ -41,7 +41,6 @@ session_start();
         $contraseña = $_POST['passSesion'];
 
         UserController::iniciarUser($email, $contraseña);
-        echo $_SESSION['email'];
 
     }
 
@@ -95,16 +94,6 @@ session_start();
     </header>
 
     <main>
-
-    <!-- <div class="edit" id="divPerf">
-            <form method="POST" action="perfil.php">
-                <input type="submit" class="miPerfil" id="miPerf" value="Mi Perfil"></input>
-            </form>
-            <hr>
-            <form method="POST" action="#">
-                <input name="closeSesion" type="submit" class="cerrar" id="cerSes" value="Cerrar Sesión"></input>
-            </form>
-    </div> -->
 
     <div class="contenedorDIV">
         <div class="login" id="divL">
