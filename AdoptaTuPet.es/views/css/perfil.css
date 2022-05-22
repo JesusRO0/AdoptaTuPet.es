@@ -7,7 +7,6 @@
     /* Letras:
     
     font-family: 'Raleway', sans-serif;
-    font-family: 'Fredoka One', cursive;
     font-family: 'Fredoka', sans-serif;
     
     Colores:
@@ -95,8 +94,8 @@ header a{
     top: 300px;
     background-color: #87DDFF;
     text-align: center;
-    width: 380px;
-    height: 400px;
+    width: 410px;
+    height: 420px;
     border-radius: 20px;
     box-shadow: 0px 0px 8px black;
 }
@@ -110,8 +109,8 @@ header a{
     top: 300px;
     background-color: #87DDFF;
     text-align: center;
-    width: 380px;
-    height: 490px;
+    width: 410px;
+    height: 530px;
     border-radius: 20px;
     box-shadow: 0px 0px 8px black;
 }
@@ -124,12 +123,11 @@ header a{
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100%;
     z-index: 10;
 }
 .login hr{
-    width: 80%;
-    margin-left: 38px;
+    width: 70%;
+    margin-left: 60px;
     border: 0.3px solid black;
     border-radius: 30px;
     margin-bottom: 10px;
@@ -147,7 +145,7 @@ header a{
     color:#E7F6FC;
     background-color: #ED7F05;
     height: 70px;
-    width: 300px;
+    width: 320px;
     border: 0;
     border-radius: 50px;
     box-shadow: 0px 0px 8px black;
@@ -156,7 +154,9 @@ input{
     font-size: 1.4em;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+    padding: 5px;
 }
 .Registrate{
     text-shadow: 0px 0px 2px black;
@@ -172,8 +172,8 @@ input{
     text-shadow: 0px 0px 2px black;
 }
 .registro hr{
-    width: 80%;
-    margin-left: 38px;
+    width: 70%;
+    margin-left: 60px;
     border: 0.3px solid black;
     border-radius: 30px;
     margin-bottom: 10px;

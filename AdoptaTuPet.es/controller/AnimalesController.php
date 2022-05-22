@@ -1,5 +1,7 @@
 <?php
 
+require_once "../model/AnimalModel.php";
+
 class AnimalesController{
 
     public static function creaAnimalController($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño){
@@ -55,10 +57,10 @@ class AnimalesController{
 
     }
 
-    public static function filtarRazas(){
+    public static function filtrarRazas(){
 
         $filtrarRaza = new AnimalModel();
-        
+        echo "Holaaaa";
         $resultado = $filtrarRaza -> filtraRaza();
 
         for($i = 0; $i < count($resultado); $i++){

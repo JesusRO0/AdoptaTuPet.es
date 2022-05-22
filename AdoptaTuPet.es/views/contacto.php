@@ -87,7 +87,7 @@ session_start();
     <div class="contenedorDIV">
         <div class="login" id="divL">
 
-            <img src="./img/perro (1).png">
+            <img src="./img/perroIcono.png">
             <h3>Iniciar Sesión</h3>
             <hr>
 
@@ -112,7 +112,7 @@ session_start();
 
         <div class="registro" id="divR">
 
-            <img src="./img/perro (1).png">
+            <img src="./img/perroIcono.png">
             <h3>Regístrate</h3>
             <hr>
 
