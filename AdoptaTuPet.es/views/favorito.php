@@ -84,117 +84,74 @@ session_start();
 
     <main>
 
-    <div class="contenedorDIV">
-        <div class="login" id="divL">
+        <div class="contenedorDIV">
+            <div class="login" id="divL">
 
-            <img src="./img/perroIcono.png">
-            <h3>Iniciar Sesión</h3>
-            <hr>
+                <img src="./img/perroIcono.png">
+                <h3>Iniciar Sesión</h3>
+                <hr>
 
-            <form action="#" method="POST">
-                <p>
-                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog">
-                </p>
+                <form action="#" method="POST">
+                    <p>
+                        <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog">
+                    </p>
 
-                <p>
-                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog">
-                </p>
-                <p>
-                    <input type="submit" name="completarLogin" value="Entra" class="completaLogin" id="botonLogin" >
-                </p>
+                    <p>
+                        <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog">
+                    </p>
+                    <p>
+                        <input type="submit" name="completarLogin" value="Entra" class="completaLogin" id="botonLogin" >
+                    </p>
 
-                <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
+                    <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
 
-            </form>
+                </form>
 
+
+            </div>
+
+            <div class="registro" id="divR">
+
+                <img src="./img/perroIcono.png">
+                <h3>Regístrate</h3>
+                <hr>
+
+                <form action="#" method="POST">
+                    <p>
+                        <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="email">
+                    </p>
+
+                    <p>
+                        <input type="password" name="contraseña" placeholder="  Contraseña" class="inserta inicioS" id="contraseña">
+                    </p>
+
+                    <p>
+                        <input type="password" name="Repcontraseña" placeholder="  Repetir Contraseña" class="inserta inicioS" id="Repcontraseña">
+                    </p>
+
+                    <p>
+                        <input type="text" name="usuario" placeholder="  Nombre Usuario" class="inserta inicioS" id="usuario">
+                    </p>
+
+                    <p>
+                        <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro" >
+                    </p>
+
+                    <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>
+
+                </form>
+
+            </div>
+        </div>
+        <div class="contenedor" id="Contenedor">
+            <div class="navegador">
+                <a class="chat" href="./mensajes.php"><img src="./img/chat.png"></a>
+                <a class="favorito" href="./favorito.php"><img src="./img/amor.png"></a>
+                <a class="ajustes" href="./perfil.php"><img src="./img/engranaje.png"></a>
+                <a class="salir" href="../index.php"><img src="./img/salida.png"></a>
+            </div>
 
         </div>
-
-        <div class="registro" id="divR">
-
-            <img src="./img/perroIcono.png">
-            <h3>Regístrate</h3>
-            <hr>
-
-            <form action="#" method="POST">
-                <p>
-                    <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="email">
-                </p>
-
-                <p>
-                    <input type="password" name="contraseña" placeholder="  Contraseña" class="inserta inicioS" id="contraseña">
-                </p>
-
-                <p>
-                    <input type="password" name="Repcontraseña" placeholder="  Repetir Contraseña" class="inserta inicioS" id="Repcontraseña">
-                </p>
-
-                <p>
-                    <input type="text" name="usuario" placeholder="  Nombre Usuario" class="inserta inicioS" id="usuario">
-                </p>
-
-                <p>
-                    <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro" >
-                </p>
-
-                <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>
-
-            </form>
-
-
-        </div>
-    </div>
-    <div class="contenedor" id="Contenedor">
-        <div class="navegador">
-            <a class="chat" href="./mensajes.php"><img src="./img/chat.png"></a>
-            <a class="favorito" href="./favorito.php"><img src="./img/amor.png"></a>
-            <a class="ajustes" href="./perfil.php"><img src="./img/engranaje.png"></a>
-            <a class="salir" href="../index.php"><img src="./img/salida.png"></a>
-        </div>
-        <div class="perfil">
-            <h1>Mi Perfil</h1>
-            <hr>
-            <form action="#" method="POST">
-                <p>
-                    <label for="usuario">Nombre de Usuario*</label>
-                    <input type="text" name="usuario" placeholder="  Usuario" class="inserta inicioS" id="usuario">
-                </p>
-
-                <p>
-                    <label for="email">Email*</label>
-                    <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="email">
-                </p>
-
-                <p>
-                    <label for="direccion">Direccion</label>
-                    <input type="text" name="direccion" placeholder="  Direccion" class="inserta inicioS" id="direccion">
-                </p>
-
-                <p>
-                    <input type="submit" name="Guardar" value="Guardar" class="guardar" id="Guardar" >
-                </p>
-
-            </form>
-        </div>
-        <div class="cambioImagen">
-            <?php
-
-                if(isset($_SESSION['email'])){
-                    
-                    echo "<div class='sesionIniciada'> 
-                    ".UserController::recogerFoto($_SESSION['email'])."
-                    </div>";
-                }else{
-
-                    echo "<img src='./img/usuario.png' width='80px'>";
-                }
-
-            ?>
-            <input type="submit" name="subirImagen" value="Cambiar Imagen" class="subirImagen" id="subirImagen">
-        </div>
-    </div>
-    
-
     </main>
 
     <footer>

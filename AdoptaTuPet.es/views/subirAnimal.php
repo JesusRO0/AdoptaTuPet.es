@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 session_start();
 ?>
 
@@ -159,7 +161,7 @@ if(isset($_POST['cerrarSesion'])){
 
             <div class="edad">
                 <label for="edad">Edad: </label>
-                <input type="number" min=0 name="edad" required>
+                <input type="text" name="edad" required>
             </div>
 
             <div class="nombre">
@@ -169,7 +171,7 @@ if(isset($_POST['cerrarSesion'])){
 
             <div class="descripcion">
                 <label for="descripcion">Descripcion: </label>
-                <textarea name="descripcion" rows="10" columns="100" required></textarea>
+                <textarea name="descripcion" rows="10" columns="300" required></textarea>
             </div>
 
             <div class="especie">
@@ -203,7 +205,7 @@ if(isset($_POST['cerrarSesion'])){
             </div>
 
             <div class="boton">
-                <input type="submit" name="submit" value="Subir Producto"/>
+                <input type="submit" name="submit" value="Subir Animal"/>
             </div>
             
         </form>
@@ -230,10 +232,20 @@ if(isset($_POST['cerrarSesion'])){
                         $sexo = $_POST['sexo'];
                         $tamaño = $_POST['tamaño'];
 
-                        $resultado = $mitienda->query("INSERT INTO animal(edad,nombre,descripcion,especie,imagen,localidad,raza,sexo,tamano) VALUES ('$edad','$nombre','$descripcion','$especie','$miimagen','$localidad','$raza','$sexo','$tamaño');");  
+                        echo $edad;
+                        echo $nombre;
+                        echo $descripcion;
+                        echo $especie;
+                        echo $miimagen;
+                        echo $localidad;
+                        echo $raza;
+                        echo $sexo;
+                        echo $tamaño;
+
+                        $resultado = $bd->query("INSERT INTO animal(edad,nombre,descripcion,especie,imagen,localidad,raza,sexo,tamano) VALUES ('$edad','$nombre','$descripcion','$especie','$miimagen','$localidad','$raza','$sexo','$tamaño');");  
 
                 if($resultado){
-                    echo "Se ha subido el producto correctamente.";
+                    echo "Se ha subido el animal correctamente.";
                 }else{
                     echo "La subida ha fallado, intentalo de nuevo.";
                 }
