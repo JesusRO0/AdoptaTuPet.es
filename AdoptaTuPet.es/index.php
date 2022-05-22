@@ -191,7 +191,7 @@ session_start();
                             a casa vacunado, desparasitado, con análisis de leishmaniosis,
                             con chip y esterilizado.
                         </p>
-                        <a href="./views/adopta.php">HOLA</a>
+                        <a href="./views/adopta.php" target="_blank"><h2 class="botonVerGato">VER GATOS</h2></a>
                     </div>
                 </div>
             </div>
@@ -209,7 +209,7 @@ session_start();
             <div class="tercerbanner">
                 <div class="contenidotercerbanner">
                     <h1>Últimos anuncios en nuestro FORO</h1>
-                    <div>ANUNCIOS </div>
+                    <div>ANUNCIOS</div>
                 </div>
             </div>
         </div>

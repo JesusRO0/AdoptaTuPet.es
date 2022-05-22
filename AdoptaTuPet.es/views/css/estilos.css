@@ -216,7 +216,7 @@ input{
 .bannerperro{
     position: absolute;
     z-index: -5;
-    width: 1903px;
+    width: 100%;
 }
 .contenedor{
     margin: auto 0;
@@ -231,7 +231,7 @@ input{
     align-items:center;
 }
 .primerbanner h1{
-    padding-bottom: 20px;
+    padding-bottom: 1.04vw;
     font-weight: 500;
 }
 .separador{
@@ -244,11 +244,11 @@ input{
     justify-content: center;
     align-items:center;
     color: #ED7F05;
-    margin-top: 90px;
+    margin-top: 4.68vw;
     font-size: 2em;
-    width: 800px;
+    width: 41vw;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 5.20vw;
 }
 .textoprimerbanner h2{
     font-weight: 300;
@@ -257,12 +257,12 @@ input{
     border-radius: 10px;
     background-color:#E7F6FC;
     color:#87DDFF;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-top: 1.30vw;
+    padding-bottom: 1.30vw;
+    padding-left: 2.34vw;
+    padding-right: 2.34vw;
     box-shadow: 0px 0px 5px black;
-    margin: 30px;
+    margin: 1.56vw;
     font-size: 0.8em;
 }
 .perroygato{
@@ -271,22 +271,22 @@ input{
     justify-content: center;
     align-items:center;
     background-color: #E7F6FC;
-    padding: 30px;
+    padding: 1.56vw;
 }
 .perroygato p{
     font-size: 1.5em;
-    width: 800px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 41.66vw;
+    padding-top: 1.56vw;
+    padding-bottom: 1.56vw;
 }
 .anuncioPerro a{
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 300px;
+    width: 15.62vw;
 }
 .anuncioGato a{
-    width: 300px;
+    width: 15.62vw;
 }
 .perroygato h1{
     color: #87DDFF;
@@ -314,18 +314,18 @@ input{
 }
 .botonVerPerro,.botonVerGato{
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.52vw;
     background-color:#87DDFF;
     color:#E7F6FC;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 300px;
+    padding-top: 0.52vw;
+    padding-bottom: 0.52vw;
+    width: 15.62vw;
     box-shadow: 0px 0px 2px black;
     font-size: 1.4em;
     text-shadow: 0px 0px 2px black;
 }
 .headergato{
-    width: 1903px;
+    width: 100%;
     position: absolute;
     z-index: -5;
     /* width: 1903px;
@@ -336,17 +336,17 @@ input{
     color: #E7F6FC;
     font-size: 1.2em;
     text-align: center;
-    width: 900px;
+    width: 46.87vw;
 }
 .textosegundobanner{
-    margin: 30px 0px 25px 200px;
+    margin: 1.56vw 0px 1.30vw 10.41vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
 }
 .textosegundobanner h1{
-    margin: 20px;
+    margin: 1.041vw;
     text-shadow: 0px 0px 10px black;
 }
 .textosegundobanner h2{
@@ -357,19 +357,19 @@ input{
     border-radius: 10px;
     background-color:#ED7F05;
     color:#E7F6FC;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-top: 1.30vw;
+    padding-bottom: 1.30vw;
+    padding-left: 2.34vw;
+    padding-right: 2.34vw;
     box-shadow: 0px 0px 10px black;
-    margin: 30px;
+    margin: 1.56vw;
     font-size: 1.2em;
     font-weight: bolder;
 }
 .tercerbanner{
     font-family: 'Raleway', sans-serif;
     background-color: #E7F6FC;
-    padding: 40px;
+    padding: 2.08vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
