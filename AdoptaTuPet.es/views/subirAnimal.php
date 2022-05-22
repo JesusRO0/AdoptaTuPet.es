@@ -19,37 +19,37 @@ session_start();
 
 <body>
 
-    <?php
 
-    require_once "../controller/ControllerUser.php";
-    require_once "../controller/AnimalesController.php";
+<?php
 
-    if(isset($_POST['completarRegistro'])){
+require_once "../controller/ControllerUser.php";
+require_once "../controller/AnimalesController.php";
 
-        $email = $_POST['email'];
-        $usuario = $_POST['usuario'];
-        $contraseña = $_POST['contraseña'];
-        $repContraseña = $_POST['Repcontraseña'];
+if(isset($_POST['completarRegistro'])){
 
-        UserController::creaUserController($email, $usuario, $contraseña, $repContraseña);
-    }
+    $email = $_POST['email'];
+    $usuario = $_POST['usuario'];
+    $contraseña = $_POST['contraseña'];
+    $repContraseña = $_POST['Repcontraseña'];
 
-    if(isset($_POST['completarLogin'])){
+    UserController::creaUserController($email, $usuario, $contraseña, $repContraseña);
+}
 
-        $email = $_POST['correoSesion'];
-        $contraseña = $_POST['passSesion'];
+if(isset($_POST['completarLogin'])){
 
-        UserController::iniciarUser($email, $contraseña);
-        echo $_SESSION['email'];
-    }
+    $email = $_POST['correoSesion'];
+    $contraseña = $_POST['passSesion'];
 
-    if(isset($_POST['cerrarSesion'])){
+    UserController::iniciarUser($email, $contraseña);
+    echo $_SESSION['email'];
+}
 
-        unset($_SESSION['email']);
-    }
+if(isset($_POST['cerrarSesion'])){
 
-    ?>
+    unset($_SESSION['email']);
+}
 
+?>
     <header>
             <div class="menu" id="Menu">
 
@@ -93,16 +93,6 @@ session_start();
 
     <main>
 
-    <!-- <div class="edit" id="divPerf">
-            <form method="POST" action="perfil.php">
-                <input type="submit" class="miPerfil" id="miPerf" value="Mi Perfil"></input>
-            </form>
-            <hr>
-            <form method="POST" action="#">
-                <input name="closeSesion" type="submit" class="cerrar" id="cerSes" value="Cerrar Sesión"></input>
-            </form>
-    </div> -->
-
     <div class="contenedorDIV">
         <div class="login" id="divL">
 
@@ -123,7 +113,6 @@ session_start();
                 </p>
 
                 <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
-                <p class="errorL"></p>
 
             </form>
 
@@ -161,95 +150,109 @@ session_start();
 
             </form>
 
-        </div>
-    </div>
-    <div class="contenedor" id="Contenedor">
-        <div class="filtro">
-            <h2>Filtrar</h2> 
-            <select name="especie" id="especie">
-                <option value="perros">Perros</option>
-                <option value="gatos">Gatos</option>
-            </select>
-            <input type="text" name="localidad" id="localidad" placeholder="Localidad">
-            <select name="raza" id="raza">
-                <option value="raza" disabled selected>Raza</option>
-                <?php
-                    AnimalesController::filtrarRazas();
-                ?>
-            </select>
-            <select name="sexo" id="sexo">
-                <option value="sexo" disabled selected>Sexo</option>
-                <option value="hembra">Hembra</option>
-                <option value="Macho">Macho</option>
-            </select>
-            <select name="edad" id="edad">
-                <option value="edad" disabled selected>Edad</option>
-                <option value="cachorro">Cachorro</option>
-                <option value="adulto">Adulto</option>
-                <option value="senior">Sénior</option>
-            </select>
-            <select name="tamaño" id="tamaño">
-                <option value="Tamaño" disabled selected>Tamaño</option>
-                <option value="pequeño">Pequeño</option>
-                <option value="mediano">Mediano</option>
-                <option value="grande">Grande</option>
-            </select>
-        </div>
-        
-        <div class="contenedorAnimales">
-
-            <?php
-
-                if(isset($_POST['especie'])){
-
-                    $especie = $_POST['especie'];
-                }else{
-
-                    $especie = '';
-                }
-                if(isset($_POST['localidad'])){
-
-                    $localidad = $_POST['localidad'];
-                }else{
-
-                    $localidad = '';
-                }
-                if(isset($_POST['sexo'])){
-
-                    $sexo = $_POST['sexo'];
-                }else{
-
-                    $sexo = '';
-                }
-                if(isset($_POST['edad'])){
-
-                    $edad = $_POST['edad'];
-                }else{
-
-                    $edad = '';
-                }
-                if(isset($_POST['tamaño'])){
-
-                    $tamaño = $_POST['tamaño'];
-                }else{
-
-                    $tamaño = '';
-                }
-                if(isset($_POST['raza'])){
-
-                    $raza = $_POST['raza'];
-                }else{
-
-                    $raza = '';
-                }
-                AnimalesController::filtarAnimales($edad, $especie, $localidad , $raza, $sexo, $tamaño);
-
-            ?>
 
         </div>
-    </div>
-    
-    
+
+        <div class="producto">
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <div class="edad">
+                <label for="edad">Edad: </label>
+                <input type="number" min=0 name="edad" required>
+            </div>
+
+            <div class="nombre">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" required>
+            </div>
+
+            <div class="descripcion">
+                <label for="descripcion">Descripcion: </label>
+                <textarea name="descripcion" rows="10" columns="100" required></textarea>
+            </div>
+
+            <div class="especie">
+                <label for="especie">especie: </label>
+                <input type="text" name="especie" required>
+            </div>
+
+            <div class="imagen">
+                Selecciona una imagen del animal:
+                <input type="file" name="image"/>
+            </div>
+
+            <div class="localidad">
+                <label for="localidad">Localidad: </label>
+                <input type="text" name="localidad" required>
+            </div>
+
+            <div class="raza">
+                <label for="raza">Raza: </label>
+                <input type="text" name="raza" required>
+            </div>
+
+            <div class="sexo">
+                <label for="sexo">Sexo: </label>
+                <input type="text" name="sexo" required>
+            </div>
+
+            <div class="tamaño">
+                <label for="tamaño">tamaño: </label>
+                <input type="text" name="tamaño" required>
+            </div>
+
+            <div class="boton">
+                <input type="submit" name="submit" value="Subir Producto"/>
+            </div>
+            
+        </form>
+
+        </div>
+
+        <?php
+
+        //Cuando se pulsa en ingresar un nuevo producto podemos introducir los datos de él con su imagen
+        // y subirlo a la base de datos mitienda.
+            if(isset($_POST["submit"])){
+
+                $check = getimagesize($_FILES["image"]["tmp_name"]);
+
+                    if($check !== false){
+                        $edad = $_POST['edad'];
+                        $nombre = $_POST['nombre'];
+                        $descripcion = $_POST['descripcion'];
+                        $especie = $_POST['especie'];
+                        $image = $_FILES['image']['tmp_name'];
+                        $miimagen = addslashes(file_get_contents($image));
+                        $localidad = $_POST['localidad'];
+                        $raza = $_POST['raza'];
+                        $sexo = $_POST['sexo'];
+                        $tamaño = $_POST['tamaño'];
+
+                        $resultado = $mitienda->query("INSERT INTO animal(edad,nombre,descripcion,especie,imagen,localidad,raza,sexo,tamano) VALUES ('$edad','$nombre','$descripcion','$especie','$miimagen','$localidad','$raza','$sexo','$tamaño');");  
+
+                if($resultado){
+                    echo "Se ha subido el producto correctamente.";
+                }else{
+                    echo "La subida ha fallado, intentalo de nuevo.";
+                }
+
+            }else{
+                    echo "No se ha seleccionado ninguna imagen.";
+            }
+        }
+
+        ?>
+
+        <div class="volver">
+        <form action="./perfil.php" method="post" enctype="multipart/form-data">
+
+        <input type="submit" name="submit" value="Volver"/>
+
+        </form>
+        </div>
+
     </main>
 
     <footer>
