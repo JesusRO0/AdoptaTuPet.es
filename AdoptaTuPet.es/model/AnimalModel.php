@@ -34,8 +34,9 @@ class AnimalModel{
 
         }
 
-        $db -> query("INSERT INTO animal (edad,especie,imagen,localidad,raza,sexo,tamano) VALUES ($edad,'$especie','$imagen','$localidad','$nombre','$raza','$sexo',$tamaño)");
+        $db -> query("INSERT INTO animal (nombre,edad,especie,imagen,localidad,raza,sexo,tamano) VALUES ('$edad','$especie','$imagen','$localidad','$nombre','$raza','$sexo','$tamaño')");
 
+        return true;
     }
 
     function mostrarAnimal($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño){

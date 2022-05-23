@@ -171,7 +171,7 @@ if(isset($_POST['cerrarSesion'])){
 
             <div class="descripcion">
                 <label for="descripcion">Descripcion: </label>
-                <textarea name="descripcion" rows="10" columns="300" required></textarea>
+                <textarea name="descripcion" rows="10"></textarea>
             </div>
 
             <div class="especie">
@@ -196,12 +196,12 @@ if(isset($_POST['cerrarSesion'])){
 
             <div class="sexo">
                 <label for="sexo">Sexo: </label>
-                <input type="text" name="sexo" required>
+                <input type="text" name="sexo">
             </div>
 
             <div class="tamaño">
                 <label for="tamaño">tamaño: </label>
-                <input type="text" name="tamaño" required>
+                <input type="text" name="tamaño">
             </div>
 
             <div class="boton">
@@ -239,9 +239,9 @@ if(isset($_POST['cerrarSesion'])){
                         echo $sexo;
                         echo $tamaño;
 
-                        AnimalesController::creaAnimalController($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño);
+                        $resultado = AnimalesController::creaAnimalController($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño);
 
-                if($animal){
+                if($resultado){
                     echo "Se ha subido el animal correctamente.";
                 }else{
                     echo "La subida ha fallado, intentalo de nuevo.";

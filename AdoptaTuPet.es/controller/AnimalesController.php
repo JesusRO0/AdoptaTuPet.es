@@ -10,6 +10,7 @@ class AnimalesController{
 
         $animal -> creaAnimal($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño);
 
+        return true;
     }
 
     public static function mostrarAnimalController($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño){
