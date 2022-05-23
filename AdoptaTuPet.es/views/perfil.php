@@ -199,6 +199,13 @@ session_start();
 
             ?>
             <input type="submit" name="subirImagen" value="Cambiar Imagen" class="subirImagen" id="subirImagen">
+            <?php
+
+            if($_SESSION['email'] == "adoptatupet@gmail.com"){
+
+                 echo "<a class='subirAnimal' href='./subirAnimal.php'><h2>Subir Animal</h2></a>";           
+            }
+            ?>
         </div>
     </div>
     

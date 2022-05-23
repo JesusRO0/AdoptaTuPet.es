@@ -17,7 +17,7 @@ class AnimalModel{
     private $tamaño;
 
 
-    function creaAnimal($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño){
+    function creaAnimal($nombre,$edad,$especie,$imagen,$localidad,$raza,$sexo,$tamaño,$descripcion){
 
         try{
             $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
@@ -34,7 +34,7 @@ class AnimalModel{
 
         }
 
-        $db -> query("INSERT INTO animal (nombre,edad,especie,imagen,localidad,raza,sexo,tamano) VALUES ('$edad','$especie','$imagen','$localidad','$nombre','$raza','$sexo','$tamaño')");
+        $db -> query("INSERT INTO animal (nombre,edad,especie,imagen,localidad,raza,sexo,tamano,descripcion) VALUES ('$nombre','$edad','$especie','$imagen','$localidad','$raza','$sexo','$tamaño','$descripcion')");
 
         return true;
     }

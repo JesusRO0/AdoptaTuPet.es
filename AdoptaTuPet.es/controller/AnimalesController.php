@@ -4,11 +4,11 @@ require_once "../model/AnimalModel.php";
 
 class AnimalesController{
 
-    public static function creaAnimalController($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño){
+    public static function creaAnimalController($nombre,$edad,$especie,$imagen,$localidad,$raza,$sexo,$tamaño,$descripcion){
 
         $animal = new AnimalModel();
 
-        $animal -> creaAnimal($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño);
+        $animal -> creaAnimal($nombre,$edad,$especie,$imagen,$localidad,$raza,$sexo,$tamaño,$descripcion);
 
         return true;
     }

@@ -155,7 +155,7 @@ if(isset($_POST['cerrarSesion'])){
 
         </div>
 
-        <div class="producto">
+        <div class="animal">
 
         <form action="#" method="post" enctype="multipart/form-data">
 
@@ -221,7 +221,7 @@ if(isset($_POST['cerrarSesion'])){
                     if($check !== false){
                         $edad = $_POST['edad'];
                         $nombre = $_POST['nombre'];
-                        $descripcion = $_POST['descripcion'];
+                        nl2br($descripcion = $_POST['descripcion']);
                         $especie = $_POST['especie'];
                         $image = $_FILES['image']['tmp_name'];
                         $imagen = addslashes(file_get_contents($image));
@@ -239,7 +239,7 @@ if(isset($_POST['cerrarSesion'])){
                         echo $sexo;
                         echo $tamaño;
 
-                        $resultado = AnimalesController::creaAnimalController($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño);
+                        $resultado = AnimalesController::creaAnimalController($nombre,$edad,$especie,$imagen,$localidad,$raza,$sexo,$tamaño,$descripcion);
 
                 if($resultado){
                     echo "Se ha subido el animal correctamente.";
