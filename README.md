@@ -118,6 +118,8 @@ Cuerpo: Raleway.
 
 - No se va ha usar boostrap, solo vanilla css.
 - Tampoco se utilizará Laravel por falta de tiempo.
+- Vanilla javascript.
+- Solo perros y gatos, posible ampliación con más animales.
 
 Se ha realizado cambios en el color y la letra en algunos apartados tales como en el index y contacto, se ha terminado el header que compartirán todos los apartados más el footer, dentro del header se ha creado los bloques de iniciar sesión y regístrate mediante javascript.  
 
