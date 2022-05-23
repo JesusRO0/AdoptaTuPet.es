@@ -103,14 +103,14 @@ Para los colores usaremos una gama de azul para dar sensación de libertad con u
 
 - Letras
 
-Títulos: Handlee, Mali o Aleo.
-Cuerpo: Montserrat, Raleway o Quicksand.
+Títulos: Fredoka.
+Cuerpo: Raleway.
 
 - Icono de la Página
 
 ![Icono](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/iconoadoptatupet.png)
 
-- Mockup, diseño de alta fidelidad (Sujeto a cambios)
+- Mockup, diseño de alta fidelidad.
 
 ![Mockup](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/AdoptaTuPetes.pdf)
 
@@ -118,6 +118,8 @@ Cuerpo: Montserrat, Raleway o Quicksand.
 
 - No se va ha usar boostrap, solo vanilla css.
 - Tampoco se utilizará Laravel por falta de tiempo.
+- Vanilla javascript.
+- Solo perros y gatos, posible ampliación con más animales.
 
 Se ha realizado cambios en el color y la letra en algunos apartados tales como en el index y contacto, se ha terminado el header que compartirán todos los apartados más el footer, dentro del header se ha creado los bloques de iniciar sesión y regístrate mediante javascript.  
 
@@ -125,4 +127,6 @@ El apartado de index.php y contacto.php está terminado, falta implementar más 
 
 En adopta.php se verán todas las mascotas que se podrán adoptar y poder guardarlas en favoritos, entre el día 19/05 20/05 debería estar implementado, se usará mysqli para ello.  
 
-El siguiente paso sería modificar el animal.php que se trata del mismo perfil de un animal cuando se ha clickeado, allí se verá un perfil y el botón para poder adoptarlo, a parte tendremos acceso a una API donde nos recomendará tips para nuestras mascotas. Una vez que se realice la adopción normalmente se le comunica al usuario un mensaje/mail donde obtiene toda la información sobre la protectora que tiene a esa mascota, se interntará mandar ese correo o mensaje.
+El siguiente paso sería modificar el animal.php que se trata del mismo perfil de un animal cuando se ha clickeado, allí se verá un perfil y el botón para poder adoptarlo, a parte tendremos acceso a una API donde nos recomendará tips para nuestras mascotas. Una vez que se realice la adopción normalmente se le comunica al usuario un mensaje/mail donde obtiene toda la información sobre la protectora que tiene a esa mascota, se interntará mandar ese correo o mensaje.  
+
+22/05 Se ha modificado el apartado de model y controller del proyecto añadiendo las funciones que necesitaba del usuario y animal, del usuario se ha añadido un registro y un iniciar sesión funcional, tambien el mostrar su foto de perfil default y poder subir una propia. Del apartado animal el poder subir animales y guardar su favorito, se ha modificado el diseño y añadido el apartado perfil, mensajes, favoritos y subirAnimal. Faltaría subir animales a la BBDD y poder mostrarlos en el apartado de adopta.php que ya se ha creado una función previa para ello. Se debería crear un model y un controller específico para el subirAnimal.php y subir correctamente los animales a la BBDD. El tema del foro se aplazará hasta que se muestre todo lo escrito previamente y se logre el diseño en móvil.
