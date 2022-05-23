@@ -60,7 +60,6 @@ class AnimalesController{
     public static function filtrarRazas(){
 
         $filtrarRaza = new AnimalModel();
-        echo "Holaaaa";
         $resultado = $filtrarRaza -> filtraRaza();
 
         for($i = 0; $i < count($resultado); $i++){

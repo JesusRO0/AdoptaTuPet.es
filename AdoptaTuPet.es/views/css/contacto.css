@@ -223,13 +223,14 @@ a{
     text-align: center;
     color:#ED7F05;
     width:  67.70vw;
+    font-size: 2vw;
 }
 .definicion img{
     margin-top: 30px;
     margin-bottom: 20px;
     background-color: #E7F6FC;
     border-radius: 10px;
-    width: 300px;
+    width: 20vw;
 }
 .atributos{
     display: grid;
@@ -244,18 +245,16 @@ a{
     background-color: #E7F6FC;
     padding: 20px;
     text-align: center;
-    font-size: 1.4em;
-    line-height: 40px;
-    border-radius: 10px;
 }
 .atributos h1{
     text-shadow: 1px 1px 1px black;
     color: #87DDFF;
     margin-bottom: 20px;
+    font-size: 3vw;
 }
 .atributos p{
     color:#ED7F05;
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 .tituloPreguntas{
     display: flex;
@@ -268,6 +267,7 @@ a{
     color:#ED7F05;
     margin-bottom: 20px;
     margin-top: 20px;
+    font-size: 2vw;
 }
 .botonPreguntas{
     border-radius: 10px;
@@ -279,7 +279,7 @@ a{
     padding-top: 25px;
     padding-bottom: 25px;
     box-shadow: 0px 0px 5px black;
-    font-size: 2em;
+    font-size: 2vw;
 }
 .pasosAdoptar{
     background-color: #ED7F05;
@@ -288,7 +288,7 @@ a{
     align-items: center;
     margin-top: 50px;
     padding-top: 30px;
-    font-size: 1.4em;
+    font-size: 1.4vw;
     color: #E7F6FC;
 }
 .pasosAdoptar p{
@@ -302,7 +302,7 @@ font-size: 2.5em;
     width: 100%;
 }
 .pasos p{
-    font-size: 1.2em;
+    font-size: 1.5vw;
     padding-top: 15px;
 }
 .paso1,.paso2,.paso3{
@@ -328,19 +328,14 @@ font-size: 2.5em;
     color: #ED7F05;
 }
 .contactar h1{
-    font-size: 2.5em;
+    font-size: 2vw;
 }
 .informacion{
-    font-size: 1.4em;
+    font-size: 1.8vw;
     margin: 20px;
     margin-left: 50px;
     margin-right: 50px;
 }
-/*form input{
-    width: 300px;
-    box-shadow: 0 0 2px black;
-    margin-bottom: 16px;
-}*/
 .asunto,.mensaje{
     width: 100%;
 }
@@ -352,7 +347,7 @@ font-size: 2.5em;
     flex-flow: column;
     align-items: center;
     color: #ED7F05;
-    font-size: 1.2em;
+    font-size: 1.5vw;
 }
 /*-------------------------------- FOOTER ------------------------------*/
 

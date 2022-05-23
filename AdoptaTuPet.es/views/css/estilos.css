@@ -16,417 +16,421 @@
     */
 }
 
-body{
-    font-family: 'Fredoka', sans-serif;
-}
+@media screen and (min-width:1024px) {
+    body{
+        background-color: #E7F6FC;
+        font-family: 'Fredoka', sans-serif;
+    }
 
-/*-------------------------------- HEADER ------------------------------*/
-header{
-    background-color: #E7F6FC;
-}
-header a{
-    text-decoration: none;
-}
-.titulo{
-    color: #87DDFF;
-    text-shadow: 0px 2px 2px black;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items:center;
-    width: 300px;
-}
-.titulo img{
-    padding-right: 10px;
-    width: 30%;
-}
-.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:center;
-}
-.secciones{
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-    width: 500px;
-}
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items:center;
-    width: 250px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.redes img{
-    width: 100%;
-    padding: 5px;
-}
-.home,.adopta,.foro,.contacto{
-    border-radius: 10px;
-    background-color: #ED7F05;
-    color: #E7F6FC;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-shadow: 0px 0px 2px black;
-}
-.entra{
-    border-radius: 10px;
-    background-color: white;
-    color: #ED7F05;
-    border: 1px solid #ED7F05;
-    padding: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    box-shadow: 0px 0px 2px black;
-}
+    /*-------------------------------- HEADER ------------------------------*/
 
-#divL{
-    display: none;
-    position: absolute;
-    top: 300px;
-    background-color: #87DDFF;
-    text-align: center;
-    width: 410px;
-    height: 420px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 8px black;
-}
-#divL img{
-    width: 25%;
-    margin: 10px;
-}
-#divR{
-    display: none;
-    position: absolute;
-    top: 300px;
-    background-color: #87DDFF;
-    text-align: center;
-    width: 410px;
-    height: 530px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 8px black;
-}
-#divR img{
-    width: 25%;
-    margin: 10px;
-}
-.contenedorDIV {
-    background: #EEE;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    z-index: 10;
-}
-.login hr{
-    width: 70%;
-    margin-left: 60px;
-    border: 0.3px solid black;
-    border-radius: 30px;
-    margin-bottom: 10px;
-}
-.login h3{
-    color: #E7F6FC;
-    font-size: 2em;
-    text-shadow: 0px 0px 2px black;
-}
-.inicioS {
-    font-size: 1.6em;
-    margin: 5px;
-}
-.completaLogin{
-    color:#E7F6FC;
-    background-color: #ED7F05;
-    height: 70px;
-    width: 320px;
-    border: 0;
-    border-radius: 50px;
-    box-shadow: 0px 0px 8px black;
-}
-input{
-    font-size: 1.4em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-family: 'Fredoka', sans-serif;
-    border-radius: 5px;
-    padding: 5px;
-}
-.Registrate{
-    text-shadow: 0px 0px 2px black;
-    font-size: 1.2em;
-    color: #E7F6FC;
-}
-.Registrate a{
-    color: #E7F6FC;
-}
-.registro h3{
-    color: #E7F6FC;
-    font-size: 2em;
-    text-shadow: 0px 0px 2px black;
-}
-.registro hr{
-    width: 70%;
-    margin-left: 60px;
-    border: 0.3px solid black;
-    border-radius: 30px;
-    margin-bottom: 10px;
-}
-.textobotonLogin{
-    text-shadow: 0px 0px 2px black;
-    font-size: 1.2em;
-    color: #E7F6FC;
-}
-.textobotonLogin a{
-    color: #E7F6FC;
-}
-.sesionIniciada{
-    display: flex;
-    flex-flow: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-.sesionIniciada input{
-    border-radius: 10px;
-    background-color: white;
-    color: #ED7F05;
-    border: 1px solid #ED7F05;
-    padding: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-right: 5px;
-    box-shadow: 0px 0px 2px black;
-}
-.sesionIniciada img{
-    border-radius: 50%;
-}
+    header{
+        background-color: #E7F6FC;
+    }
+    header a{
+        text-decoration: none;
+    }
+    .titulo{
+        color: #87DDFF;
+        text-shadow: 0px 2px 2px black;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:center;
+        width: 300px;
+    }
+    .titulo img{
+        padding-right: 10px;
+        width: 30%;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+    }
+    .secciones{
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        width: 500px;
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items:center;
+        width: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .redes img{
+        width: 50px;
+        padding: 5px;
+    }
+    .home,.adopta,.foro,.contacto{
+        border-radius: 10px;
+        background-color: #ED7F05;
+        color: #E7F6FC;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: 0px 0px 2px black;
+    }
+    .entra{
+        border-radius: 10px;
+        background-color: white;
+        color: #ED7F05;
+        border: 1px solid #ED7F05;
+        padding: 10px;
+        padding-left: 35px;
+        padding-right: 35px;
+        box-shadow: 0px 0px 2px black;
+    }
 
-/*-------------------------------- FIN HEADER ------------------------------*/
+    #divL{
+        display: none;
+        position: absolute;
+        top: 300px;
+        background-color: #87DDFF;
+        text-align: center;
+        width: 410px;
+        height: 420px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 8px black;
+    }
+    #divL img{
+        width: 25%;
+        margin: 10px;
+    }
+    #divR{
+        display: none;
+        position: absolute;
+        top: 300px;
+        background-color: #87DDFF;
+        text-align: center;
+        width: 410px;
+        height: 530px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 8px black;
+    }
+    #divR img{
+        width: 25%;
+        margin: 10px;
+    }
+    .contenedorDIV {
+        background: #EEE;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+    }
+    .login hr{
+        width: 70%;
+        margin-left: 60px;
+        border: 0.3px solid black;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+    .login h3{
+        color: #E7F6FC;
+        font-size: 2em;
+        text-shadow: 0px 0px 2px black;
+    }
+    .inicioS {
+        font-size: 1.6em;
+        margin: 5px;
+    }
+    .completaLogin{
+        color:#E7F6FC;
+        background-color: #ED7F05;
+        height: 70px;
+        width: 320px;
+        border: 0;
+        border-radius: 50px;
+        box-shadow: 0px 0px 8px black;
+    }
+    input{
+        font-size: 1.4em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: 'Fredoka', sans-serif;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .Registrate{
+        text-shadow: 0px 0px 2px black;
+        font-size: 1.2em;
+        color: #E7F6FC;
+    }
+    .Registrate a{
+        color: #E7F6FC;
+    }
+    .registro h3{
+        color: #E7F6FC;
+        font-size: 2em;
+        text-shadow: 0px 0px 2px black;
+    }
+    .registro hr{
+        width: 70%;
+        margin-left: 60px;
+        border: 0.3px solid black;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+    .textobotonLogin{
+        text-shadow: 0px 0px 2px black;
+        font-size: 1.2em;
+        color: #E7F6FC;
+    }
+    .textobotonLogin a{
+        color: #E7F6FC;
+    }
+    .sesionIniciada{
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .sesionIniciada input{
+        border-radius: 10px;
+        background-color: white;
+        color: #ED7F05;
+        border: 1px solid #ED7F05;
+        padding: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 5px;
+        box-shadow: 0px 0px 2px black;
+    }
+    .sesionIniciada img{
+        border-radius: 50%;
+    }
 
-.contenedor{
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.bannerperro{
-    position: absolute;
-    z-index: -5;
-    width: 100%;
-}
-.contenedor{
-    margin: auto 0;
-}
-.contenedor a {
-    text-decoration: none;
-}
-.primerbanner{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-}
-.primerbanner h1{
-    padding-bottom: 1.04vw;
-    font-weight: 500;
-}
-.separador{
-    width: 22vw;
-}
-.textoprimerbanner{
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    color: #ED7F05;
-    margin-top: 4.68vw;
-    font-size: 2em;
-    width: 41vw;
-    text-align: center;
-    margin-bottom: 5.20vw;
-}
-.textoprimerbanner h2{
-    font-weight: 300;
-}
-.botoncontacto{
-    border-radius: 10px;
-    background-color:#E7F6FC;
-    color:#87DDFF;
-    padding-top: 1.30vw;
-    padding-bottom: 1.30vw;
-    padding-left: 2.34vw;
-    padding-right: 2.34vw;
-    box-shadow: 0px 0px 5px black;
-    margin: 1.56vw;
-    font-size: 0.8em;
-}
-.perroygato{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    background-color: #E7F6FC;
-    padding: 1.56vw;
-}
-.perroygato p{
-    font-size: 1.5em;
-    width: 41.66vw;
-    padding-top: 1.56vw;
-    padding-bottom: 1.56vw;
-}
-.anuncioPerro a{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 15.62vw;
-}
-.anuncioGato a{
-    width: 15.62vw;
-}
-.perroygato h1{
-    color: #87DDFF;
-    text-shadow: 1px 1px 1px black;
-}
-.anuncioPerro{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.anuncioGato{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-.infoGato,.infoPerro{
-    display: flex;
-    flex-direction: column;
-}
-.infoPerro{
-    display: flex;
-    flex-flow: column;
-    justify-content: end;
-    align-items: flex-end;
-}
-.botonVerPerro,.botonVerGato{
-    text-align: center;
-    border-radius: 0.52vw;
-    background-color:#87DDFF;
-    color:#E7F6FC;
-    padding-top: 0.52vw;
-    padding-bottom: 0.52vw;
-    width: 15.62vw;
-    box-shadow: 0px 0px 2px black;
-    font-size: 1.4em;
-    text-shadow: 0px 0px 2px black;
-}
-.headergato{
-    width: 100%;
-    position: absolute;
-    z-index: -5;
-    /* width: 1903px;
-    min-width: 1000px; */
-}
-.segundobanner{
-    font-family: 'Raleway', sans-serif;
-    color: #E7F6FC;
-    font-size: 1.2em;
-    text-align: center;
-    width: 46.87vw;
-}
-.textosegundobanner{
-    margin: 1.56vw 0px 1.30vw 10.41vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-}
-.textosegundobanner h1{
-    margin: 1.041vw;
-    text-shadow: 0px 0px 10px black;
-}
-.textosegundobanner h2{
-    font-weight: 300;
-    text-shadow: 0px 0px 10px black;
-}
-.botonbannergato{
-    border-radius: 10px;
-    background-color:#ED7F05;
-    color:#E7F6FC;
-    padding-top: 1.30vw;
-    padding-bottom: 1.30vw;
-    padding-left: 2.34vw;
-    padding-right: 2.34vw;
-    box-shadow: 0px 0px 10px black;
-    margin: 1.56vw;
-    font-size: 1.2em;
-    font-weight: bolder;
-}
-.tercerbanner{
-    font-family: 'Raleway', sans-serif;
-    background-color: #E7F6FC;
-    padding: 2.08vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-}
-.tercerbanner h1{
-    color: #ED7F05;
-}
+    /*-------------------------------- FIN HEADER ------------------------------*/
 
-/*-------------------------------- FOOTER ------------------------------*/
+    .contenedor{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bannerperro{
+        position: absolute;
+        z-index: -5;
+        width: 100%;
+    }
+    .contenedor{
+        margin: auto 0;
+    }
+    .contenedor a {
+        text-decoration: none;
+    }
+    .primerbanner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+    }
+    .primerbanner h1{
+        padding-bottom: 1.04vw;
+        font-weight: 500;
+    }
+    .separador{
+        width: 22vw;
+    }
+    .textoprimerbanner{
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        color: #ED7F05;
+        margin-top: 4.68vw;
+        font-size: 2vw;
+        width: 41vw;
+        text-align: center;
+    }
+    .textoprimerbanner h2{
+        font-weight: 300;
+    }
+    .botoncontacto{
+        border-radius: 10px;
+        background-color:#E7F6FC;
+        color:#87DDFF;
+        padding-top: 1.30vw;
+        padding-bottom: 1.30vw;
+        padding-left: 2.34vw;
+        padding-right: 2.34vw;
+        box-shadow: 0px 0px 5px black;
+        margin: 1.56vw;
+        font-size: 1.5vw;
+    }
+    .perroygato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        background-color: #E7F6FC;
+        padding: 1.56vw;
+    }
+    .perroygato img{
+        width: 40%;
+    }
+    .perroygato p{
+        font-size: 1.5vw;
+        width: 41.66vw;
+        padding-top: 1.56vw;
+        padding-bottom: 1.56vw;
+    }
+    .anuncioPerro a{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 15.62vw;
+    }
+    .anuncioGato a{
+        width: 15.62vw;
+    }
+    .perroygato h1{
+        color: #87DDFF;
+        text-shadow: 1px 1px 1px black;
+    }
+    .anuncioPerro{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .anuncioGato{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .infoGato,.infoPerro{
+        display: flex;
+        flex-direction: column;
+    }
+    .infoPerro{
+        display: flex;
+        flex-flow: column;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    .botonVerPerro,.botonVerGato{
+        text-align: center;
+        border-radius: 0.52vw;
+        background-color:#87DDFF;
+        color:#E7F6FC;
+        padding-top: 0.52vw;
+        padding-bottom: 0.52vw;
+        width: 15.62vw;
+        box-shadow: 0px 0px 2px black;
+        font-size: 1.4vw;
+        text-shadow: 0px 0px 2px black;
+    }
+    .headergato{
+        width: 100%;
+        position: absolute;
+        z-index: -5;
+    }
+    .segundobanner{
+        font-family: 'Raleway', sans-serif;
+        color: #E7F6FC;
+        font-size: 1.2vw;
+        text-align: center;
+        width: 60vw;
+    }
+    .textosegundobanner{
+        margin: 1.56vw 0vw 1.30vw 10.41vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .textosegundobanner h1{
+        margin: 1.041vw;
+        text-shadow: 0px 0px 10px black;
+    }
+    .textosegundobanner h2{
+        font-weight: 300;
+        text-shadow: 0px 0px 10px black;
+    }
+    .botonbannergato{
+        border-radius: 10px;
+        background-color:#ED7F05;
+        color:#E7F6FC;
+        padding-top: 1.30vw;
+        padding-bottom: 1.30vw;
+        padding-left: 2.34vw;
+        padding-right: 2.34vw;
+        box-shadow: 0px 0px 10px black;
+        margin: 1.56vw;
+        font-size: 1.5vw;
+        font-weight: bolder;
+    }
+    .tercerbanner{
+        font-family: 'Raleway', sans-serif;
+        background-color: #E7F6FC;
+        padding: 2.08vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .tercerbanner h1{
+        color: #ED7F05;
+    }
 
-footer{
-    display: flex;
-    flex-flow: column;
-}
-.piedepagina{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    background-color:#E7F6FC;
-    border-top: 1px solid black;
-    padding-top: 10px;
-}
-.pie1{
-    color: #87DDFF;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.tituloPie{
-    text-shadow: 0px 2px 2px black;
-}
-.pie1 img{
-    padding-right: 10px;
-    width: 70px;
-}
-.redesPie img{
-    margin: 20px;
-    width: 50px;
-}
-li{
-    list-style:none;
-    color: black;
-    font-size: 1.2em;
-}
-.pie2{
-    margin: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.pie3 h2{
-    font-weight: 100;
-}
-.textoPie{
-    background-color: #002b3c;
-    padding: 30px;
-    text-align: center;
-    color: #E7F6FC;
+    /*-------------------------------- FOOTER ------------------------------*/
+
+    footer{
+        display: flex;
+        flex-flow: column;
+    }
+    .piedepagina{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        background-color:#E7F6FC;
+        border-top: 1px solid black;
+        padding-top: 10px;
+    }
+    .pie1{
+        color: #87DDFF;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+    .tituloPie{
+        text-shadow: 0px 2px 2px black;
+    }
+    .pie1 img{
+        padding-right: 10px;
+        width: 70px;
+    }
+    .redesPie img{
+        margin: 20px;
+        width: 50px;
+    }
+    li{
+        list-style:none;
+        color: black;
+        font-size: 1.2em;
+    }
+    .pie2{
+        margin: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .pie3 h2{
+        font-weight: 100;
+    }
+    .textoPie{
+        background-color: #002b3c;
+        padding: 30px;
+        text-align: center;
+        color: #E7F6FC;
+    }
 }

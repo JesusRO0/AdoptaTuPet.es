@@ -282,23 +282,5 @@ class AnimalModel{
 
     }
 
-    function subirAnimal(){
-
-        try{
-            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
-
-            if($db->connect_errno){
-
-                //Error al soltar un error la función
-                throw new Exception("No se ha podido acceder a la basede datos");
-
-            }
-        }catch(Exception $ex){
-            //Otro tipo de error
-            echo $ex->getMessage(), "<br>";
-
-        }
-    }
-
 }
 ?>

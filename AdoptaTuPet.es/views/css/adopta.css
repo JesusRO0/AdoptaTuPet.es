@@ -220,11 +220,11 @@ input{
 }
 .filtro h2{
     margin: 20px;
-    font-size: 2.4em;
+    font-size: 2.4vw;
     text-shadow: 0 0 1px black;
 }
 .filtro select{
-    font-size: 1.5em;
+    font-size: 1.6vw;
     margin: 10px;
     border: 0;
     border-radius: 5px;
@@ -233,7 +233,7 @@ input{
     color:#ED7F05;
 }
 .filtro input{
-    font-size: 1.5em;
+    font-size: 1.6vw;
     margin: 10px;
     border: 0;
     border-radius: 5px;

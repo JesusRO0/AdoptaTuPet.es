@@ -214,8 +214,6 @@ if(isset($_POST['cerrarSesion'])){
 
         <?php
 
-        //Cuando se pulsa en ingresar un nuevo producto podemos introducir los datos de él con su imagen
-        // y subirlo a la base de datos mitienda.
             if(isset($_POST["submit"])){
 
                 $check = getimagesize($_FILES["image"]["tmp_name"]);
@@ -226,7 +224,7 @@ if(isset($_POST['cerrarSesion'])){
                         $descripcion = $_POST['descripcion'];
                         $especie = $_POST['especie'];
                         $image = $_FILES['image']['tmp_name'];
-                        $miimagen = addslashes(file_get_contents($image));
+                        $imagen = addslashes(file_get_contents($image));
                         $localidad = $_POST['localidad'];
                         $raza = $_POST['raza'];
                         $sexo = $_POST['sexo'];
@@ -236,15 +234,14 @@ if(isset($_POST['cerrarSesion'])){
                         echo $nombre;
                         echo $descripcion;
                         echo $especie;
-                        echo $miimagen;
                         echo $localidad;
                         echo $raza;
                         echo $sexo;
                         echo $tamaño;
 
-                        $resultado = $bd->query("INSERT INTO animal(edad,nombre,descripcion,especie,imagen,localidad,raza,sexo,tamano) VALUES ('$edad','$nombre','$descripcion','$especie','$miimagen','$localidad','$raza','$sexo','$tamaño');");  
+                        AnimalesController::creaAnimalController($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño);
 
-                if($resultado){
+                if($animal){
                     echo "Se ha subido el animal correctamente.";
                 }else{
                     echo "La subida ha fallado, intentalo de nuevo.";
