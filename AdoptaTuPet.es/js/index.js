@@ -16,5 +16,6 @@ var miPerf = document.getElementById('miPerf');
 var cerSes = document.getElementById('cerSes');
 var h2Perf = document.getElementById('h2Perf');
 var imgPerf = document.getElementById('imgPerf');
-
+var login = document.getElementById('divL');
+var registro = document.getElementById('divR');
 

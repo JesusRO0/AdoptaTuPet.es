@@ -127,22 +127,27 @@ session_start();
             <form action="#" method="POST">
                 <p>
                     <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="email">
+                    <div id="errorEmail" class="hidden">* Ha introducido de manera incorrecta el email, por favor pruebe de nuevo</div>
                 </p>
 
                 <p>
-                    <input type="password" name="contraseña" placeholder="  Contraseña" class="inserta inicioS" id="contraseña">
+                    <input type="password" name="password" placeholder="  Contraseña" class="inserta inicioS" id="password">
+                    <div id="errorPassword" class="hidden">* Ha introducido de manera incorrcecta la contraseña, por favor pruebe de nuevo</div>
                 </p>
 
                 <p>
-                    <input type="password" name="Repcontraseña" placeholder="  Repetir Contraseña" class="inserta inicioS" id="Repcontraseña">
+                    <input type="password" name="confirmaPassword" placeholder="  Repetir Contraseña" class="inserta inicioS" id="confirmaPassword">
+                    <div id="errorConfirmaPassword" class="hidden">* La contraeña que ha introducido no coincide</div>
                 </p>
 
                 <p>
                     <input type="text" name="usuario" placeholder="  Nombre Usuario" class="inserta inicioS" id="usuario">
+                    <div id="errorUsuario" class="hidden">* Ha introducido de manera incorrecta el usuario, por favor pruebe de nuevo</div>
                 </p>
 
                 <p>
-                    <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro" >
+                    <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro">
+                    <div id="errorFormulario" class="hidden"><strong>Debe rellenar todos los campos correctamente.</strong></div>
                 </p>
 
                 <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>
@@ -339,6 +344,7 @@ session_start();
     <script src="/model/js/index.js"></script>
     <script src="/model/js/loginAjax.js"></script> -->
     <script src="../js/openDivs.js"></script>
+    <script src="../js/index.js"></script>
     <!-- <script src="/model/js/registerAjax.js"></script> -->
 
 </body>
