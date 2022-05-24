@@ -213,6 +213,9 @@ body{
     .sesionIniciada img{
         border-radius: 50%;
     }
+    #errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
+        display: none;
+    }
 
     /*-------------------------------- FIN HEADER ------------------------------*/
 
