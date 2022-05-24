@@ -1,6 +1,7 @@
 //Validacion de Registro
 
 document.getElementById("email").addEventListener("blur", function(ev){
+    let email = document.getElementById("email").value;
 
     if (email != "") {
         if (!expEmail.test(email)) {
@@ -13,10 +14,11 @@ document.getElementById("email").addEventListener("blur", function(ev){
             rellenadoCamposForm[0] = true;
         }
     }
-    ev.preventDefault();
+    //ev.preventDefault();
 });
 
 document.getElementById("password").addEventListener("blur", function(ev){
+    let password = document.getElementById("password").value;
 
     if (password != "") {
         if (!expPassword.test(password)) {
@@ -33,6 +35,8 @@ document.getElementById("password").addEventListener("blur", function(ev){
 
 
 document.getElementById("confirmaPassword").addEventListener("blur", function(ev){
+    let confirmaPassword = document.getElementById("confirmaPassword").value;
+    let password2 = document.getElementById("password").value;
 
     if (confirmaPassword != "") {
         if (password2 != confirmaPassword) {
@@ -49,6 +53,7 @@ document.getElementById("confirmaPassword").addEventListener("blur", function(ev
 });
 
 document.getElementById("usuario").addEventListener("blur", function(ev){
+    let usuario = document.getElementById("usuario").value;
 
     if (usuario != "") {
         datosUsuario[3] = usuario;

@@ -104,11 +104,11 @@ session_start();
 
             <form action="#" method="POST">
                 <p>
-                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog">
+                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
                 </p>
 
                 <p>
-                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog">
+                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,}$" required>
                 </p>
                 <p>
                     <input type="submit" name="completarLogin" value="Entra" class="completaLogin" id="botonLogin" >
@@ -262,8 +262,9 @@ session_start();
     <script src="/model/js/enter.js"></script>
     
     <script src="/model/js/loginAjax.js"></script> -->
-    <script src="./js/openDivs.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/expresionesRegulares.js"></script>
+    <script src="./js/openDivs.js"></script>
     <script src="./js/registro.js"></script>
     <!-- <script src="/model/js/registerAjax.js"></script> -->
 
