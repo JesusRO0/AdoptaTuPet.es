@@ -31,8 +31,8 @@ if(isset($_POST['completarRegistro'])){
 
     $email = $_POST['email'];
     $usuario = $_POST['usuario'];
-    $contraseña = $_POST['contraseña'];
-    $repContraseña = $_POST['Repcontraseña'];
+    $contraseña = $_POST['password'];
+    $repContraseña = $_POST['confirmaPassword'];
 
     UserController::creaUserController($email, $usuario, $contraseña, $repContraseña);
 }
@@ -43,7 +43,6 @@ if(isset($_POST['completarLogin'])){
     $contraseña = $_POST['passSesion'];
 
     UserController::iniciarUser($email, $contraseña);
-    echo $_SESSION['email'];
 }
 
 if(isset($_POST['cerrarSesion'])){

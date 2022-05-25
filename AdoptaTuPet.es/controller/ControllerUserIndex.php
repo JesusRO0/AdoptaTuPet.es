@@ -16,7 +16,7 @@ class UserController{
 
             $creaUsuario = new User();
 
-            $resultado = $creaUsuario->creaUser($email, $usuario,$contraseña);
+            $resultado = $creaUsuario->creaUser($email, $usuario, $contraseña);
 
             return $resultado;
 
@@ -26,38 +26,6 @@ class UserController{
         }
 
     }
-
-
-    /*
-        
-        Función que accede al modelo de User para montar los divs necesarios para la página dedicada del usuario.
-        @see UserModel/muestraDatosUsuario
-    
-    */
-    /*public static function montaUsuario($idUser){
-
-        $user = new User();
-
-        $datos = $user->muestraDatosUsuario();
-
-        echo "<div class='contenedorPropio' id='contenedorPropio'>
-            <div class='fotoPerfil'>
-                <img width='100' src='data:image/png;base64, ".base64_encode($datos['foto'])."'></img>
-            </div>
-            <form action='./model/subeImagenUser.php' method='post' enctype='multipart/form-data'>
-                <input type='file' name='cambiaFoto'>
-            </form>
-        
-            <div class='inputs'>
-                <input type='text' name='nombre' id='nombre' class='nombre texto' value='".$datos['nombre']."'>
-                <input type='text' name='alias 'class='alias texto' id='alias' value='".$datos['correo']."'>
-                <!--<input type='text' name='desc' class='desc texto' id='desc'>-->
-                <div class='saveButton texto' id='saveButton'><p>Guardar</p></div>
-            </div>
-        
-        </div>";
-
-    }*/
 
     /*
         
@@ -103,9 +71,9 @@ class UserController{
 
     public static function recogerFoto($email){
         
-        $usuario = new User();
+        $user = new User();
 
-        $imagen = $usuario -> fotoPerfil($email);
+        $imagen = $user -> fotoPerfil($email);
 
         return $imagen;
     }

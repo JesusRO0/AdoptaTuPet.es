@@ -50,7 +50,7 @@ ini_set("display_errors", 1);
             if($consulta->fetch_object()){
 
                 //Si da error de que ya existe el usuario lanzamos una excepción
-                throw new Exception("Ese usuario ya existe.", 2);
+                throw new Exception("<strong>Ese usuario ya existe.</strong>", 2);
 
             }else{
 
@@ -94,6 +94,7 @@ ini_set("display_errors", 1);
 
         }
 
+        try{
         //Realizamos la consulta para comprobar que la contraseña sea la misma
         $consulta = $db->query("SELECT email, contrasena FROM usuario WHERE email = '$email';");
 
@@ -109,15 +110,24 @@ ini_set("display_errors", 1);
             }
 
             else{
+                //Si da error de que ya existe el usuario lanzamos una excepción
+            throw new Exception("<strong>Contraseña incorrecta.</strong>");
                 echo '<script>document.getElementById("errorL").innerHTML="Contraseña incorrecta.";</script>';
             }
         }
 
         else{
+            //Si da error de que ya existe el usuario lanzamos una excepción
+            throw new Exception("<strong>El email introducido no existe.</strong>");
             echo '<script>document.getElementById("errorL").innerHTML="El email no existe.";</script>';
         }
 
-        
+    }catch(Exception $ex){
+
+        //Si no, lanzamos otra
+        echo $ex->getMessage(), "<br>";
+
+    }
 
         //Cerramos la base de datos
         $db->close();

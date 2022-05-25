@@ -29,8 +29,8 @@ session_start();
 
         $email = $_POST['email'];
         $usuario = $_POST['usuario'];
-        $contraseña = $_POST['contraseña'];
-        $repContraseña = $_POST['Repcontraseña'];
+        $contraseña = $_POST['password'];
+        $repContraseña = $_POST['confirmaPassword'];
 
         UserController::creaUserController($email, $usuario, $contraseña, $repContraseña);
     }
@@ -86,6 +86,7 @@ session_start();
 
                         echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
                     }
+                    
 
                 ?>
                 
@@ -116,7 +117,6 @@ session_start();
 
                 <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
                 <p class="errorL"></p>
-
             </form>
 
 
@@ -152,6 +152,7 @@ session_start();
                 <p>
                     <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro">
                     <div id="errorFormulario" class="hidden"><strong>Debe rellenar todos los campos correctamente.</strong></div>
+                    <div id="comprobacionEmail"></div>
                 </p>
 
                 <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>

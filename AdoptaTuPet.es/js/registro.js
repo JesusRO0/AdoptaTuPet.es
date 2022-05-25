@@ -72,11 +72,12 @@ document.getElementById("formularioRegistro").addEventListener("submit", functio
     }
 
     if (contador == 4){
-        alert("Ha rellenado satisfactoriamente el formulario, sus datos son los siguientes: " + datosUsuario);
+
     } else {
+        ev.preventDefault();
         errorFormulario.style.color = "red";
         errorFormulario.style.display = "block";
+
     }
-    ev.preventDefault();
 });
 

@@ -27,8 +27,8 @@ session_start();
 
         $email = $_POST['email'];
         $usuario = $_POST['usuario'];
-        $contraseña = $_POST['contraseña'];
-        $repContraseña = $_POST['Repcontraseña'];
+        $contraseña = $_POST['password'];
+        $repContraseña = $_POST['confirmaPassword'];
 
         UserController::creaUserController($email, $usuario, $contraseña, $repContraseña);
     }
@@ -39,7 +39,6 @@ session_start();
         $contraseña = $_POST['passSesion'];
 
         UserController::iniciarUser($email, $contraseña);
-        echo $_SESSION['email'];
     }
 
     if(isset($_POST['cerrarSesion'])){
