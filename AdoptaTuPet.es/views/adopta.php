@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 session_start();
 ?>
 
@@ -76,9 +78,12 @@ session_start();
                         
                         echo "<div class='sesionIniciada'> 
                         ".UserController::recogerFoto($_SESSION['email'])."
-                        <form method='POST' action='#'>
-                            <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
-                        </form>
+                            <div class='menuSesion'>
+                            <a href='./views/perfil.php'><h3 class='verPerfil'>Ver Perfil</h3></a>
+                            <form method='POST' action='#'>
+                                <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
+                            </form>
+                            </div>
                         </div>";
                     }else{
 
@@ -168,37 +173,39 @@ session_start();
         </div>
     </div>
     <div class="contenedor" id="Contenedor">
-        <div class="filtro">
-            <h2>Filtrar</h2> 
-            <select name="especie" id="especie">
-                <option value="perros">Perros</option>
-                <option value="gatos">Gatos</option>
-            </select>
-            <input type="text" name="localidad" id="localidad" placeholder="Localidad">
-            <select name="raza" id="raza">
-                <option value="raza" disabled selected>Raza</option>
-                <?php
-                    AnimalesController::filtrarRazas();
-                ?>
-            </select>
-            <select name="sexo" id="sexo">
-                <option value="sexo" disabled selected>Sexo</option>
-                <option value="hembra">Hembra</option>
-                <option value="Macho">Macho</option>
-            </select>
-            <select name="edad" id="edad">
-                <option value="edad" disabled selected>Edad</option>
-                <option value="cachorro">Cachorro</option>
-                <option value="adulto">Adulto</option>
-                <option value="senior">Sénior</option>
-            </select>
-            <select name="tamaño" id="tamaño">
-                <option value="Tamaño" disabled selected>Tamaño</option>
-                <option value="pequeño">Pequeño</option>
-                <option value="mediano">Mediano</option>
-                <option value="grande">Grande</option>
-            </select>
-        </div>
+        <form action="#" method="POST">
+            <div class="filtro">
+                <select name="especie" id="especie">
+                    <option value="Perro">Perros</option>
+                    <option value="Gato">Gatos</option>
+                </select>
+                <input type="text" name="localidad" id="localidad" placeholder="Localidad">
+                <select name="raza" id="raza">
+                    <option value="raza" disabled selected>Raza</option>
+                    <?php
+                        AnimalesController::filtrarRazas();
+                    ?>
+                </select>
+                <select name="sexo" id="sexo">
+                    <option value="sexo" disabled selected>Sexo</option>
+                    <option value="Hembra">Hembra</option>
+                    <option value="Macho">Macho</option>
+                </select>
+                <select name="edad" id="edad">
+                    <option value="edad" disabled selected>Edad</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Adulto">Adulto</option>
+                    <option value="Senior">Sénior</option>
+                </select>
+                <select name="tamaño" id="tamaño">
+                    <option value="Tamaño" disabled selected>Tamaño</option>
+                    <option value="Pequeño">Pequeño</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Grande">Grande</option>
+                </select>
+            </div>
+            <input type="submit" name="filtrarSubmit" value="Filtrar" class="filtrarSubmit" id="filtrarSubmit">
+        </form>
         
         <div class="contenedorAnimales">
 
@@ -246,6 +253,12 @@ session_start();
 
                     $raza = '';
                 }
+                echo $especie;
+                echo $localidad;
+                echo $sexo;
+                echo $edad;
+                echo $tamaño;
+                echo $raza;
                 AnimalesController::filtarAnimales($edad, $especie, $localidad , $raza, $sexo, $tamaño);
 
             ?>

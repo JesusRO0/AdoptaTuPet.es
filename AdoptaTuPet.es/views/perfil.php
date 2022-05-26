@@ -166,27 +166,25 @@ session_start();
         <div class="perfil">
             <h1>Mi Perfil</h1>
             <hr>
-            <form action="#" method="POST">
                 <p>
                     <label for="usuario">Nombre de Usuario*</label>
-                    <input type="text" name="usuario" placeholder="  Usuario" class="inserta inicioS" id="usuario">
+                    <input type="text" name="usuario" placeholder="  Usuario" class="inserta inicioS" id="usuarioCambio">
                 </p>
 
                 <p>
                     <label for="email">Email*</label>
-                    <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="email">
+                    <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="emailCambio">
                 </p>
 
                 <p>
                     <label for="direccion">Direccion</label>
-                    <input type="text" name="direccion" placeholder="  Direccion" class="inserta inicioS" id="direccion">
+                    <input type="text" name="direccion" placeholder="  Direccion" class="inserta inicioS" id="direccionCambio">
                 </p>
 
                 <p>
-                    <input type="submit" name="Guardar" value="Guardar" class="guardar" id="Guardar" >
+                    <input type="button" name="Guardar" value="Guardar" class="guardar" id="Guardar" >
                 </p>
-
-            </form>
+                <p id="mensaje"></p>
         </div>
         <div class="cambioImagen">
             <?php
@@ -202,10 +200,15 @@ session_start();
                 }
 
             ?>
+            <form action="../model/FotoModel.php" method="POST" enctype="multipart/form-data">
+
+            <input type="file" name="image"/>
             <input type="submit" name="subirImagen" value="Cambiar Imagen" class="subirImagen" id="subirImagen">
+
+            </form>
             <?php
 
-            if($_SESSION['email'] == "adoptatupet@gmail.com"){
+            if($_SESSION['email'] == "adoptatupet@gmail.es"){
 
                  echo "<a class='subirAnimal' href='./subirAnimal.php'><h2>Subir Animal</h2></a>";           
             }
@@ -259,6 +262,7 @@ session_start();
     <script src="/model/js/loginAjax.js"></script> -->
     <script src="../js/openDivs.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/AjaxUsuario.js"></script>
     <!-- <script src="/model/js/registerAjax.js"></script> -->
 
 </body>

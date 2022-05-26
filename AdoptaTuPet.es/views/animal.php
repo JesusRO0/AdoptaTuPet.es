@@ -22,6 +22,8 @@ session_start();
     <?php
 
     require_once "../controller/ControllerUser.php";
+    require_once "../controller/AnimalesController.php"; 
+    require_once "../controller/APIController.php";
 
     if(isset($_POST['completarRegistro'])){
 
@@ -75,9 +77,12 @@ session_start();
                         
                         echo "<div class='sesionIniciada'> 
                         ".UserController::recogerFoto($_SESSION['email'])."
-                        <form method='POST' action='#'>
-                            <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
-                        </form>
+                            <div class='menuSesion'>
+                            <a href='./perfil.php'><h3 class='verPerfil'>Ver Perfil</h3></a>
+                            <form method='POST' action='#'>
+                                <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
+                            </form>
+                            </div>
                         </div>";
                     }else{
 
@@ -158,22 +163,61 @@ session_start();
     </div>
     <div class="contenedor" id="Contenedor">
 
+    <?php
+
+        $idAnimal = $_GET['idAnimal'];
+
+        $mostrarAnimal = AnimalesController::MostrarAnimalPerfil($idAnimal);       
+
+    ?>
+
         <div class="animal">
 
             <div class="imagenAnimal">
-                <img src="./img/perro (1).png">
+                <?php
+                    echo "<img src='data:image/png;base64, ".base64_encode($mostrarAnimal[0]['imagen'])."'>";
+                ?>
             </div>
 
             <div class="perfilAnimal">
-                <h1>Perro</h1>
-                <p>Asturias</p>
+                <h1>
+                    <?php
+                     echo $mostrarAnimal[0]['nombre'];
+                    ?>
+                </h1>
+                <p>
+                    <?php
+                     echo $mostrarAnimal[0]['localidad'];
+                    ?>
+                </p>
                 <hr>
                 <h2>Detalles</h2>
                 <ol>
-                    <li><p>Raza Mestizo</p></li>
-                    <li><p>Sexo Macho</p></li>
-                    <li><p>F.Nacimiento 19.04.2015</p></li>
-                    <li><p>Tamaño Desconocido</p></li>
+                    <li><p>
+                    <?php
+                     echo $mostrarAnimal[0]['especie'];
+                    ?>
+                    </p></li>
+                    <li><p>Raza: 
+                        <?php
+                        echo $mostrarAnimal[0]['raza'];
+                        ?>
+                    </p></li>
+                    <li><p>Sexo:
+                    <?php
+                     echo $mostrarAnimal[0]['sexo'];
+                    ?>
+                    </p></li>
+                    <li><p>Edad:
+                    <?php
+                     echo $mostrarAnimal[0]['edad'];
+                    ?>
+                    </p></li>
+                    <li><p>Tamaño:
+                    <?php
+                     echo $mostrarAnimal[0]['tamano'];
+                    ?>
+                    </p></li>
                 </ol>
                 <div class="adoptar">
                     <button>¡QUIERO ADOPTAR!</button>
@@ -191,23 +235,30 @@ session_start();
         </div>
         <div class="descripcion">
             <h2>Descripción</h2>
-            <p>Esta preciosidad se llama Miel y tiene 11 meses aprox. Fue abandonada cerca de Barcelona siendo solo una cachorrita. Entró con muchísimo miedo y desorientada…pero seguro que lo peor ya ha pasado y pronto encontraremos un buen hogar para ella.
-
-            Cómo podéis ver, más bonita no puede ser. 
-
-            Por favor ayudarme a difundirla; a ver si entre todos conseguimos que cambie su suerte y tengo una familia pronto. Miel está sana y se entrega esterilizada, debidamente vacunada y desparasitada. Míel está en una protectora cerca de Barcelona pero puede viajar a cualquier punto de la península. Podéis contactar conmigo aquí para ampliar información: 646 958 099 juancarcasta@gmail.com . Abrazos y gracias.</p>
+            <p>
+                <?php
+                    echo $mostrarAnimal[0]['descripcion'];
+                ?>
+            </p>
         </div>
         <div>
-            <h1>API</h1>
+            <h1>Curiosidad Gatuna</h1>
+            <p>
+                <?php
+                
+                    echo API::APIFacts();
+                    
+                ?>
+            </p>
         </div>
-        <div class="similares">
+        <!--<div class="similares">
             <h2>Animales similares</h2>
             <div class="animalesSimilares">
                 <img src="./img/perro (1).png">
                 <img src="./img/perro (1).png">
                 <img src="./img/perro (1).png">
             </div>
-        </div>
+        </div> -->
     </div>
     </main>
 

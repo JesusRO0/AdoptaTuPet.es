@@ -78,9 +78,12 @@ if(isset($_POST['cerrarSesion'])){
                         
                         echo "<div class='sesionIniciada'> 
                         ".UserController::recogerFoto($_SESSION['email'])."
-                        <form method='POST' action='#'>
-                            <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
-                        </form>
+                            <div class='menuSesion'>
+                            <a href='./views/perfil.php'><h3 class='verPerfil'>Ver Perfil</h3></a>
+                            <form method='POST' action='#'>
+                                <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
+                            </form>
+                            </div>
                         </div>";
                     }else{
 

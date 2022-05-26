@@ -45,7 +45,7 @@ class AnimalesController{
 
         for($i = 0; $i < count($resultado); $i++){
 
-            echo "<div class='animal'>
+            echo "<a href='./animal.php?idAnimal=".$resultado[$i]['idAnimal']."'><div class='animal'>
                 <div class='fotoAnimal'>
                     <img src='data:image/png;base64, ".base64_encode($resultado[$i]['imagen'])."'>
                 </div>
@@ -53,7 +53,7 @@ class AnimalesController{
                     <p class='nombreAnimal'>".$resultado[$i]['nombre']."</p>
                     <p class='localidadAnimal'>".$resultado[$i]['localidad']."</p>
                 </div>
-            </div>";
+            </div></a>";
         }
 
     }
@@ -67,6 +67,15 @@ class AnimalesController{
 
             echo "<option value='$resultado[$i]'>$resultado[$i]</option>";
         }
+
+    }
+
+    public static function MostrarAnimalPerfil($idAnimal){
+
+        $MostrarAnimal = new AnimalModel();
+        $resultado = $MostrarAnimal -> mostrarAnimalPerfil($idAnimal);
+
+        return $resultado;
 
     }
 }

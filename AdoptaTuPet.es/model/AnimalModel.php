@@ -157,11 +157,11 @@ class AnimalModel{
 
         if($edad == '' && $especie == '' && $localidad == '' && $raza == '' && $sexo == '' && $tamaño == ''){
 
-            $filtro = $db -> query("SELECT imagen, nombre, localidad FROM animal");
+            $consulta = "SELECT imagen, nombre, localidad, idAnimal FROM animal";
             
         }else{
 
-            $consulta = 'SELECT imagen, nombre, localidad FROM animal WHERE ';
+            $consulta = 'SELECT imagen, nombre, localidad, idAnimal FROM animal WHERE ';
             $varios = false;
 
             if($edad != ''){
@@ -174,7 +174,7 @@ class AnimalModel{
 
                 if($varios){
 
-                    $consulta .= "AND especie = '$especie' ";
+                    $consulta .= " AND especie = '$especie' ";
 
                 }else{
 
@@ -187,7 +187,7 @@ class AnimalModel{
 
                 if($varios){
 
-                    $consulta .= "AND localidad = '$localidad' ";
+                    $consulta .= " AND localidad = '$localidad' ";
                 }else{
 
                     $consulta .= "localidad = '$localidad'";
@@ -198,7 +198,7 @@ class AnimalModel{
 
                 if($varios){
 
-                    $consulta .= "AND raza = '$raza' ";
+                    $consulta .= " AND raza = '$raza' ";
 
                 }else{
 
@@ -210,7 +210,7 @@ class AnimalModel{
 
                 if($varios){
 
-                    $consulta .= "AND sexo = '$sexo' ";
+                    $consulta .= " AND sexo = '$sexo' ";
 
                 }else{
 
@@ -222,7 +222,7 @@ class AnimalModel{
 
                 if($varios){
 
-                    $consulta .= "AND tamano = '$tamaño' ";
+                    $consulta .= " AND tamano = '$tamaño' ";
 
                 }else{
 
@@ -231,14 +231,17 @@ class AnimalModel{
                 }
             }
 
+            
+        }
             $resultado = $db -> query($consulta);
-
+            
             while($animal = $resultado -> fetch_object()){
 
                 $animales[$contador] = array(
                     'nombre' => $animal -> nombre,
                     'imagen' => $animal -> imagen,
                     'localidad' => $animal -> localidad,
+                    'idAnimal' => $animal -> idAnimal,
                 );
 
                 $contador++;
@@ -246,7 +249,6 @@ class AnimalModel{
             }
 
             return $animales;
-        }
 
     }
 
@@ -272,15 +274,55 @@ class AnimalModel{
 
         $filtraRaza =  $db -> query("SELECT raza FROM animal");
 
-        while($raza = $filtraRaza -> fetch_object()){
+        while($razaFiltro = $filtraRaza -> fetch_object()){
 
-            $razas[$contador] = "$raza -> raza";
+            $razas[$contador] = $razaFiltro -> raza;
             $contador++;
 
         }
 
         return $razas;
 
+    }
+
+    function mostrarAnimalPerfil($idAnimal){
+
+        $almacenAnimal = [];
+        $cont = 0;
+
+        try{
+            $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
+
+            if($db->connect_errno){
+
+                //Error al soltar un error la función
+                throw new Exception("No se ha podido acceder a la basede datos");
+
+            }
+        }catch(Exception $ex){
+            //Otro tipo de error
+            echo $ex->getMessage(), "<br>";
+
+        }
+
+        $verAnimal = $db -> query("SELECT edad,especie,imagen,localidad,raza,sexo,tamano,nombre,descripcion FROM animal WHERE idAnimal = $idAnimal");
+
+        while ($animales = $verAnimal -> fetch_object()) {
+
+            $almacenAnimal[$cont] = array(
+                "edad" => $animales -> edad,
+                "especie" => $animales -> especie,
+                "imagen" => $animales -> imagen,
+                "localidad" => $animales -> localidad,
+                "raza" => $animales -> raza,
+                "sexo" => $animales -> sexo,
+                "tamano" => $animales -> tamano,
+                "nombre" => $animales -> nombre,
+                "descripcion" => $animales -> descripcion,
+            );
+            $cont++;
+        }
+        return $almacenAnimal;
     }
 
 }

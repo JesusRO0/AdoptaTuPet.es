@@ -204,7 +204,7 @@ ini_set("display_errors", 1);
         }
     }
 
-    function cambiaUsuario($usuario, $localidad, $email, $idUsuario){
+    function cambiaUsuario($usuario, $localidad, $email, $emailOLD){
 
         try{
             $db = new mysqli('localhost', "administrador", "123456", "adoptatupet");
@@ -220,7 +220,8 @@ ini_set("display_errors", 1);
 
         }
 
-        $db -> query("UPDATE usuario SET usuario = '$usuario', localidad='$localidad', email='$email' WHERE idUsuario = $idUsuario");
+        $db -> query("UPDATE usuario SET usuario = '$usuario', localidad='$localidad', email='$email' WHERE email = '$emailOLD'");
+        $_SESSION['email'] = $email;
 
     }
 
