@@ -10,7 +10,7 @@ session_start();
     <meta charset="utf-8">
     <title>AdoptaTuPet.es</title>
     <link rel="icon" href="./img/iconoadoptatupet.png">
-    <link rel="stylesheet" href="./css/foro.css">
+    <link rel="stylesheet" href="../css/foro.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -76,7 +76,7 @@ session_start();
                         echo "<div class='sesionIniciada'> 
                         ".UserController::recogerFoto($_SESSION['email'])."
                             <div class='menuSesion'>
-                            <a href='./views/perfil.php'><h3 class='verPerfil'>Ver Perfil</h3></a>
+                            <a href='./perfil.php'><h3 class='verPerfil'>Ver Perfil</h3></a>
                             <form method='POST' action='#'>
                                 <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
                             </form>

@@ -10,7 +10,7 @@ session_start();
     <meta charset="utf-8">
     <title>AdoptaTuPet.es</title>
     <link rel="icon" href="./img/iconoadoptatupet.png">
-    <link rel="stylesheet" href="./css/perfil.css">
+    <link rel="stylesheet" href="../css/perfil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">

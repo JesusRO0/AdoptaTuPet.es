@@ -1,4 +1,5 @@
 <?php
+//Variables que le pasamos por php para que el ajax haga los cambios en el usuario y la funcion que lo realiza.
 
 session_start();
 
@@ -9,16 +10,7 @@ $usuario = $_GET['usuario'];
 $email = $_GET['email'];
 $direccion = $_GET['direccion'];
 $emailOLD = $_SESSION['email'];
-echo $usuario;
-echo $email;
-echo $direccion;
-echo $emailOLD;
-echo "<script>console.log('$usuario')</script>";
-echo "<script>console.log('$email')</script>";
-echo "<script>console.log('$direccion')</script>";
-echo "<script>console.log('$emailOLD')</script>";
 
- $usuarioNuevo -> cambiaUsuario($usuario, $direccion, $email, $emailOLD);
-
+$usuarioNuevo -> cambiaUsuario($usuario, $direccion, $email, $emailOLD);
 
 ?>
