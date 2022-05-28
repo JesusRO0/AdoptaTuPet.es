@@ -256,10 +256,10 @@ input{
 .perfilAnimal li{
     list-style: circle;
     margin-left: 25px;
-    font-size: 1.5vw;
+    font-size: 1.5em;
 }
 .perfilAnimal h1{
-    font-size: 2.5vw;
+    font-size: 2.5em;
     padding-bottom: 10px;
     padding-right: 10px;
 }
@@ -267,7 +267,7 @@ input{
     padding-bottom: 10px;
     padding-right: 10px;
     padding-top: 10px;
-    font-size: 1.8vw;
+    font-size: 1.8em;
 }
 .perfilAnimal img{
     width:35px;
@@ -280,6 +280,7 @@ input{
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+    font-size: 1.2em;
 }
 .imagenAnimal{
     width: 100%;
@@ -304,23 +305,35 @@ input{
     border: 0 solid black;
     background-color:#E7F6FC;
     width: 100%;
+    font-size: 1.2vw;
 }
 .descripcion{
     align-items: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Fredoka', sans-serif;
     background-color: #87DDFF;
     border-radius: 15px;
     padding: 20px;
     width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
-.descripcion h2{
+.descripcion h2,h1{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.descripcion p{
+    font-size: 1.4em;
+}
+.descripcion hr{
+    border: 1px solid #E7F6FC;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .adoptar button{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Fredoka', sans-serif;
     color:#E7F6FC;
     background-color: #ED7F05;
-    padding: 2vw;
+    padding: 1.6vw;
     border: 0 solid black;
     border-radius: 15px;
     font-size: 1.8vw;
@@ -331,6 +344,9 @@ input{
 .redesCompartir img{
     width: 50px;
     margin: 10px;
+}
+.perfilAnimal button{
+    cursor: pointer;
 }
 /*-------------------------------- FOOTER ------------------------------*/
 

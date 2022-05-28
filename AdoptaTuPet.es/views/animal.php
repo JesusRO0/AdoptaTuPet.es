@@ -215,7 +215,7 @@ session_start();
                         </p></li>
                     </ol>
                 <div class="adoptar">
-                    <button>¡QUIERO ADOPTAR!</button>
+                    <button onclick="adoptar()">¡QUIERO ADOPTAR!</button>
                     <div class="compartir">
                         <p>Compartir este animal puede salvarle la vida</p>
                         <div class="redesCompartir">
@@ -235,8 +235,7 @@ session_start();
                     echo $mostrarAnimal[0]['descripcion'];
                 ?>
             </p>
-        </div>
-        <div>
+            <hr>
             <h1>Curiosidad Gatuna</h1>
             <p>
                 <?php
@@ -284,15 +283,15 @@ session_start();
         <div class="textoPie"><p>© 2022 AdoptaTuPet. Todos los derechos reservados. Aviso legal, Política de privacidad y protección de datos personales.</p></div>
     </footer>
 
-    <!-- <script src="/model/js/ajax.js"></script>
-    <script src="/model/js/cambiaDatos.js"></script>
-    <script src="/model/js/clear.js"></script>
-    <script src="/model/js/enter.js"></script>
-    <script src="/model/js/index.js"></script>
-    <script src="/model/js/loginAjax.js"></script> -->
-    <script src="../js/openDivs.js"></script>
+    <script>
+        function adoptar() {
+            alert("¡GRACIAS POR ADOPTAR!\nTe enviaremos un correo con los datos de la protectora y ellos se pondrá en contacto con usted.");
+        }
+    </script>
     <script src="../js/index.js"></script>
-    <!-- <script src="/model/js/registerAjax.js"></script> -->
+    <script src="../js/expresionesRegulares.js"></script>
+    <script src="../js/openDivs.js"></script>
+    <script src="../js/registro.js"></script>
 
 </body>
 

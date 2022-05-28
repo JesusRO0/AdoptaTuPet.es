@@ -259,18 +259,11 @@ session_start();
         </div>
         <div class="textoPie"><p>© 2022 AdoptaTuPet. Todos los derechos reservados. Aviso legal, Política de privacidad y protección de datos personales.</p></div>
     </footer>
-
-    <!-- <script src="/model/js/ajax.js"></script>
-    <script src="/model/js/cambiaDatos.js"></script>
-    <script src="/model/js/clear.js"></script>
-    <script src="/model/js/enter.js"></script>
     
-    <script src="/model/js/loginAjax.js"></script> -->
     <script src="./js/index.js"></script>
     <script src="./js/expresionesRegulares.js"></script>
     <script src="./js/openDivs.js"></script>
     <script src="./js/registro.js"></script>
-    <!-- <script src="/model/js/registerAjax.js"></script> -->
 
 </body>
 
