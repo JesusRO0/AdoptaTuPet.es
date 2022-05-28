@@ -97,16 +97,6 @@ session_start();
 
     <main>
 
-    <!-- <div class="edit" id="divPerf">
-            <form method="POST" action="perfil.php">
-                <input type="submit" class="miPerfil" id="miPerf" value="Mi Perfil"></input>
-            </form>
-            <hr>
-            <form method="POST" action="#">
-                <input name="closeSesion" type="submit" class="cerrar" id="cerSes" value="Cerrar Sesión"></input>
-            </form>
-    </div> -->
-
     <div class="contenedorDIV">
         <div class="login" id="divL">
 
@@ -179,7 +169,7 @@ session_start();
                     <option value="Perro">Perros</option>
                     <option value="Gato">Gatos</option>
                 </select>
-                <input type="text" name="localidad" id="localidad" placeholder="Localidad">
+                <input type="text" name="localidad" id="localidad" class="localidad" placeholder="Localidad">
                 <select name="raza" id="raza">
                     <option value="raza" disabled selected>Raza</option>
                     <?php
@@ -203,8 +193,8 @@ session_start();
                     <option value="Mediano">Mediano</option>
                     <option value="Grande">Grande</option>
                 </select>
+                <input type="submit" name="filtrarSubmit" value="Filtrar" class="filtrarSubmit" id="filtrarSubmit">
             </div>
-            <input type="submit" name="filtrarSubmit" value="Filtrar" class="filtrarSubmit" id="filtrarSubmit">
         </form>
         
         <div class="contenedorAnimales">
@@ -253,12 +243,7 @@ session_start();
 
                     $raza = '';
                 }
-                echo $especie;
-                echo $localidad;
-                echo $sexo;
-                echo $edad;
-                echo $tamaño;
-                echo $raza;
+                
                 AnimalesController::filtarAnimales($edad, $especie, $localidad , $raza, $sexo, $tamaño);
 
             ?>

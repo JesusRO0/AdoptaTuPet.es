@@ -242,7 +242,7 @@ input{
     text-shadow: 0 0 1px black;
 }
 .filtro select{
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     margin: 10px;
     border: 0;
     border-radius: 5px;
@@ -250,8 +250,8 @@ input{
     background-color: white;
     color:#ED7F05;
 }
-.filtro input{
-    font-size: 1.6vw;
+.localidad{
+    font-size: 1.2vw;
     margin: 10px;
     border: 0;
     border-radius: 5px;
@@ -266,7 +266,45 @@ input::placeholder{
 .contenedorAnimales{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
+}
+.filtrarSubmit{
+    font-weight: bold;
+    color: #87DDFF;
+    background-color:white;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    border: 0;
+}
+.animal{
+    font-family: 'Fredoka', sans-serif;
+    margin: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #ffffff;
+}
+.animal img{
+    width: 420px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.nombreAnimal{
+    font-weight: bold;
+    font-size: 1.6em;
+    color:#ED7F05;
+    margin: 10px;
+}
+.localidadAnimal{
+    font-size: 1.1em;
+    color: black;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/

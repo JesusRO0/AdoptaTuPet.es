@@ -51,6 +51,7 @@ class AnimalesController{
                 </div>
                 <div class='informacionAnimal'>
                     <p class='nombreAnimal'>".$resultado[$i]['nombre']."</p>
+                    <hr>
                     <p class='localidadAnimal'>".$resultado[$i]['localidad']."</p>
                 </div>
             </div></a>";
