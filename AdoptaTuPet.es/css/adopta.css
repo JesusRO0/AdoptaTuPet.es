@@ -283,9 +283,9 @@ input::placeholder{
 .animal{
     font-family: 'Fredoka', sans-serif;
     margin: 10px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-radius: 25px;
     background-color: #ffffff;
+    transition: transform 0.5s linear;
 }
 .animal img{
     width: 420px;
@@ -294,17 +294,51 @@ input::placeholder{
 }
 .nombreAnimal{
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.8em;
     color:#ED7F05;
     margin: 10px;
 }
+.informacionAnimal{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 .localidadAnimal{
+    display: flex;
+    align-items: center;
     font-size: 1.1em;
     color: black;
-    margin: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.localidadAnimal img{
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+hr{
+    margin: 0 auto;
+    width: 100px;
+    border: 0.5px solid black;
+    opacity: 0%;
+    transition: all 0.5s linear;
 }
 a{
     text-decoration: none;
+}
+.animal:hover{
+    transition: transform 0.5s linear;
+    box-shadow: 0px 0px 5px black;
+    transform:scale(105%);
+}
+.animal:hover hr{
+    transition: all 1s linear;
+    color: white;
+    width: 350px;
+    opacity: 100%;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/

@@ -185,40 +185,35 @@ session_start();
                      echo $mostrarAnimal[0]['nombre'];
                     ?>
                 </h1>
-                <p>
+                <p class="localizacion">
                     <?php
-                     echo $mostrarAnimal[0]['localidad'];
+                     echo "<img src='./img/localizacion.png'>".$mostrarAnimal[0]['localidad'];
                     ?>
                 </p>
                 <hr>
                 <h2>Detalles</h2>
-                <ol>
-                    <li><p>
-                    <?php
-                     echo $mostrarAnimal[0]['especie'];
-                    ?>
-                    </p></li>
-                    <li><p>Raza: 
+                    <ol>
+                        <li><p><strong>Raza: </strong>
+                            <?php
+                                echo $mostrarAnimal[0]['raza'];
+                            ?>
+                        </p></li>
+                        <li><p><strong>Sexo:</strong>
+                            <?php
+                                echo $mostrarAnimal[0]['sexo'];
+                            ?>
+                        </p></li>
+                        <li><p><strong>Edad:</strong>
+                            <?php
+                                echo $mostrarAnimal[0]['edad'];
+                            ?>
+                        </p></li>
+                        <li><p class="tamaño"><strong>Tamaño:</strong>
                         <?php
-                        echo $mostrarAnimal[0]['raza'];
+                            echo $mostrarAnimal[0]['tamano'];
                         ?>
-                    </p></li>
-                    <li><p>Sexo:
-                    <?php
-                     echo $mostrarAnimal[0]['sexo'];
-                    ?>
-                    </p></li>
-                    <li><p>Edad:
-                    <?php
-                     echo $mostrarAnimal[0]['edad'];
-                    ?>
-                    </p></li>
-                    <li><p>Tamaño:
-                    <?php
-                     echo $mostrarAnimal[0]['tamano'];
-                    ?>
-                    </p></li>
-                </ol>
+                        </p></li>
+                    </ol>
                 <div class="adoptar">
                     <button>¡QUIERO ADOPTAR!</button>
                     <div class="compartir">
@@ -251,14 +246,6 @@ session_start();
                 ?>
             </p>
         </div>
-        <!--<div class="similares">
-            <h2>Animales similares</h2>
-            <div class="animalesSimilares">
-                <img src="./img/perro (1).png">
-                <img src="./img/perro (1).png">
-                <img src="./img/perro (1).png">
-            </div>
-        </div> -->
     </div>
     </main>
 

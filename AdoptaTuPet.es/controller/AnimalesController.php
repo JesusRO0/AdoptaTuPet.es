@@ -52,7 +52,7 @@ class AnimalesController{
                 <div class='informacionAnimal'>
                     <p class='nombreAnimal'>".$resultado[$i]['nombre']."</p>
                     <hr>
-                    <p class='localidadAnimal'>".$resultado[$i]['localidad']."</p>
+                    <p class='localidadAnimal'><img src='./img/localizacion.png'>".$resultado[$i]['localidad']."</p>
                 </div>
             </div></a>";
         }
