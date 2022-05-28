@@ -191,7 +191,8 @@ input{
     align-items: center;
 }
 .sesionIniciada img{
-    border-radius: 50%;
+    width: 100px;
+    border-radius: 100px;
 }
 .sesionIniciada input{
     font-family: 'Fredoka', sans-serif;
@@ -259,11 +260,15 @@ input{
     font-size: 1.5em;
 }
 .perfilAnimal h1{
+    color: #E7F6FC;
+    text-shadow: 1px 1px 1px black;
     font-size: 2.5em;
     padding-bottom: 10px;
     padding-right: 10px;
 }
 .perfilAnimal h2{
+    color: #E7F6FC;
+    text-shadow: 1px 1px 1px black;
     padding-bottom: 10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -317,7 +322,9 @@ input{
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
-.descripcion h2,h1{
+.descripcion h2,.descripcion h1{
+    color: #E7F6FC;
+    text-shadow: 1px 1px 1px black;
     margin-bottom: 10px;
     font-size: 2em;
 }

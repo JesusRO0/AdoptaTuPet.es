@@ -207,7 +207,39 @@ input{
     box-shadow: 0px 0px 2px black;
 }
 .sesionIniciada img{
-    border-radius: 50%;
+    width: 100px;
+    border-radius: 100px;
+}
+.sesionIniciada input{
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px black;
+    padding: 4px;
+}
+.menuSesion{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.verPerfil{
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px black;
+    padding: 4px;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+#errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
+    display: none;
 }
 .subirAnimal{
     border-radius: 10px;
@@ -219,6 +251,9 @@ input{
     padding-right: 5px;
     margin-right: 5px;
     box-shadow: 0px 0px 2px black;
+}
+.cerrarSesion{
+    display: none;
 }
 
 /*-------------------------------- FIN HEADER ------------------------------*/

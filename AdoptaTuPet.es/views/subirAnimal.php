@@ -162,8 +162,10 @@ if(isset($_POST['cerrarSesion'])){
 
         </div>
 
-        <div class="animal">
+        <div class="subirAnimal">
 
+        <h1>Subir Animal</h1>
+        <hr>
         <form action="#" method="post" enctype="multipart/form-data">
 
             <div class="edad">
@@ -182,7 +184,7 @@ if(isset($_POST['cerrarSesion'])){
             </div>
 
             <div class="especie">
-                <label for="especie">especie: </label>
+                <label for="especie">Especie: </label>
                 <input type="text" name="especie" required>
             </div>
 
@@ -207,12 +209,12 @@ if(isset($_POST['cerrarSesion'])){
             </div>
 
             <div class="tamaño">
-                <label for="tamaño">tamaño: </label>
+                <label for="tamaño">Tamaño: </label>
                 <input type="text" name="tamaño">
             </div>
 
             <div class="boton">
-                <input type="submit" name="submit" value="Subir Animal"/>
+                <input type="submit" name="submit" class="inputSubir" value="Subir Animal"/>
             </div>
             
         </form>
@@ -237,15 +239,6 @@ if(isset($_POST['cerrarSesion'])){
                         $sexo = $_POST['sexo'];
                         $tamaño = $_POST['tamaño'];
 
-                        echo $edad;
-                        echo $nombre;
-                        echo $descripcion;
-                        echo $especie;
-                        echo $localidad;
-                        echo $raza;
-                        echo $sexo;
-                        echo $tamaño;
-
                         $resultado = AnimalesController::creaAnimalController($nombre,$edad,$especie,$imagen,$localidad,$raza,$sexo,$tamaño,$descripcion);
 
                 if($resultado){
@@ -260,14 +253,6 @@ if(isset($_POST['cerrarSesion'])){
         }
 
         ?>
-
-        <div class="volver">
-        <form action="./perfil.php" method="post" enctype="multipart/form-data">
-
-        <input type="submit" name="submit" value="Volver"/>
-
-        </form>
-        </div>
 
     </main>
 

@@ -192,7 +192,8 @@ input{
     align-items: center;
 }
 .sesionIniciada img{
-    border-radius: 50%;
+    width: 100px;
+    border-radius: 100px;
 }
 .sesionIniciada input{
     font-family: 'Fredoka', sans-serif;

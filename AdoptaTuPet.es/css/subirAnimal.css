@@ -192,7 +192,8 @@ input{
     align-items: center;
 }
 .sesionIniciada img{
-    border-radius: 50%;
+    width: 100px;
+    border-radius: 100px;
 }
 .sesionIniciada input{
     font-family: 'Fredoka', sans-serif;
@@ -228,6 +229,37 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
+.subirAnimal{
+    background-color: #87DDFF;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+.subirAnimal input{
+    margin: 10px;
+    font-size: 1.4em;
+}
+.subirAnimal label{
+    font-size: 1.4em;
+}
+.subirAnimal hr{
+    border: 2px solid #E7F6FC;
+}
+.subirAnimal h1{
+    color:#E7F6FC;
+    text-shadow: 1px 1px 1px black;
+}
+.inputSubir{
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px black;
+    padding: 4px;
+    cursor: pointer;
+}
 
 
 /*-------------------------------- FOOTER ------------------------------*/
