@@ -69,8 +69,14 @@ body{
         padding-right: 20px;
     }
     .redes img{
+        transition: all 0.2s linear;
         width: 50px;
         padding: 5px;
+    }
+    .redes img:hover{
+        transition: all 0.2s linear;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px black;
     }
     .home,.adopta,.foro,.contacto{
         border-radius: 10px;
@@ -80,6 +86,15 @@ body{
         padding-left: 15px;
         padding-right: 15px;
         box-shadow: 0px 0px 2px black;
+        transition: all 0.2s linear;
+    }
+    .home:hover,.adopta:hover,.foro:hover,.contacto:hover{
+        transition: all 0.2s linear;
+        box-shadow: 0px 0px 8px black;
+    }
+    .home:active,.adopta:active,.foro:active,.contacto:active{
+        transition: all 0s linear;
+        color:black;
     }
     .entra{
         border-radius: 10px;
@@ -90,16 +105,24 @@ body{
         padding-left: 35px;
         padding-right: 35px;
         box-shadow: 0px 0px 2px black;
+        cursor: pointer;
+        transition: all 0.2s linear;
     }
-
+    .entra:hover{
+        box-shadow: 0px 0px 8px black;
+        transition: all 0.2s linear;
+    }
+    .entra:active{
+        background-color:#ED7F05;
+        color: #E7F6FC;
+    }
     #divL{
         display: none;
-        position: absolute;
-        top: 300px;
+        position: fixed;
+        top: 250px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
-        /*height: 420px;*/
         border-radius: 20px;
         box-shadow: 0px 0px 8px black;
     }
@@ -109,12 +132,11 @@ body{
     }
     #divR{
         display: none;
-        position: absolute;
-        top: 300px;
+        position: fixed;
+        top: 250px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
-        /*height: 530px;*/
         border-radius: 20px;
         box-shadow: 0px 0px 8px black;
     }
@@ -123,7 +145,6 @@ body{
         margin: 10px;
     }
     .contenedorDIV {
-        background: #EEE;
         align-items: center;
         display: flex;
         justify-content: center;
@@ -131,8 +152,8 @@ body{
     }
     .login hr{
         width: 70%;
-        margin-left: 60px;
-        border: 0.3px solid black;
+        margin:0 auto;
+        border: 0.3px solid white;
         border-radius: 30px;
         margin-bottom: 10px;
     }
@@ -141,9 +162,23 @@ body{
         font-size: 2em;
         text-shadow: 0px 0px 2px black;
     }
-    .inicioS {
-        font-size: 1.6em;
+    .emailLogin,.contraseñaLogin,.emailRegistro,.contraseñaRegistro,.repetirContraseña,.nombreUsuario{
+        font-size: 1.8em;
         margin: 5px;
+        border-radius: 5px;
+        border: 0;
+    }
+    .nombreUsuario{
+        margin-bottom: 20px;
+    }
+    .contraseñaLogin{
+        margin-bottom: 20px;
+    }
+    .login input::placeholder{
+        color: #87DDFF;
+    }
+    .registro input::placeholder{
+        color: #87DDFF;
     }
     .completaLogin{
         color:#E7F6FC;
@@ -153,6 +188,7 @@ body{
         border: 0;
         border-radius: 50px;
         box-shadow: 0px 0px 8px black;
+        font-size: 2em;
     }
     .Registrate{
         margin: 10px;
@@ -170,8 +206,8 @@ body{
     }
     .registro hr{
         width: 70%;
-        margin-left: 60px;
-        border: 0.3px solid black;
+        margin: 0 auto;
+        border: 0.3px solid white;
         border-radius: 30px;
         margin-bottom: 10px;
     }
@@ -279,9 +315,13 @@ body{
         padding-bottom: 1.30vw;
         padding-left: 2.34vw;
         padding-right: 2.34vw;
-        box-shadow: 0px 0px 5px black;
         margin: 1.56vw;
         font-size: 1.5vw;
+        transition: all 0.2s linear;
+    }
+    .botoncontacto:hover{
+        transition: all 0.2s linear;
+        box-shadow: 0px 0px 8px black;
     }
     .perroygato{
         display: flex;
@@ -345,6 +385,11 @@ body{
         box-shadow: 0px 0px 2px black;
         font-size: 1.4vw;
         text-shadow: 0px 0px 2px black;
+        transition: all 0.2s linear;
+    }
+    .botonVerPerro:hover,.botonVerGato:hover{
+        transition: all 0.2s linear;
+        box-shadow: 0px 0px 8px black;
     }
     .headergato{
         width: 100%;
@@ -381,22 +426,14 @@ body{
         padding-bottom: 1.30vw;
         padding-left: 2.34vw;
         padding-right: 2.34vw;
-        box-shadow: 0px 0px 10px black;
         margin: 1.56vw;
         font-size: 1.5vw;
         font-weight: bolder;
+        transition: all 0.2s linear;
     }
-    .tercerbanner{
-        font-family: 'Raleway', sans-serif;
-        background-color: #E7F6FC;
-        padding: 2.08vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-    }
-    .tercerbanner h1{
-        color: #ED7F05;
+    .botonbannergato:hover{
+        transition: all 0.2s linear;
+        box-shadow: 0px 0px 8px black;
     }
 
     /*-------------------------------- FOOTER ------------------------------*/
@@ -404,6 +441,7 @@ body{
     footer{
         display: flex;
         flex-flow: column;
+
     }
     .piedepagina{
         display: flex;
@@ -434,7 +472,7 @@ body{
     li{
         list-style:none;
         color: black;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .pie2{
         margin: 30px;

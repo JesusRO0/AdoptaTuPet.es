@@ -70,8 +70,14 @@ input{
     padding-right: 20px;
 }
 .redes img{
+    transition: all 0.2s linear;
     width: 50px;
     padding: 5px;
+}
+.redes img:hover{
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px black;
 }
 .home,.adopta,.foro,.contacto{
     border-radius: 10px;
@@ -81,6 +87,15 @@ input{
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 0px 0px 2px black;
+    transition: all 0.2s linear;
+}
+.home:hover,.adopta:hover,.foro:hover,.contacto:hover{
+    transition: all 0.2s linear;
+    box-shadow: 0px 0px 8px black;
+}
+.home:active,.adopta:active,.foro:active,.contacto:active{
+    transition: all 0s linear;
+    color:black;
 }
 .entra{
     border-radius: 10px;
@@ -91,16 +106,24 @@ input{
     padding-left: 35px;
     padding-right: 35px;
     box-shadow: 0px 0px 2px black;
+    cursor: pointer;
+    transition: all 0.2s linear;
 }
-
+.entra:hover{
+    box-shadow: 0px 0px 8px black;
+    transition: all 0.2s linear;
+}
+.entra:active{
+    background-color:#ED7F05;
+    color: #E7F6FC;
+}
 #divL{
     display: none;
-    position: absolute;
-    top: 300px;
+    position: fixed;
+    top: 250px;
     background-color: #87DDFF;
     text-align: center;
     width: 410px;
-    /*height: 420px;*/
     border-radius: 20px;
     box-shadow: 0px 0px 8px black;
 }
@@ -110,12 +133,11 @@ input{
 }
 #divR{
     display: none;
-    position: absolute;
-    top: 300px;
+    position: fixed;
+    top: 250px;
     background-color: #87DDFF;
     text-align: center;
     width: 410px;
-    /*height: 530px;*/
     border-radius: 20px;
     box-shadow: 0px 0px 8px black;
 }
@@ -124,7 +146,6 @@ input{
     margin: 10px;
 }
 .contenedorDIV {
-    background: #EEE;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -132,8 +153,8 @@ input{
 }
 .login hr{
     width: 70%;
-    margin-left: 60px;
-    border: 0.3px solid black;
+    margin:0 auto;
+    border: 0.3px solid white;
     border-radius: 30px;
     margin-bottom: 10px;
 }
@@ -142,9 +163,23 @@ input{
     font-size: 2em;
     text-shadow: 0px 0px 2px black;
 }
-.inicioS {
-    font-size: 1.6em;
+.emailLogin,.contraseñaLogin,.emailRegistro,.contraseñaRegistro,.repetirContraseña,.nombreUsuario{
+    font-size: 1.8em;
     margin: 5px;
+    border-radius: 5px;
+    border: 0;
+}
+.nombreUsuario{
+    margin-bottom: 20px;
+}
+.contraseñaLogin{
+    margin-bottom: 20px;
+}
+.login input::placeholder{
+    color: #87DDFF;
+}
+.registro input::placeholder{
+    color: #87DDFF;
 }
 .completaLogin{
     color:#E7F6FC;
@@ -154,6 +189,7 @@ input{
     border: 0;
     border-radius: 50px;
     box-shadow: 0px 0px 8px black;
+    font-size: 2em;
 }
 .Registrate{
     margin: 10px;
@@ -171,8 +207,8 @@ input{
 }
 .registro hr{
     width: 70%;
-    margin-left: 60px;
-    border: 0.3px solid black;
+    margin: 0 auto;
+    border: 0.3px solid white;
     border-radius: 30px;
     margin-bottom: 10px;
 }
@@ -227,6 +263,7 @@ input{
     display: none;
 }
 
+
 /*-------------------------------- FIN HEADER ------------------------------*/
 
 a{
@@ -242,7 +279,7 @@ a{
     text-align: center;
     color:#ED7F05;
     width:  67.70vw;
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 .definicion img{
     margin-top: 30px;
@@ -269,11 +306,11 @@ a{
     text-shadow: 1px 1px 1px black;
     color: #87DDFF;
     margin-bottom: 20px;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .atributos p{
     color:#ED7F05;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 .tituloPreguntas{
     display: flex;
@@ -286,7 +323,7 @@ a{
     color:#ED7F05;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 .botonPreguntas{
     border-radius: 10px;
@@ -297,8 +334,12 @@ a{
     padding-right: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
-    box-shadow: 0px 0px 5px black;
-    font-size: 2vw;
+    font-size: 1.8vw;
+    transition: all 0.2s linear;
+}
+.botonPreguntas:hover{
+    box-shadow: 0px 0px 8px black;
+    transition: all 0.2s linear;
 }
 .pasosAdoptar{
     background-color: #ED7F05;
@@ -307,11 +348,11 @@ a{
     align-items: center;
     margin-top: 50px;
     padding-top: 30px;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     color: #E7F6FC;
 }
 .pasosAdoptar p{
-font-size: 2.5em;
+font-size: 2em;
 }
 .pasos{
     display: flex;
@@ -321,7 +362,7 @@ font-size: 2.5em;
     width: 100%;
 }
 .pasos p{
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     padding-top: 15px;
 }
 .paso1,.paso2,.paso3{
@@ -347,20 +388,47 @@ font-size: 2.5em;
     color: #ED7F05;
 }
 .contactar h1{
-    font-size: 2vw;
+    font-size: 1.8vw;
+}
+.contactar input{
+    font-family: 'Fredoka', sans-serif;
+    margin: 4px;
 }
 .informacion{
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     margin: 20px;
     margin-left: 50px;
     margin-right: 50px;
 }
-.asunto,.mensaje{
+.asunto{
+    font-size: 1.5em;
     width: 100%;
 }
+.mensaje{
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 4px;
+    font-size: 1.5em;
+}
+.nombre,.email{
+    font-size: 1.5em;
+    width: 48%;
+}
+.EnviarCorreo{
+    border-radius: 10px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-shadow: 0px 0px 2px black;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: 10px;
+}
 .preguntas{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #87DDFF;
     display: flex;
     flex-flow: column;

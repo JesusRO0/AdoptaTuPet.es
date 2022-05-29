@@ -256,7 +256,7 @@ session_start();
             <p class="informacion">El equipo de adoptauperro.es responderá encantado a tus dudas, comentarios o propuestas, aún así, te recordamos que nuestro
                 portal sirve como soporte para que las protectoras y refugios publiquen sus anuncios, por lo que si lo que deseas es recibir
                 información sobre alguno de los anuncios publicados, te recomendamos contactar directamente con los anunciantes.</p>
-            <form action="#" method="POST">
+
                 <p>
                     <input type="text" name="nombre" placeholder="  Nombre" class="nombre" id="Nombre">
                     <input type="text" name="email" placeholder="  Email" class="email" id="Email">
@@ -267,11 +267,11 @@ session_start();
                 </p>
 
                 <p>
-                    <textarea name="mensaje" placeholder="  Mensaje" class="mensaje" id="Mensaje" rows="10" cols="50"></textarea>
+                    <textarea name="mensaje" placeholder=" Mensaje" class="mensaje" id="Mensaje" rows="10" cols="50"></textarea>
                 </p>
 
                 <p>
-                    <input type="submit" name="botonEnviar" value="Enviar" class="enviar" id="Enviar">
+                    <button onclick="enviarEmail()" name="botonEnviar" class="EnviarCorreo" id="EnviarCorreo">Enviar Correo</button>
                 </p>
 
             </form>
@@ -339,6 +339,11 @@ session_start();
         <div class="textoPie"><p>© 2022 AdoptaTuPet. Todos los derechos reservados. Aviso legal, Política de privacidad y protección de datos personales.</p></div>
     </footer>
 
+    <script>
+        function enviarEmail() {
+            alert("Se ha enviado un email a nuestro equipo de AdoptaTuPet.es.");
+        }
+    </script>
     <script src="../js/index.js"></script>
     <script src="../js/expresionesRegulares.js"></script>
     <script src="../js/openDivs.js"></script>

@@ -108,11 +108,11 @@ session_start();
 
             <form action="#" method="POST">
                 <p>
-                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                    <input type="text" name="correoSesion" placeholder="  Email" class="emailLogin" id="emailLog" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
                 </p>
 
                 <p>
-                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,}$" required>
+                    <input type="password" name="passSesion" placeholder="  Contraseña" class="contraseñaLogin" id="passLog" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,}$" required>
                 </p>
                 <p>
                     <input type="submit" name="completarLogin" value="Entra" class="completaLogin" id="botonLogin" >
@@ -133,22 +133,22 @@ session_start();
 
             <form action="#" id="formularioRegistro" method="POST">
                 <p>
-                    <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="email">
+                    <input type="text" name="email" placeholder="  Email" class="emailRegistro" id="email">
                     <div id="errorEmail" class="hidden">* Ha introducido de manera incorrecta el email, por favor pruebe de nuevo</div>
                 </p>
 
                 <p>
-                    <input type="password" name="password" placeholder="  Contraseña" class="inserta inicioS" id="password">
+                    <input type="password" name="password" placeholder="  Contraseña" class="contraseñaRegistro" id="password">
                     <div id="errorPassword" class="hidden">* Ha introducido de manera incorrcecta la contraseña, por favor pruebe de nuevo</div>
                 </p>
 
                 <p>
-                    <input type="password" name="confirmaPassword" placeholder="  Repetir Contraseña" class="inserta inicioS" id="confirmaPassword">
+                    <input type="password" name="confirmaPassword" placeholder="  Repetir Contraseña" class="repetirContraseña" id="confirmaPassword">
                     <div id="errorConfirmaPassword" class="hidden">* La contraeña que ha introducido no coincide</div>
                 </p>
 
                 <p>
-                    <input type="text" name="usuario" placeholder="  Nombre Usuario" class="inserta inicioS" id="usuario">
+                    <input type="text" name="usuario" placeholder="  Nombre Usuario" class="nombreUsuario" id="usuario">
                     <div id="errorUsuario" class="hidden">* Ha introducido de manera incorrecta el usuario, por favor pruebe de nuevo</div>
                 </p>
 
@@ -214,13 +214,6 @@ session_start();
                         <a href="./views/contacto.php" target="_blank"><h1 class="botonbannergato">¡CONTÁCTANOS!</h1></a>
                     </div>
                 </div>
-
-            <div class="tercerbanner">
-                <div class="contenidotercerbanner">
-                    <h1>Últimos anuncios en nuestro FORO</h1>
-                    <div>ANUNCIOS</div>
-                </div>
-            </div>
         </div>
 
     </main>
