@@ -263,7 +263,7 @@ session_start();
             <p>
                 <?php
                 
-                    echo APIController::APIFacts();
+                    echo API::APIFacts();
                     
                 ?>
             </p>
