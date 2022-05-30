@@ -2,7 +2,7 @@
 //Importamos la clase y funciones del Usermodel
 require_once "../model/UserModel.php";
 
-//Clase del controlador de Usuario que utiliza todas las funciones
+//Clase del controlador de Usuario en /views que utiliza todas las funciones
 class UserController{
 
     //Función para crear el usuario
