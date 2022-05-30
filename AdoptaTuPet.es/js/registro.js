@@ -1,5 +1,9 @@
-//Validacion de Registro
+//Validacion de Registro, si no cumplen con las expresiones regulares aparecerá un bloque informando de un error.
+//La variable rellenadoCamposForm[] está creada en index.js y esta compuesta por 4 false que irán cambiando,
+//se cambiarán a True cuando se haga una correcta comprobación de cada campo, al tener los 4 se realizará el registro o
+//si no estan todos en True aparecera un bloque informando que no se han completado todos los campos.
 
+//Comprobación del email.
 document.getElementById("email").addEventListener("blur", function(ev){
     let email = document.getElementById("email").value;
 
@@ -17,6 +21,7 @@ document.getElementById("email").addEventListener("blur", function(ev){
     //ev.preventDefault();
 });
 
+//Comprobación de la contraseña.
 document.getElementById("password").addEventListener("blur", function(ev){
     let password = document.getElementById("password").value;
 
@@ -33,7 +38,7 @@ document.getElementById("password").addEventListener("blur", function(ev){
     ev.preventDefault();
 });
 
-
+//Comprobación de la repetición de la contraseña.
 document.getElementById("confirmaPassword").addEventListener("blur", function(ev){
     let confirmaPassword = document.getElementById("confirmaPassword").value;
     let password2 = document.getElementById("password").value;
@@ -52,6 +57,7 @@ document.getElementById("confirmaPassword").addEventListener("blur", function(ev
     ev.preventDefault();
 });
 
+//No hay comprobación del usuario pero lo guardamos para la comprobación total de los datos.
 document.getElementById("usuario").addEventListener("blur", function(ev){
     let usuario = document.getElementById("usuario").value;
 
@@ -62,6 +68,7 @@ document.getElementById("usuario").addEventListener("blur", function(ev){
     ev.preventDefault();
 });
 
+//Comprobación del formulario, revisa si todos los campos han sido completado correctamente.
 document.getElementById("formularioRegistro").addEventListener("submit", function(ev){
     let contador = 0;
 
@@ -72,6 +79,9 @@ document.getElementById("formularioRegistro").addEventListener("submit", functio
     }
 
     if (contador == 4){
+        
+        alert("¡Se ha completado el registro correctamente!");
+        console.log(datosUsuario);
 
     } else {
         ev.preventDefault();
@@ -80,4 +90,3 @@ document.getElementById("formularioRegistro").addEventListener("submit", functio
 
     }
 });
-
