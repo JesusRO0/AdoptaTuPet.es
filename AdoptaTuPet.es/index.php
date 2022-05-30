@@ -108,7 +108,7 @@ session_start();
                             </div>
                         </div>";
 
-                        echo "<a class='entraMovil' id='divEntradaMovil'><img src='./views/img/usuario.png'>Entra</a>";
+                        echo "<a class='entraMovil' id='divEntradaMovil'><img src='./views/img/usuario.png'>Perfil</a>";
 
                     }else{
 
