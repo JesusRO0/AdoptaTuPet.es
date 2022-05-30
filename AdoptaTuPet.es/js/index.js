@@ -1,4 +1,4 @@
-var page = 1;
+//Variables globales usadas utilizadas con js.
 
 //Comprobación Formulario de Registro
 var rellenadoCamposForm = [false, false, false, false];
@@ -17,6 +17,3 @@ var errorFormulario = document.getElementById("errorFormulario");
 //Bloques de Iniciar sesión y registro
 var login = document.getElementById('divL');
 var registro = document.getElementById('divR');
-
-
-console.log("123");
