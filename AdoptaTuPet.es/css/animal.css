@@ -299,7 +299,7 @@ input{
 }
 .animal{
     display: flex;
-    flex-flow: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -721,6 +721,9 @@ li{
         font-size: 1.2em;
     }
     #errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
+        display: none;
+    }
+    .botonMovil{
         display: none;
     }
 

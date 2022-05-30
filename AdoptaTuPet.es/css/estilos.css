@@ -70,12 +70,21 @@ input{
     flex-flow: column;
     align-items: center;
     justify-items: center;
+    text-align: center;
+}
+.entraMovil h2{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+
 }
 .botonMovil{
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 1.5em;
 }
 .homeMovil a,.adoptaMovil a,.contactoMovil a{
@@ -642,7 +651,10 @@ li{
         color: #E7F6FC;
     }
     .sesionIniciada{
-        display: none;
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: center;
+        align-items: center;
     }
     .sesionIniciada img{
         width: 100px;
@@ -679,7 +691,9 @@ li{
     #errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
         display: none;
     }
-
+    .botonMovil{
+        display: none;
+    }
     /*-------------------------------- FIN HEADER ------------------------------*/
 
     .contenedor{

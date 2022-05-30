@@ -117,7 +117,6 @@ session_start();
 
                     }else{
 
-                        echo "<script>document.getElementById('divEntradaMovil').style.display = 'block'</script>";
                         echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
 
                     }

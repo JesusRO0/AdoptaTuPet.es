@@ -627,7 +627,9 @@ li{
     #errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
         display: none;
     }
-
+    .botonMovil{
+        display: none;
+    }
 
     /*-------------------------------- FIN HEADER ------------------------------*/
 

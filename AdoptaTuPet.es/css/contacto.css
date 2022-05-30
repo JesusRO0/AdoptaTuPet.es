@@ -16,7 +16,7 @@
     */
 }
 body{
-    background-color:#E7F6FC;
+    background-color:#87DDFF;
     font-family: 'Fredoka', sans-serif;
     overflow-x: hidden;
 }
@@ -304,18 +304,18 @@ a{
     text-align: center;
     color:#ED7F05;
     width:  67.70vw;
-    font-size: 1.8vw;
+    font-size: 5vw;
 }
 .definicion img{
     margin-top: 30px;
     margin-bottom: 20px;
     background-color: #E7F6FC;
     border-radius: 10px;
-    width: 20vw;
+    width: 25vw;
 }
 .atributos{
     display: grid;
-    grid-template-areas: "a1 a2 a3" "a4 a5 a6";
+    grid-template-areas: "a1" "a2";
     grid-gap: 50px;
     margin: 20px;
 }
@@ -331,11 +331,11 @@ a{
     text-shadow: 1px 1px 1px black;
     color: #87DDFF;
     margin-bottom: 20px;
-    font-size: 2vw;
+    font-size: 5.5vw;
 }
 .atributos p{
     color:#ED7F05;
-    font-size: 1.5vw;
+    font-size: 3.5vw;
 }
 .tituloPreguntas{
     display: flex;
@@ -348,7 +348,7 @@ a{
     color:#ED7F05;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 1.8vw;
+    font-size: 5.5vw;
 }
 .botonPreguntas{
     border-radius: 10px;
@@ -359,7 +359,7 @@ a{
     padding-right: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-size: 1.8vw;
+    font-size: 5.5vw;
     transition: all 0.2s linear;
 }
 .botonPreguntas:hover{
@@ -373,21 +373,23 @@ a{
     align-items: center;
     margin-top: 50px;
     padding-top: 30px;
-    font-size: 1.2vw;
+    font-size: 3vw;
     color: #E7F6FC;
+    width: 100%;
 }
 .pasosAdoptar p{
-font-size: 2em;
+    font-size: 2vw;
 }
 .pasos{
-    display: flex;
-    flex-flow: row;
-    align-items: center;
+    display: grid;
+    grid-template-areas: "a1" "a2";
+    grid-gap: 50px;
+    margin: 20px;
     color: #ED7F05;
     width: 100%;
 }
 .pasos p{
-    font-size: 1.4vw;
+    font-size: 4vw;
     padding-top: 15px;
 }
 .paso1,.paso2,.paso3{
@@ -397,6 +399,7 @@ font-size: 2em;
     text-align: center;
     margin: 15px;
     padding: 30px;
+    width: 95%;
 }
 .paso2 img{
     width: 24.21vw;
@@ -413,14 +416,14 @@ font-size: 2em;
     color: #ED7F05;
 }
 .contactar h1{
-    font-size: 1.8vw;
+    font-size: 5vw;
 }
 .contactar input{
     font-family: 'Fredoka', sans-serif;
     margin: 4px;
 }
 .informacion{
-    font-size: 1.5vw;
+    font-size: 3.5vw;
     margin: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -432,7 +435,7 @@ font-size: 2em;
 .mensaje{
     font-family: 'Fredoka', sans-serif;
     margin-top: 4px;
-    font-size: 1.5em;
+    font-size: 3vw;
 }
 .nombre,.email{
     font-size: 1.5em;
@@ -764,6 +767,9 @@ li{
         font-size: 1.2em;
     }
     #errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
+        display: none;
+    }
+    .botonMovil{
         display: none;
     }
 

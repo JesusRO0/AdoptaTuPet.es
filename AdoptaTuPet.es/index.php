@@ -80,7 +80,8 @@ session_start();
                     </div>
 
                     <div class="botonMovil">
-                        <h2 class='entraMovil' id='divEntradaMovil'><img src='./views/img/usuario.png'>Entra</h2>
+                        <h2 class='entraMovil' id='divEntradaMovil'>
+                            <img src='./views/img/usuario.png'>Entra</h2>
                         <a href='./views/perfil.php' class='entraPerfilMovil' id='divEntradaPerfilMovil'>
                             <img src='./views/img/usuario.png'>
                             <h2 class="entraPerfilh2">Perfil<h2>
@@ -117,7 +118,6 @@ session_start();
 
                     }else{
 
-                        echo "<script>document.getElementById('divEntradaMovil').style.display = 'block'</script>";
                         echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
 
                     }

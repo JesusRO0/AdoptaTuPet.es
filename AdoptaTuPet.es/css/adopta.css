@@ -293,7 +293,7 @@ input{
 
 .filtro{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items:center;
     color:#87DDFF;
@@ -305,7 +305,7 @@ input{
     text-shadow: 0 0 1px black;
 }
 .filtro select{
-    font-size: 1.2vw;
+    font-size: 4vw;
     margin: 10px;
     border: 0;
     border-radius: 5px;
@@ -314,7 +314,7 @@ input{
     color:#ED7F05;
 }
 .localidad{
-    font-size: 1.2vw;
+    font-size: 4vw;
     margin: 10px;
     border: 0;
     border-radius: 5px;
@@ -340,7 +340,7 @@ input::placeholder{
     margin: 10px;
     padding: 8px;
     border-radius: 5px;
-    font-size: 1.3vw;
+    font-size: 4vw;
     border: 0;
 }
 .animal{
@@ -705,6 +705,9 @@ li{
         font-size: 1.2em;
     }
     #errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
+        display: none;
+    }
+    .botonMovil{
         display: none;
     }
 
@@ -1082,7 +1085,10 @@ li{
         color: #E7F6FC;
     }
     .sesionIniciada{
-        display: none;
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: center;
+        align-items: center;
     }
     .sesionIniciada img{
         width: 100px;
