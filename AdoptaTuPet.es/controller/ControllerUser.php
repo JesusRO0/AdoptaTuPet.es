@@ -1,15 +1,11 @@
 <?php
-
+//Importamos la clase y funciones del Usermodel
 require_once "../model/UserModel.php";
 
+//Clase del controlador de Usuario que utiliza todas las funciones
 class UserController{
 
-    /*
-        
-        Función que accede al modelo de User para registrar uno SIN permisos de administrador.
-        @see UserModel/registroUser
-    
-    */
+    //Función para crear el usuario
     public static function creaUserController($email, $usuario, $contraseña, $repContraseña){
 
         if($contraseña == $repContraseña){
@@ -27,43 +23,11 @@ class UserController{
 
     }
 
-
     /*
-        
-        Función que accede al modelo de User para montar los divs necesarios para la página dedicada del usuario.
-        @see UserModel/muestraDatosUsuario
-    
-    */
-    /*public static function montaUsuario($idUser){
-
-        $user = new User();
-
-        $datos = $user->muestraDatosUsuario();
-
-        echo "<div class='contenedorPropio' id='contenedorPropio'>
-            <div class='fotoPerfil'>
-                <img width='100' src='data:image/png;base64, ".base64_encode($datos['foto'])."'></img>
-            </div>
-            <form action='./model/subeImagenUser.php' method='post' enctype='multipart/form-data'>
-                <input type='file' name='cambiaFoto'>
-            </form>
-        
-            <div class='inputs'>
-                <input type='text' name='nombre' id='nombre' class='nombre texto' value='".$datos['nombre']."'>
-                <input type='text' name='alias 'class='alias texto' id='alias' value='".$datos['correo']."'>
-                <!--<input type='text' name='desc' class='desc texto' id='desc'>-->
-                <div class='saveButton texto' id='saveButton'><p>Guardar</p></div>
-            </div>
-        
-        </div>";
-
-    }*/
-
-    /*
-        
-        Función que accede al modelo de User para subir una foto de perfil a la base de datos
-        @see UserModel/fotoPerfil
-    
+    *    
+    *    Función que accede al modelo de UserModel para subir una foto de perfil a la base de datos
+    *    @see UserModel/fotoPerfil
+    *
     */
     public static function subeFotoPerfil($idUsuario, $fotoPerfil){
 
@@ -74,10 +38,10 @@ class UserController{
     }
 
     /*
-        
-        Función que accede al modelo de User para cambiar los datos del usuario en la base de datos
-        @see UserModel/cambiarDatos
-    
+    *   
+    *    Función que accede al modelo de UserModel para cambiar los datos del usuario en la base de datos
+    *    @see UserModel/cambiarDatos
+    *
     */
     public static function cambiarDatos($usuario, $localidad, $email, $idUsuario){
 
@@ -88,10 +52,10 @@ class UserController{
     }
     
     /*
-        
-        Función que accede al modelo de User para iniciar sesión
-        @see UserModel/inicioSesion
-    
+    *    
+    *    Función que accede al modelo de UserModel para iniciar sesión
+    *    @see UserModel/inicioSesion
+    *
     */
     public static function iniciarUser($email, $contraseña){
 
@@ -100,6 +64,13 @@ class UserController{
         $idUser = $user->iniciarSesion($email, $contraseña);
 
     }
+    
+    /*
+    *    
+    *    Función que accede al modelo de UserModel para fotoPerfilViews
+    *    @see UserModel/fotoPerfilViews
+    *
+    */
 
     public static function recogerFoto($email){
         
