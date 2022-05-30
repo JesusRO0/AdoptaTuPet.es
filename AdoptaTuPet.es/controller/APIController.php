@@ -1,5 +1,10 @@
 <?php
 
+/*
+* Clase API donde esta toda la configuración de la API FACTS CATS
+*
+/*
+
 class API{
 
     public static function APIFacts(){
