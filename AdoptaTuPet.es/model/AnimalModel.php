@@ -1,7 +1,10 @@
 <?php
-
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
+
+/*
+* Clase Animal con todas las funcionalidades referente a los animales.
+*/
 
 class AnimalModel{
 
@@ -16,7 +19,22 @@ class AnimalModel{
     private $sexo;
     private $tamaño;
 
-
+    /*
+    *Función CreaAnimal usada para crear los animlaes en el apartado de subirAnimales.php
+    *
+    *@param $nombre es el nombre que le pasaremos por el input $nombre
+    *@param $edad la edad puede ser "Cachorro", "Adulto", "Senior" y se lo pasamos por el input $edad
+    *@param $especie puede ser "Perro" o "Gato" y se lo pasamos por el input $especie
+    *@param $imagen debemos seleccionar una imagen la cual se mostrará en el apartado de adopta.php y animal.php más los demás datos
+    *@param $localidad es la procedencia del animal y se la pasamos mediante el input $localidad
+    *@param $raza la raza es bastante importanmte porque se irán creando razas nuevas cada vez que metamos animales distintos el input $raza
+    *@param $sexo puede ser "Macho" o "hembra" y lo introducimos en el input $sexo
+    *@param $tamaño puede ser "Pequeño", "Mediano" y "Grande" y lo pasamos por el input $tamaño
+    *@param $descripcion Tendra una breve descripción del animal y se lo pasamos mediante el input $descripcion
+    *
+    *return true para comprobar si el animal se ha subido correctamente
+    */
+    
     function creaAnimal($nombre,$edad,$especie,$imagen,$localidad,$raza,$sexo,$tamaño,$descripcion){
 
         try{
@@ -38,6 +56,21 @@ class AnimalModel{
 
         return true;
     }
+    
+    /*
+    *Función MostrarAniaml usada para mostrar los animles en el adopta.php
+    *
+    *@param $nombre es el nombre que le pasaremos por el input $nombre
+    *@param $edad la edad puede ser "Cachorro", "Adulto", "Senior" y se lo pasamos por el input $edad
+    *@param $especie puede ser "Perro" o "Gato" y se lo pasamos por el input $especie
+    *@param $imagen debemos seleccionar una imagen la cual se mostrará en el apartado de adopta.php y animal.php más los demás datos
+    *@param $localidad es la procedencia del animal y se la pasamos mediante el input $localidad
+    *@param $raza la raza es bastante importanmte porque se irán creando razas nuevas cada vez que metamos animales distintos el input $raza
+    *@param $sexo puede ser "Macho" o "hembra" y lo introducimos en el input $sexo
+    *@param $tamaño puede ser "Pequeño", "Mediano" y "Grande" y lo pasamos por el input $tamaño
+    *
+    *return $almacenAnimal con toda la información del animal
+    */
 
     function mostrarAnimal($edad,$especie,$imagen,$localidad,$nombre,$raza,$sexo,$tamaño){
 
@@ -77,6 +110,16 @@ class AnimalModel{
         }
         return $almacenAnimal;
     }
+    
+    /*
+    *Función mostrarPerfilAnimal usada para mostrar el animal cuando hacemos click en alguno en adopta.php
+    *
+    *@param idAnimal es el id del animal que vamos a mostrar en el perfil obtenido al darle click en adopta.php
+    *
+    *return $almacenAnimal con toda la información del animal
+    *
+    *NO SE USA, HAY OTRA MEJOR ABAJO
+    */
 
     function mostrarPerfilAnimal($idAnimal){
 
@@ -114,6 +157,14 @@ class AnimalModel{
         }
         return $almacenAnimal;
     }
+    
+    /*
+    *Función adoptarAnimal cuando el usuario adopta al animal guardamos el id del animal y del usuario
+    *
+    *@param $idAnimal es el id del animal que vamos a mostrar en el perfil obtenido al darle click en adopta.php
+    *@param $idUsuario es el id del usuario que se ha logueado y va a adoptar el animal
+    *
+    */
 
     function adoptarAnimal($idAnimal,$idUsuario){
 
@@ -134,6 +185,20 @@ class AnimalModel{
 
         $db -> query("UPDATE animal SET idUsuario = $idUsuario WHERE idAnimal = $idAnimal");
     }
+    
+    /*
+    *Función filtro utilizado en adopta.php hace una consulta compuesta por cada propiedad seleccionada
+    *
+    *@param $edad la edad puede ser "Cachorro", "Adulto", "Senior" y se lo pasamos por el input $edad
+    *@param $especie puede ser "Perro" o "Gato" y se lo pasamos por el input $especie
+    *@param $localidad es la procedencia del animal y se la pasamos mediante el input $localidad
+    *@param $raza la raza es bastante importanmte porque se irán creando razas nuevas cada vez que metamos animales distintos el input $raza
+    *@param $sexo puede ser "Macho" o "hembra" y lo introducimos en el input $sexo
+    *@param $tamaño puede ser "Pequeño", "Mediano" y "Grande" y lo pasamos por el input $tamaño
+    *
+    *return $animnales que es el resultado de lo filtrado, es un array asociativo con todas las propiedades
+    *
+    */
 
     function filtro($edad = '',$especie = '',$localidad='',$raza='',$sexo='',$tamaño=''){
 
@@ -251,6 +316,12 @@ class AnimalModel{
             return $animales;
 
     }
+    
+    /*
+    *Función filtraRaza guarda las razas de los animales y las muestra en el input select
+    *
+    *return $razas muestra todas las razas guardadas
+    */
 
     function filtraRaza(){
 
@@ -284,6 +355,14 @@ class AnimalModel{
         return $razas;
 
     }
+    
+    /*
+    *Función mostrarAnimalPerfil usada para mostrar el animal cuando hacemos click en alguno en adopta.php
+    *
+    *@param idAnimal es el id del animal que vamos a mostrar en el perfil obtenido al darle click en adopta.php
+    *
+    *return $almacenAnimal con toda la información del animal
+    */
 
     function mostrarAnimalPerfil($idAnimal){
 
