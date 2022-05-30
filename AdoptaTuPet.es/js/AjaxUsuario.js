@@ -1,3 +1,6 @@
+//AJAX para el cambio de datos del usuario en perfil.php.
+//Le pasamos el usuario, email y dirección que son los campos que vamos a cambiar.
+
 function cambiaDatos(usuario,email,direccion){
 
     var mensaje = document.getElementById("mensaje");
