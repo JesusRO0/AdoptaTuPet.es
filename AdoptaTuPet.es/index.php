@@ -108,9 +108,11 @@ session_start();
                             </div>
                         </div>";
 
+                        echo "<a class='entraMovil' id='divEntradaMovil'><img src='./views/img/usuario.png'>Entra</a>";
+
                     }else{
 
-                        echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
+                        echo "<h2 href='./views/perfil.php' class='entra' id='divEntrada'>Entra</h2>";
                     }
                     
 
