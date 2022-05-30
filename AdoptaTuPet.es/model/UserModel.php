@@ -92,6 +92,7 @@ ini_set("display_errors", 1);
     *@param $contraseña recoge la contraseña del login con lo que se iniciará sesión.
     *
     */
+        
     function iniciarSesion($email, $contraseña){
         
         try{
@@ -151,9 +152,10 @@ ini_set("display_errors", 1);
     /*
     *Función para borrar usuarios
     *
-    *@param $email almacena el$email del usuario que queremos borrar
+    *@param $email guarda el email del usuario pero igualmente esta función no se utiliza
     *
     */
+        
     function borraUser($email){
 
         //Comprobamos que la conexión se realice con éxito
@@ -177,12 +179,13 @@ ini_set("display_errors", 1);
     }
 
     /*
-    *Función para mostrar la información en el perfil de usuario
+    *Función para mostrar la información en el contendor del perfil de usuario en la esquina superior derecha de la página
     *
-    *@param $email guarda el$email del usuario del que queremos ver el perfil
+    *@param $email es el email que le pasamos del usuario cuando este hace login
     *
-    *@return un un array asociativo con los datos que queremos mostrar en el perfil
+    *@return $muesta es un un array asociativo con los datos que queremos mostrar en nuestro contenedor del perfil
     */
+        
     function muestraDatosUsuario($email){
 
         //Comprobamos que la conexión se realice con éxito
@@ -217,6 +220,17 @@ ini_set("display_errors", 1);
             return $muestra;
         }
     }
+        
+    /*
+    *Función cambiar los datos del usuario 
+    *
+    *@param $email es el email nuevo del usuario que le pasaremos mediante el input del perfil.php 
+    *@param $emailOLD es el email inicial con el que el usuario se ha logueado
+    *@param $localidad es la dirección que le pasamos mediante el input de perfil.php
+    *@param $usuario es el nuevo usuario que le damos mediante el input de perfil.php
+    *
+    *@return $muesta es un un array asociativo con los datos que queremos mostrar en nuestro contenedor del perfil
+    */
 
     function cambiaUsuario($usuario, $localidad, $email, $emailOLD){
 
