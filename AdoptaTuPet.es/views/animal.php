@@ -238,7 +238,12 @@ session_start();
                         </p></li>
                     </ol>
                 <div class="adoptar">
-                    <button onclick="adoptar()">¡QUIERO ADOPTAR!</button>
+                    <?php
+                        if(isset($_SESSION['email'])){
+
+                            echo "<button onclick='adoptar()'>¡QUIERO ADOPTAR!</button>";
+                        }
+                    ?>
                     <div class="compartir">
                         <p>Compartir este animal puede salvarle la vida</p>
                         <div class="redesCompartir">
