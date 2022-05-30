@@ -1,4 +1,6 @@
-//Evento de login
+//Eventos que hacen mostrar el contendor del login y registro cuando pulsamos en el botón "Entrar".
+
+//Evento de login.
 document.getElementById("divEntrada").addEventListener('click', function(ev){
     
     registro.style.display = 'none';
@@ -14,7 +16,7 @@ document.getElementById("divEntrada").addEventListener('click', function(ev){
     ev.preventDefault();
 });
 
-//Evento de registro
+//Evento de registro.
 document.getElementById("registro").addEventListener('click', function(ev){
 
     login.style.display = 'none';
@@ -31,7 +33,7 @@ document.getElementById("registro").addEventListener('click', function(ev){
     ev.preventDefault();
 });
 
-//Volver al login
+//Volver al login.
 document.getElementById("Entra").addEventListener('click', function(ev){
     
     registro.style.display = 'none';
@@ -46,7 +48,7 @@ document.getElementById("Entra").addEventListener('click', function(ev){
     ev.preventDefault();
 });
 
-//Cerrar el login o el registro si se clickea fuera
+//Cerrar el login o el registro si se clickea fuera del contenedor.
 document.getElementById("Contenedor").addEventListener('click', function(ev){
     
     registro.style.display = 'none';
