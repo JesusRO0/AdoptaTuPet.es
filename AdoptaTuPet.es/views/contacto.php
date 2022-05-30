@@ -301,28 +301,6 @@ session_start();
             </form>
 
         </div>
-        <div class="preguntas">
-            <h1 id="tituloPreguntasFrecuentes">Preguntas Frecuentes</h1>
-            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
-                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
-            </select>
-            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
-                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
-            </select>
-            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
-                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
-            </select>
-            <h1>Ayuda y Soporte</h1>
-            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
-                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
-            </select>
-            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
-                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
-            </select>
-            <select name="preguntasFrecuentes" id="preguntasFrecuentes">
-                <option value="default">¿Porqué he creado AdoptaTuPet.es?</option>
-            </select>
-        </div>
     </div>
     
    
@@ -333,7 +311,6 @@ session_start();
             <div class="pie1">
                 <img src="./img/iconoadoptatupet.png">
                 <h1 class="tituloPie">AdoptaTuPet.es</h1>
-            
             <ol>
                 <li><p>Apartado de Correos 9</p></li>
                 <li><p>9 Grupos Rocío</p></li>

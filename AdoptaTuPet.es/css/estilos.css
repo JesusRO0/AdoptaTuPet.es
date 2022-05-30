@@ -277,6 +277,7 @@ input{
     display: none;
 }
 
+
 /*-------------------------------- FIN HEADER ------------------------------*/
 
 .bannerperro,.primerbanner,.perroygato,.anuncioGato,.headergato,.segundobanner{
@@ -627,10 +628,7 @@ li{
         color: #E7F6FC;
     }
     .sesionIniciada{
-        display: flex;
-        flex-flow: row-reverse;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
     .sesionIniciada img{
         width: 100px;
