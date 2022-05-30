@@ -1,6 +1,12 @@
 <?php
-
+/*
+* Importamos el model de Animalmodel
+*/
 require_once "../model/AnimalModel.php";
+
+/*
+* Clase del controlador de los animales, utilización de las clases del model
+*/
 
 class AnimalesController{
 
