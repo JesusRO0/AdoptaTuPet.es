@@ -58,8 +58,31 @@ session_start();
                     <img src="./views/img/iconoadoptatupet.png">
                     <h1 class="inicio">AdoptaTuPet.es</h1>
                 </div>
-
+                
                 <div class="secciones">
+                    <div class="homeMovil">
+                        <a href="./index.php">
+                            <img src="./views/img/casa-icono-silueta.png">
+                            <h2 class="home2">Inicio</h2>
+                        </a>
+                    </div>
+                    <div class="adoptaMovil">
+                        <a href="./views/adopta.php">
+                            <img src="./views/img/pata.png">
+                            <h2 class="adopta2">Adopta</h2>
+                        </a>
+                    </div>
+                    <div class="contactoMovil">
+                        <a href="./views/contacto.php">
+                            <img src="./views/img/chat.png">
+                            <h2 class="contacto2">Contacto</h2>
+                        </a>
+                    </div>
+
+                    <div class="botonMovil">
+                        <h2 class='entraMovil' id='divEntradaMovil'><img src='./views/img/usuario.png'>Entra</h2>
+                    </div>
+
                     <a href="./index.php"><h2 class="home">Inicio</h2></a>
                     <a href="./views/adopta.php"><h2 class="adopta">Adopta</h2></a>
                     <a href="./views/foro.php"><h2 class="foro">Foro</h2></a>
@@ -167,6 +190,37 @@ session_start();
     </div>
     
         <div class="contenedor" id="Contenedor">
+
+            <div class="primerbannerMovil">
+                <h1>AdoptaTuPet.es</h1>
+                <div class="imagenMovil">
+                    <hr>
+                    <img src="./views/img/iconoadoptatupet.png">
+                    <hr>
+                </div>
+                <h1 class="difunde">Adopta ❤ Difunde <br>Involúcrate</h1>
+                <img class="gatoUnoMovil" src="./views/img/pngwing.com.png">
+            </div>
+
+            <div class="segundobannerMovil">
+                <h1 class="tituloHueso">Todos los animales de AdoptaTuPet.es necesitan un hogar<h1>
+                <img class="huesoMovil" src="./views/img/pngwing.com (1).png">
+                <div class="perroGatoMovil">
+                    <div class="perroMovil">
+                        <a href="./views/adopta.php" target="_blank">
+                            <img src="./views/img/perroIcono.png">
+                            <h1>PERROS</h1>
+                        </a>
+                    </div>
+                    <div class="gatoMovil">
+                        <a href="./views/adopta.php" target="_blank">
+                            <img src="./views/img/gato.png">
+                            <h1>GATOS</h1>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
 
             <img class="bannerperro" src="./views/img/bannerperro.jpg">
                 <div class="primerbanner">

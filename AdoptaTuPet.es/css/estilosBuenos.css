@@ -1,0 +1,490 @@
+/*CSS Mobile First*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Letras:
+    
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    
+    Colores:
+
+    #E7F6FC azul claro, #87DDFF celeste y #ED7F05 naranja.
+    
+    */
+}
+body{
+    background-color:#E7F6FC;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/*-------------------------------- HEADER ------------------------------*/
+
+header{
+    background-color: #E7F6FC;
+}
+header a{
+    text-decoration: none;
+}
+input{
+    font-family: 'Fredoka', sans-serif;
+}
+.titulo{
+    color: #87DDFF;
+    text-shadow: 0px 2px 2px black;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    width: 300px;
+}
+.titulo img{
+    padding-right: 10px;
+    width: 30%;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+}
+.secciones{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    width: 500px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.redes img{
+    transition: all 0.2s linear;
+    width: 50px;
+    padding: 5px;
+}
+.redes img:hover{
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px black;
+}
+.home,.adopta,.foro,.contacto{
+    border-radius: 10px;
+    background-color: #ED7F05;
+    color: #E7F6FC;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 0px 2px black;
+    transition: all 0.2s linear;
+}
+.home:hover,.adopta:hover,.foro:hover,.contacto:hover{
+    transition: all 0.2s linear;
+    box-shadow: 0px 0px 8px black;
+}
+.home:active,.adopta:active,.foro:active,.contacto:active{
+    transition: all 0s linear;
+    color:black;
+}
+.entra{
+    border-radius: 10px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-shadow: 0px 0px 2px black;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.entra:hover{
+    box-shadow: 0px 0px 8px black;
+    transition: all 0.2s linear;
+}
+.entra:active{
+    background-color:#ED7F05;
+    color: #E7F6FC;
+}
+#divL{
+    display: none;
+    position: fixed;
+    top: 250px;
+    background-color: #87DDFF;
+    text-align: center;
+    width: 410px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px black;
+}
+#divL img{
+    width: 25%;
+    margin: 10px;
+}
+#divR{
+    display: none;
+    position: fixed;
+    top: 250px;
+    background-color: #87DDFF;
+    text-align: center;
+    width: 410px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px black;
+}
+#divR img{
+    width: 25%;
+    margin: 10px;
+}
+.contenedorDIV {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.login hr{
+    width: 70%;
+    margin:0 auto;
+    border: 0.3px solid white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.login h3{
+    color: #E7F6FC;
+    font-size: 2em;
+    text-shadow: 0px 0px 2px black;
+}
+.emailLogin,.contraseñaLogin,.emailRegistro,.contraseñaRegistro,.repetirContraseña,.nombreUsuario{
+    font-size: 1.8em;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+}
+.nombreUsuario{
+    margin-bottom: 20px;
+}
+.contraseñaLogin{
+    margin-bottom: 20px;
+}
+.login input::placeholder{
+    color: #87DDFF;
+}
+.registro input::placeholder{
+    color: #87DDFF;
+}
+.completaLogin{
+    color:#E7F6FC;
+    background-color: #ED7F05;
+    height: 70px;
+    width: 320px;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0px 0px 8px black;
+    font-size: 2em;
+}
+.Registrate{
+    margin: 10px;
+    text-shadow: 0px 0px 2px black;
+    font-size: 1.2em;
+    color: #E7F6FC;
+}
+.Registrate a{
+    color: #E7F6FC;
+}
+.registro h3{
+    color: #E7F6FC;
+    font-size: 2em;
+    text-shadow: 0px 0px 2px black;
+}
+.registro hr{
+    width: 70%;
+    margin: 0 auto;
+    border: 0.3px solid white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.textobotonLogin{
+    margin: 10px;
+    text-shadow: 0px 0px 2px black;
+    font-size: 1.2em;
+    color: #E7F6FC;
+}
+.textobotonLogin a{
+    color: #E7F6FC;
+}
+.sesionIniciada{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.sesionIniciada img{
+    width: 100px;
+    border-radius: 100px;
+}
+.sesionIniciada input{
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px black;
+    padding: 4px;
+}
+.menuSesion{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.verPerfil{
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px black;
+    padding: 4px;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+#errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
+    display: none;
+}
+
+/*-------------------------------- FIN HEADER ------------------------------*/
+
+.contenedor{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannerperro{
+    position: absolute;
+    z-index: -5;
+    width: 100%;
+}
+.contenedor{
+    margin: auto 0;
+}
+.contenedor a {
+    text-decoration: none;
+}
+.primerbanner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+.primerbanner h1{
+    padding-bottom: 1.04vw;
+    font-weight: 500;
+}
+.separador{
+    width: 22vw;
+}
+.textoprimerbanner{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: #ED7F05;
+    margin-top: 4.68vw;
+    font-size: 2vw;
+    width: 41vw;
+    text-align: center;
+}
+.textoprimerbanner h2{
+    font-weight: 300;
+}
+.botoncontacto{
+    border-radius: 10px;
+    background-color:#E7F6FC;
+    color:#87DDFF;
+    padding-top: 1.30vw;
+    padding-bottom: 1.30vw;
+    padding-left: 2.34vw;
+    padding-right: 2.34vw;
+    margin: 1.56vw;
+    font-size: 1.5vw;
+    transition: all 0.2s linear;
+}
+.botoncontacto:hover{
+    transition: all 0.2s linear;
+    box-shadow: 0px 0px 8px black;
+}
+.perroygato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: #E7F6FC;
+    padding: 1.56vw;
+}
+.perroygato img{
+    width: 40%;
+}
+.perroygato p{
+    font-size: 1.5vw;
+    width: 41.66vw;
+    padding-top: 1.56vw;
+    padding-bottom: 1.56vw;
+}
+.anuncioPerro a{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 15.62vw;
+}
+.anuncioGato a{
+    width: 15.62vw;
+}
+.perroygato h1{
+    font-size: 1.8vw;
+    color: #87DDFF;
+    text-shadow: 1px 1px 1px black;
+}
+.anuncioPerro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.anuncioGato{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.infoGato,.infoPerro{
+    display: flex;
+    flex-direction: column;
+}
+.infoPerro{
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+.botonVerPerro,.botonVerGato{
+    text-align: center;
+    border-radius: 0.52vw;
+    background-color:#87DDFF;
+    color:#E7F6FC;
+    padding-top: 0.52vw;
+    padding-bottom: 0.52vw;
+    width: 15.62vw;
+    box-shadow: 0px 0px 2px black;
+    font-size: 1.4vw;
+    text-shadow: 0px 0px 2px black;
+    transition: all 0.2s linear;
+}
+.botonVerPerro:hover,.botonVerGato:hover{
+    transition: all 0.2s linear;
+    box-shadow: 0px 0px 8px black;
+}
+.headergato{
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+}
+.segundobanner{
+    font-family: 'Raleway', sans-serif;
+    color: #E7F6FC;
+    font-size: 1.2vw;
+    text-align: center;
+    width: 60vw;
+}
+.textosegundobanner{
+    margin: 1.56vw 0vw 1.30vw 10.41vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.textosegundobanner h1{
+    margin: 1.041vw;
+    text-shadow: 0px 0px 10px black;
+}
+.textosegundobanner h2{
+    font-weight: 300;
+    text-shadow: 0px 0px 10px black;
+}
+.botonbannergato{
+    border-radius: 10px;
+    background-color:#ED7F05;
+    color:#E7F6FC;
+    padding-top: 1.30vw;
+    padding-bottom: 1.30vw;
+    padding-left: 2.34vw;
+    padding-right: 2.34vw;
+    margin: 1.56vw;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    transition: all 0.2s linear;
+}
+.botonbannergato:hover{
+    transition: all 0.2s linear;
+    box-shadow: 0px 0px 8px black;
+}
+
+/*-------------------------------- FOOTER ------------------------------*/
+
+footer{
+    display: flex;
+    flex-flow: column;
+
+}
+.piedepagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    background-color:#E7F6FC;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+.pie1{
+    color: #87DDFF;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.tituloPie{
+    text-shadow: 0px 2px 2px black;
+}
+.pie1 img{
+    padding-right: 10px;
+    width: 70px;
+}
+.redesPie img{
+    margin: 20px;
+    width: 50px;
+}
+li{
+    list-style:none;
+    color: black;
+    font-size: 1em;
+}
+.pie2{
+    margin: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.pie3 h2{
+    font-weight: 100;
+}
+.textoPie{
+    background-color: #002b3c;
+    padding: 30px;
+    text-align: center;
+    color: #E7F6FC;
+}

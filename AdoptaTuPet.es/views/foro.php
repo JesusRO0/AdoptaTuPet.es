@@ -103,18 +103,18 @@ session_start();
 
             <form action="#" method="POST">
                 <p>
-                    <input type="text" name="correoSesion" placeholder="  Email" class="inserta inicioS" id="emailLog">
+                    <input type="text" name="correoSesion" placeholder="  Email" class="emailLogin" id="emailLog" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
                 </p>
 
                 <p>
-                    <input type="password" name="passSesion" placeholder="  Contraseña" class="inserta inicioS" id="passLog">
+                    <input type="password" name="passSesion" placeholder="  Contraseña" class="contraseñaLogin" id="passLog" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,}$" required>
                 </p>
                 <p>
                     <input type="submit" name="completarLogin" value="Entra" class="completaLogin" id="botonLogin" >
                 </p>
 
                 <p class="Registrate" id="botonRegistrate">Si no tienes una cuenta <a href="" target="_blank" id="registro">Regístrate</a></p>
-
+                <p class="errorL"></p>
             </form>
 
 
@@ -126,30 +126,31 @@ session_start();
             <h3>Regístrate</h3>
             <hr>
 
-            <form action="#" method="POST">
+            <form action="#" id="formularioRegistro" method="POST">
                 <p>
-                    <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="email">
+                    <input type="text" name="email" placeholder="  Email" class="emailRegistro" id="email">
                     <div id="errorEmail" class="hidden">* Ha introducido de manera incorrecta el email, por favor pruebe de nuevo</div>
                 </p>
 
                 <p>
-                    <input type="password" name="password" placeholder="  Contraseña" class="inserta inicioS" id="password">
+                    <input type="password" name="password" placeholder="  Contraseña" class="contraseñaRegistro" id="password">
                     <div id="errorPassword" class="hidden">* Ha introducido de manera incorrcecta la contraseña, por favor pruebe de nuevo</div>
                 </p>
 
                 <p>
-                    <input type="password" name="confirmaPassword" placeholder="  Repetir Contraseña" class="inserta inicioS" id="confirmaPassword">
+                    <input type="password" name="confirmaPassword" placeholder="  Repetir Contraseña" class="repetirContraseña" id="confirmaPassword">
                     <div id="errorConfirmaPassword" class="hidden">* La contraeña que ha introducido no coincide</div>
                 </p>
 
                 <p>
-                    <input type="text" name="usuario" placeholder="  Nombre Usuario" class="inserta inicioS" id="usuario">
+                    <input type="text" name="usuario" placeholder="  Nombre Usuario" class="nombreUsuario" id="usuario">
                     <div id="errorUsuario" class="hidden">* Ha introducido de manera incorrecta el usuario, por favor pruebe de nuevo</div>
                 </p>
 
                 <p>
                     <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro">
                     <div id="errorFormulario" class="hidden"><strong>Debe rellenar todos los campos correctamente.</strong></div>
+                    <div id="comprobacionEmail"></div>
                 </p>
 
                 <p class="textobotonLogin" id="textobotonLogin">Si ya tienes una cuenta <a href="" target="_blank" id="Entra">Entra</a></p>

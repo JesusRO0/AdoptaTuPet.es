@@ -16,6 +16,22 @@ document.getElementById("divEntrada").addEventListener('click', function(ev){
     ev.preventDefault();
 });
 
+//Evento de login en móvil.
+document.getElementById("divEntradaMovil").addEventListener('click', function(ev){
+    
+    registro.style.display = 'none';
+
+    if (login.style.display == 'block') {
+        login.style.display = 'none';
+
+    } else {
+        login.style.display = 'block';
+
+    }
+
+    ev.preventDefault();
+});
+
 //Evento de registro.
 document.getElementById("registro").addEventListener('click', function(ev){
 
