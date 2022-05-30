@@ -112,7 +112,7 @@ session_start();
 
                     }else{
 
-                        echo "<h2 href='./views/perfil.php' class='entra' id='divEntrada'>Entra</h2>";
+                        echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
                     }
                     
 
