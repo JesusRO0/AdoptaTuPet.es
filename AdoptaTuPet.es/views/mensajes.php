@@ -78,6 +78,7 @@ session_start();
 
                     <div class="botonMovil">
                         <h2 class='entraMovil' id='divEntradaMovil'><img src='./img/usuario.png'>Entra</h2>
+                        <a href='./perfil.php' class='entraMovil' id='divEntradaMovil'><img src='./img/usuario.png'>Perfil</a>
                     </div>
 
                     <a href="../index.php"><h2 class="home">Inicio</h2></a>
@@ -102,8 +103,11 @@ session_start();
                             <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
                         </form>
                         </div>";
+
+                        echo "<script>document.getElementById('divEntradaMovil').style.display = 'none'</script>";
                     }else{
 
+                        echo "<script>document.getElementById('divEntradaMovil').style.display = 'block'</script>";
                         echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
                     }
 

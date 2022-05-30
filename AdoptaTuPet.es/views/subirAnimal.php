@@ -80,7 +80,8 @@ if(isset($_POST['cerrarSesion'])){
                     </div>
 
                     <div class="botonMovil">
-                        <h2 class='entraMovil' id='divEntradaMovil'><img src='./img/usuario.png'>Entra</h2>
+                        <h2 class='entraMovil' id='divEntradaMovil'><img src='./img/usuario.png'>Perfil</h2>
+                        <a href='./perfil.php' class='entraMovil' id='divEntradaMovil'><img src='./img/usuario.png'>Entra</a>                        <a href='./perfil.php' class='entraMovil' id='divEntradaMovil'><img src='./views/img/usuario.png'>Entra</a>
                     </div>
 
                     <a href="../index.php"><h2 class="home">Inicio</h2></a>
@@ -108,8 +109,11 @@ if(isset($_POST['cerrarSesion'])){
                             </form>
                             </div>
                         </div>";
+
+                        echo "<script>document.getElementById('divEntradaMovil').style.display = 'none'</script>";
                     }else{
 
+                        echo "<script>document.getElementById('divEntradaMovil').style.display = 'block'</script>";
                         echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
                     }
 

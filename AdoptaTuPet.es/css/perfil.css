@@ -16,7 +16,6 @@
     */
 }
 body{
-    background-color:#E7F6FC;
     font-family: 'Fredoka', sans-serif;
     overflow-x: hidden;
 }
@@ -1084,10 +1083,7 @@ li{
         color: #E7F6FC;
     }
     .sesionIniciada{
-        display: flex;
-        flex-flow: row-reverse;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
     .sesionIniciada img{
         width: 100px;

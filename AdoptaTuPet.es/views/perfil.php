@@ -78,6 +78,7 @@ session_start();
 
                     <div class="botonMovil">
                         <h2 class='entraMovil' id='divEntradaMovil'><img src='./img/usuario.png'>Entra</h2>
+                        <a href='./perfil.php' class='entraMovil' id='divEntradaMovil'><img src='./img/usuario.png'>Perfil</a>
                     </div>
 
                     <a href="../index.php"><h2 class="home">Inicio</h2></a>
@@ -102,8 +103,11 @@ session_start();
                             <input type='submit' class='cerrarSesion' name='cerrarSesion' value='Cerrar  Sesión' id='cerrarSesion'>
                         </form>
                         </div>";
+
+                        echo "<script>document.getElementById('divEntradaMovil').style.display = 'none'</script>";
                     }else{
 
+                        echo "<script>document.getElementById('divEntradaMovil').style.display = 'block'</script>";
                         echo "<h2 class='entra' id='divEntrada'>Entra</h2>";
                     }
 
@@ -192,17 +196,17 @@ session_start();
             <hr>
                 <p>
                     <label for="usuario">Nombre de Usuario*</label>
-                    <input type="text" name="usuario" placeholder="  Usuario" class="inserta inicioS" id="usuarioCambio">
+                    <input type="text" name="usuario" placeholder="  Usuario" class="emailLogin" id="usuarioCambio">
                 </p>
 
                 <p>
                     <label for="email">Email*</label>
-                    <input type="text" name="email" placeholder="  Email" class="inserta inicioS" id="emailCambio">
+                    <input type="text" name="email" placeholder="  Email" class="emailLogin" id="emailCambio">
                 </p>
 
                 <p>
                     <label for="direccion">Direccion</label>
-                    <input type="text" name="direccion" placeholder="  Direccion" class="inserta inicioS" id="direccionCambio">
+                    <input type="text" name="direccion" placeholder="  Direccion" class="emailLogin" id="direccionCambio">
                 </p>
 
                 <p>
