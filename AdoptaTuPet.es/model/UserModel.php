@@ -2,6 +2,12 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+/*
+*
+*Clase Usuario, contiene todas las funcionalidades relacionadas con el tema usuario.
+*
+*/
+
     class User{
 
         private $idUsuario;
@@ -20,6 +26,15 @@ ini_set("display_errors", 1);
             $this->localidad = $localidad;
             $this->contrasena = $contrasena;
         }
+        
+    /*
+    *Función para Crear el usuario.
+    *
+    *@param $email recoge el email del registro para crear el usuario.
+    *@param $contraseña recoge la contraseña del registro para crear el usuario.
+    *@param $usuario recoge el usuario del registro para crear el usuario.
+    *
+    */
 
     function creaUser($email, $usuario, $contraseña){
 
@@ -71,12 +86,11 @@ ini_set("display_errors", 1);
     }
 
     /*
-    *Función para iniciar sesión
+    *Función para Iniciar Sesión
     *
-    *@param $email recoge el$email con el que se quiere iniciar sesión
-    *@param $contraseña recoge la contraseña del$email con la que se quiere iniciar sesión
+    *@param $email recoge el email del login con el que se iniciará sesión.
+    *@param $contraseña recoge la contraseña del login con lo que se iniciará sesión.
     *
-    *@return un boolean para saber si el inicio se ha realizado con éxito
     */
     function iniciarSesion($email, $contraseña){
         
