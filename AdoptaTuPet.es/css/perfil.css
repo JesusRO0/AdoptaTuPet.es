@@ -81,7 +81,7 @@ input{
     align-items: center;
     color: black;
 }
-.homeMovil img,.adoptaMovil img,.contactoMovil img,.accederMovil img,.entraMovil img{
+.homeMovil img,.adoptaMovil img,.contactoMovil img,.accederMovil img,.entraMovil img,.entraPerfilMovil img{
     width: 50px;
 }
 .homeMovil,.adoptaMovil,.contactoMovil,.entraMovil{
@@ -277,6 +277,18 @@ input{
 }
 #errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
     display: none;
+}
+.entraPerfilMovil{
+    text-align: center;
+    margin: 10px;
+    font-size: 0.8em;
+    color: black;
+    display: none;
+}
+.entraPerfilh2{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1em;
 }
 
 /*-------------------------------- FIN HEADER ------------------------------*/
@@ -1083,10 +1095,7 @@ li{
         color: #E7F6FC;
     }
     .sesionIniciada{
-        display: flex;
-        flex-flow: row-reverse;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
     .sesionIniciada img{
         width: 100px;

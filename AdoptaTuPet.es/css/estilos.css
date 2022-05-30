@@ -72,6 +72,10 @@ input{
     justify-items: center;
 }
 .botonMovil{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5em;
 }
 .homeMovil a,.adoptaMovil a,.contactoMovil a{
@@ -81,7 +85,7 @@ input{
     align-items: center;
     color: black;
 }
-.homeMovil img,.adoptaMovil img,.contactoMovil img,.accederMovil img,.entraMovil img{
+.homeMovil img,.adoptaMovil img,.contactoMovil img,.accederMovil img,.entraMovil img,.entraPerfilMovil img,.entraPerfilMovil img{
     width: 50px;
 }
 .homeMovil,.adoptaMovil,.contactoMovil,.entraMovil{
@@ -275,7 +279,18 @@ input{
 #errorEmail,#errorPassword,#errorConfirmaPassword,#errorUsuario,#errorFormulario{
     display: none;
 }
-
+.entraPerfilMovil{
+    text-align: center;
+    margin: 10px;
+    font-size: 0.8em;
+    color: black;
+    display: none;
+}
+.entraPerfilh2{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1em;
+}
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
