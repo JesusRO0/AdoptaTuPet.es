@@ -109,6 +109,10 @@ session_start();
                         </div>";
 
                         echo "<a class='entraMovil' id='divEntradaMovil'><img src='./views/img/usuario.png'>Entra</a>";
+                        echo "<script>
+                        document.getElementById('divEntradaMovil').style.display = 'none';
+                        
+                        </script>";
 
                     }else{
 
