@@ -229,7 +229,6 @@ ini_set("display_errors", 1);
     *@param $localidad es la dirección que le pasamos mediante el input de perfil.php
     *@param $usuario es el nuevo usuario que le damos mediante el input de perfil.php
     *
-    *@return $muesta es un un array asociativo con los datos que queremos mostrar en nuestro contenedor del perfil
     */
 
     function cambiaUsuario($usuario, $localidad, $email, $emailOLD){
@@ -252,6 +251,14 @@ ini_set("display_errors", 1);
         $_SESSION['email'] = $email;
 
     }
+        
+    /*
+    *Función para la foto de perfildel usuario, al principio se mostraá una imagen default y si lo cambia en perfil.php se mostrará la subida.
+    *
+    *@param $email es el email que le pasamos del usuario 
+    *
+    *return $fotoPerfil devuelve la imagen default o la subida por el usuario
+    */
 
     function fotoPerfil($email){
 
@@ -285,6 +292,14 @@ ini_set("display_errors", 1);
         }
         return $fotoPerfil;
     }
+        
+    /*
+    *Función la cual es la misma que el anterior pero para las páginas de estan en /views, por el tema de las urls
+    *
+    *@param $email es el email que le pasamos del usuario 
+    *
+    *return $fotoPerfil devuelve la imagen default o la subida por el usuario
+    */
 
     function fotoPerfilViews($email){
 
