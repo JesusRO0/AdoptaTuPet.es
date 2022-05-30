@@ -282,88 +282,117 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
-.bannerperro,.primerbanner,.perroygato,.anuncioGato,.headergato,.segundobanner{
-    display: none;
-}
-.difunde{
-    margin-top: 50px;
-    text-align: center;
-    color: #ED7F05;
-    font-size: 1.2em;
-    text-shadow: 0px 0px 0px black;
-}
-.primerbannerMovil{
-    color: #87DDFF;
-    padding-top: 10px;
-    text-shadow: 0px 2px 2px black;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    font-size: 1.5em;
-    margin-bottom: 50px;
-}
-.imagenMovil{
+.filtro{
     display: flex;
     flex-direction: row;
-    align-items:center;
-}
-.imagenMovil hr{
-    margin-top: 50px;
-    width: 90vw;
-    border: 1px solid #ED7F05;
-}
-.imagenMovil img{
-    margin-top: 50px;
-    width: 90px;
-}
-.gatoUnoMovil{
-    width: 90px;
-    position: absolute;
-    z-index: -2;
-    opacity: 40%;
-    width: 200px;
-    left: 220px;
-    top: 20px;
-}
-.segundobannerMovil{
-    text-align: center;
-    background-color:#ED7F05;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    color: #E7F6FC;
-    text-shadow: 1px 1px 1px black;
-}
-.huesoMovil{
-    position: absolute;
-    top: 390px;
-    left: 170px;
-    opacity: 20%;
-    width: 250px;
-}
-.tituloHueso{
-    margin-bottom: 80px;
-}
-.perroGatoMovil{
-    display: flex;
-    flex-flow: row;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items:center;
+    color:#87DDFF;
+    margin-top: 10px;
 }
-.perroGatoMovil a{
-    text-decoration: none;
+.filtro h2{
+    margin: 20px;
+    font-size: 2.4vw;
+    text-shadow: 0 0 1px black;
+}
+.filtro select{
+    font-size: 1.2vw;
+    margin: 10px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    color:#ED7F05;
+}
+.localidad{
+    font-size: 1.2vw;
+    margin: 10px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    color: #ED7F05;
+    width: 180px;
+}
+input::placeholder{
     color: #ED7F05;
 }
-.perroGatoMovil img{
-    width: 100px;
+.contenedorAnimales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
-.perroMovil,.gatoMovil{
-    margin: 20px;
-    background-color: #E7F6FC;
-    font-size: 0.5em;
-    border-radius: 10px;
-    padding: 20px;
+.filtrarSubmit{
+    font-weight: bold;
+    color: #87DDFF;
+    background-color:white;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    border: 0;
+}
+.animal{
+    font-family: 'Fredoka', sans-serif;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    transition: transform 0.5s linear;
+}
+.animal img{
+    width: 420px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.nombreAnimal{
+    font-weight: bold;
+    font-size: 1.8em;
+    color:#ED7F05;
+    margin: 10px;
+}
+.informacionAnimal{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.localidadAnimal{
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: black;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.localidadAnimal img{
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+hr{
+    margin: 0 auto;
+    width: 100px;
+    border: 0.5px solid black;
+    opacity: 0%;
+    transition: all 0.5s linear;
+}
+a{
+    text-decoration: none;
+}
+.animal:hover{
+    transition: transform 0.5s linear;
+    box-shadow: 0px 0px 5px black;
+    transform:scale(105%);
+}
+.animal:hover hr{
+    transition: all 1s linear;
+    color: white;
+    width: 350px;
+    opacity: 100%;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/

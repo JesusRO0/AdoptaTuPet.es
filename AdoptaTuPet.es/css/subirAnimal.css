@@ -282,88 +282,36 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
-.bannerperro,.primerbanner,.perroygato,.anuncioGato,.headergato,.segundobanner{
-    display: none;
+.subirAnimal{
+    background-color: #87DDFF;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
 }
-.difunde{
-    margin-top: 50px;
-    text-align: center;
-    color: #ED7F05;
-    font-size: 1.2em;
-    text-shadow: 0px 0px 0px black;
+.subirAnimal input{
+    margin: 10px;
+    font-size: 1.4em;
 }
-.primerbannerMovil{
-    color: #87DDFF;
-    padding-top: 10px;
-    text-shadow: 0px 2px 2px black;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    font-size: 1.5em;
-    margin-bottom: 50px;
+.subirAnimal label{
+    font-size: 1.4em;
 }
-.imagenMovil{
-    display: flex;
-    flex-direction: row;
-    align-items:center;
+.subirAnimal hr{
+    border: 2px solid #E7F6FC;
 }
-.imagenMovil hr{
-    margin-top: 50px;
-    width: 90vw;
-    border: 1px solid #ED7F05;
-}
-.imagenMovil img{
-    margin-top: 50px;
-    width: 90px;
-}
-.gatoUnoMovil{
-    width: 90px;
-    position: absolute;
-    z-index: -2;
-    opacity: 40%;
-    width: 200px;
-    left: 220px;
-    top: 20px;
-}
-.segundobannerMovil{
-    text-align: center;
-    background-color:#ED7F05;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    color: #E7F6FC;
+.subirAnimal h1{
+    color:#E7F6FC;
     text-shadow: 1px 1px 1px black;
 }
-.huesoMovil{
-    position: absolute;
-    top: 390px;
-    left: 170px;
-    opacity: 20%;
-    width: 250px;
-}
-.tituloHueso{
-    margin-bottom: 80px;
-}
-.perroGatoMovil{
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.perroGatoMovil a{
-    text-decoration: none;
+.inputSubir{
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+    background-color: white;
     color: #ED7F05;
-}
-.perroGatoMovil img{
-    width: 100px;
-}
-.perroMovil,.gatoMovil{
-    margin: 20px;
-    background-color: #E7F6FC;
-    font-size: 0.5em;
-    border-radius: 10px;
-    padding: 20px;
+    border: 1px solid #ED7F05;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px black;
+    padding: 4px;
+    cursor: pointer;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/

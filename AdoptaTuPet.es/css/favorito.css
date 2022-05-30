@@ -282,89 +282,51 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
-.bannerperro,.primerbanner,.perroygato,.anuncioGato,.headergato,.segundobanner{
-    display: none;
-}
-.difunde{
-    margin-top: 50px;
-    text-align: center;
-    color: #ED7F05;
-    font-size: 1.2em;
-    text-shadow: 0px 0px 0px black;
-}
-.primerbannerMovil{
-    color: #87DDFF;
-    padding-top: 10px;
-    text-shadow: 0px 2px 2px black;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    font-size: 1.5em;
-    margin-bottom: 50px;
-}
-.imagenMovil{
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-}
-.imagenMovil hr{
-    margin-top: 50px;
-    width: 90vw;
-    border: 1px solid #ED7F05;
-}
-.imagenMovil img{
-    margin-top: 50px;
-    width: 90px;
-}
-.gatoUnoMovil{
-    width: 90px;
-    position: absolute;
-    z-index: -2;
-    opacity: 40%;
-    width: 200px;
-    left: 220px;
-    top: 20px;
-}
-.segundobannerMovil{
-    text-align: center;
-    background-color:#ED7F05;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    color: #E7F6FC;
-    text-shadow: 1px 1px 1px black;
-}
-.huesoMovil{
-    position: absolute;
-    top: 390px;
-    left: 170px;
-    opacity: 20%;
-    width: 250px;
-}
-.tituloHueso{
-    margin-bottom: 80px;
-}
-.perroGatoMovil{
+.contenedor{
+    font-family: 'Fredoka', sans-serif;
     display: flex;
     flex-flow: row;
+}
+.navegador{
+    display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-}
-.perroGatoMovil a{
-    text-decoration: none;
-    color: #ED7F05;
-}
-.perroGatoMovil img{
-    width: 100px;
-}
-.perroMovil,.gatoMovil{
-    margin: 20px;
     background-color: #E7F6FC;
-    font-size: 0.5em;
-    border-radius: 10px;
-    padding: 20px;
+    margin:10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px black;
 }
+.chat,.ajustes,.salir{
+    background-color: #87DDFF;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0px 0px 2px black;
+    margin: 10px;
+}
+.favorito{
+    background-color: #ED7F05;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0px 0px 4px black;
+}
+.navegador img{
+    width: 50px;
+}
+.misFavoritos{
+    background-color: #E7F6FC;
+    margin:10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px black;
+    padding: 20px;
+    width: 100%;
+}
+.misFavoritos hr{
+    margin-bottom: 30px;
+}
+
 
 /*-------------------------------- FOOTER ------------------------------*/
 

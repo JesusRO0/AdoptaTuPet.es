@@ -282,88 +282,132 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
-.bannerperro,.primerbanner,.perroygato,.anuncioGato,.headergato,.segundobanner{
-    display: none;
-}
-.difunde{
-    margin-top: 50px;
-    text-align: center;
-    color: #ED7F05;
-    font-size: 1.2em;
-    text-shadow: 0px 0px 0px black;
-}
-.primerbannerMovil{
-    color: #87DDFF;
-    padding-top: 10px;
-    text-shadow: 0px 2px 2px black;
-    font-family: 'Raleway', sans-serif;
+.contenedor{
     display: flex;
-    flex-direction: column;
-    align-items:center;
-    font-size: 1.5em;
-    margin-bottom: 50px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
-.imagenMovil{
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-}
-.imagenMovil hr{
-    margin-top: 50px;
-    width: 90vw;
-    border: 1px solid #ED7F05;
-}
-.imagenMovil img{
-    margin-top: 50px;
-    width: 90px;
-}
-.gatoUnoMovil{
-    width: 90px;
-    position: absolute;
-    z-index: -2;
-    opacity: 40%;
-    width: 200px;
-    left: 220px;
-    top: 20px;
-}
-.segundobannerMovil{
-    text-align: center;
-    background-color:#ED7F05;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    color: #E7F6FC;
-    text-shadow: 1px 1px 1px black;
-}
-.huesoMovil{
-    position: absolute;
-    top: 390px;
-    left: 170px;
-    opacity: 20%;
-    width: 250px;
-}
-.tituloHueso{
-    margin-bottom: 80px;
-}
-.perroGatoMovil{
+.animal{
     display: flex;
     flex-flow: row;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    width: 90%;
 }
-.perroGatoMovil a{
-    text-decoration: none;
-    color: #ED7F05;
+.perfilAnimal{
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #87DDFF;
+    border-radius: 15px;
+    width: 100%;
 }
-.perroGatoMovil img{
-    width: 100px;
+.perfilAnimal hr{
+    border: 1px solid #E7F6FC
 }
-.perroMovil,.gatoMovil{
-    margin: 20px;
-    background-color: #E7F6FC;
-    font-size: 0.5em;
-    border-radius: 10px;
+.perfilAnimal li{
+    list-style: circle;
+    margin-left: 25px;
+    font-size: 1.5em;
+}
+.perfilAnimal h1{
+    color: #E7F6FC;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.perfilAnimal h2{
+    color: #E7F6FC;
+    text-shadow: 1px 1px 1px black;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 1.8em;
+}
+.perfilAnimal img{
+    width:35px;
+    padding-right: 10px;
+}
+.tamaño{
+    margin-bottom: 10px;
+}
+.localizacion{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+.imagenAnimal{
+    width: 100%;
+}
+.imagenAnimal img{
+    width: 100%;
+    border-radius: 35px;
+    padding: 15px;
+}
+.adoptar{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.compartir{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1.5vw;
+    border: 0 solid black;
+    background-color:#E7F6FC;
+    width: 100%;
+    font-size: 1.2vw;
+}
+.descripcion{
+    align-items: center;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #87DDFF;
+    border-radius: 15px;
     padding: 20px;
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.descripcion h2,.descripcion h1{
+    color: #E7F6FC;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.descripcion p{
+    font-size: 1.4em;
+}
+.descripcion hr{
+    border: 1px solid #E7F6FC;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.adoptar button{
+    font-family: 'Fredoka', sans-serif;
+    color:#E7F6FC;
+    background-color: #ED7F05;
+    padding: 1.6vw;
+    border: 0 solid black;
+    border-radius: 15px;
+    font-size: 1.8vw;
+    margin-right: 40px;
+    font-weight: bolder;
+    width: 100%;
+}
+.redesCompartir img{
+    width: 50px;
+    margin: 10px;
+}
+.perfilAnimal button{
+    cursor: pointer;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/
@@ -801,6 +845,7 @@ li{
     .perfilAnimal button{
         cursor: pointer;
     }
+
     /*-------------------------------- FOOTER ------------------------------*/
 
     footer{

@@ -282,88 +282,175 @@ input{
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
-.bannerperro,.primerbanner,.perroygato,.anuncioGato,.headergato,.segundobanner{
-    display: none;
+a{
+    text-decoration: none;
 }
-.difunde{
-    margin-top: 50px;
-    text-align: center;
-    color: #ED7F05;
-    font-size: 1.2em;
-    text-shadow: 0px 0px 0px black;
-}
-.primerbannerMovil{
-    color: #87DDFF;
-    padding-top: 10px;
-    text-shadow: 0px 2px 2px black;
-    font-family: 'Raleway', sans-serif;
+.definicion{
     display: flex;
-    flex-direction: column;
-    align-items:center;
-    font-size: 1.5em;
-    margin-bottom: 50px;
+    flex-flow: column;
+    align-items: center;
 }
-.imagenMovil{
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-}
-.imagenMovil hr{
-    margin-top: 50px;
-    width: 90vw;
-    border: 1px solid #ED7F05;
-}
-.imagenMovil img{
-    margin-top: 50px;
-    width: 90px;
-}
-.gatoUnoMovil{
-    width: 90px;
-    position: absolute;
-    z-index: -2;
-    opacity: 40%;
-    width: 200px;
-    left: 220px;
-    top: 20px;
-}
-.segundobannerMovil{
+.definicion h1{
+    text-shadow: 0 0 1px #E7F6FC;
     text-align: center;
-    background-color:#ED7F05;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    color: #E7F6FC;
+    color:#ED7F05;
+    width:  67.70vw;
+    font-size: 1.8vw;
+}
+.definicion img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #E7F6FC;
+    border-radius: 10px;
+    width: 20vw;
+}
+.atributos{
+    display: grid;
+    grid-template-areas: "a1 a2 a3" "a4 a5 a6";
+    grid-gap: 50px;
+    margin: 20px;
+}
+.atributos div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #E7F6FC;
+    padding: 20px;
+    text-align: center;
+}
+.atributos h1{
     text-shadow: 1px 1px 1px black;
+    color: #87DDFF;
+    margin-bottom: 20px;
+    font-size: 2vw;
 }
-.huesoMovil{
-    position: absolute;
-    top: 390px;
-    left: 170px;
-    opacity: 20%;
-    width: 250px;
+.atributos p{
+    color:#ED7F05;
+    font-size: 1.5vw;
 }
-.tituloHueso{
-    margin-bottom: 80px;
+.tituloPreguntas{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
-.perroGatoMovil{
+.tituloPreguntas h1{
+    text-shadow: 0 0 1px #E7F6FC;
+    text-align: center;
+    color:#ED7F05;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.8vw;
+}
+.botonPreguntas{
+    border-radius: 10px;
+    background-color: #ED7F05;
+    color: #E7F6FC;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.8vw;
+    transition: all 0.2s linear;
+}
+.botonPreguntas:hover{
+    box-shadow: 0px 0px 8px black;
+    transition: all 0.2s linear;
+}
+.pasosAdoptar{
+    background-color: #ED7F05;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 1.2vw;
+    color: #E7F6FC;
+}
+.pasosAdoptar p{
+font-size: 2em;
+}
+.pasos{
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    color: #ED7F05;
+    width: 100%;
 }
-.perroGatoMovil a{
-    text-decoration: none;
+.pasos p{
+    font-size: 1.4vw;
+    padding-top: 15px;
+}
+.paso1,.paso2,.paso3{
+    background-color:#E7F6FC;
+    width: 31.25vw;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px;
+    padding: 30px;
+}
+.paso2 img{
+    width: 24.21vw;
+}
+.paso3 img{
+    padding-top: 10px;
+}
+.contactar{
+    background-color: #E7F6FC;
+    padding-top: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     color: #ED7F05;
 }
-.perroGatoMovil img{
-    width: 100px;
+.contactar h1{
+    font-size: 1.8vw;
 }
-.perroMovil,.gatoMovil{
+.contactar input{
+    font-family: 'Fredoka', sans-serif;
+    margin: 4px;
+}
+.informacion{
+    font-size: 1.5vw;
     margin: 20px;
-    background-color: #E7F6FC;
-    font-size: 0.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.asunto{
+    font-size: 1.5em;
+    width: 100%;
+}
+.mensaje{
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 4px;
+    font-size: 1.5em;
+}
+.nombre,.email{
+    font-size: 1.5em;
+    width: 48%;
+}
+.EnviarCorreo{
     border-radius: 10px;
-    padding: 20px;
+    background-color: white;
+    color: #ED7F05;
+    border: 1px solid #ED7F05;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-shadow: 0px 0px 2px black;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: 10px;
+}
+.preguntas{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #87DDFF;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #ED7F05;
+    font-size: 1.5vw;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/
@@ -844,6 +931,7 @@ li{
         color: #ED7F05;
         font-size: 1.5vw;
     }
+
     /*-------------------------------- FOOTER ------------------------------*/
 
     footer{
