@@ -1191,7 +1191,10 @@ li{
         color: #E7F6FC;
     }
     .sesionIniciada{
-        display: none;
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: center;
+        align-items: center;
     }
     .sesionIniciada img{
         width: 100px;
