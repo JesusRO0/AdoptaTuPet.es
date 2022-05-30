@@ -3,6 +3,8 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 /*
+* FUNCIONES QUE SE IBAN A UTILIZAR PARA EL FORO, NO SE UTILIZAN
+*
     *Función para añadir un like en caso de que el usuario haya pulsado el mismo
     *
     *@param $idImg almacena el id de la imagen a la que queremos añadir el like
