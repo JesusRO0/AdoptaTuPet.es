@@ -1,9 +1,24 @@
 <?php
-
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+/*
+*
+*Clase Favoritos con todo lo relacionado a cuando le damos me gusta a un animal este se guardará en nuestro perfil en el apartado favoritos
+*
+*/
+
 class FavoritosModel{
+    
+    /*
+    *
+    *Función favorito coge el id animal y se pasa al id usuario guardandolo para más tarde monstarlo en el perfil
+    *
+    *@param $idUsuario el id que guardaremos del animal
+    *@param $idAnimal id del animal que guardará el usuario
+    *
+    *return $favorito devulve true ya uw se ha insertado el favorito correctamente
+    */
 
     function favorito($idUsuario,$idAnimal){
 
