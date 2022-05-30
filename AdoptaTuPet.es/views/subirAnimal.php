@@ -35,6 +35,7 @@ if(isset($_POST['completarRegistro'])){
     $repContraseña = $_POST['confirmaPassword'];
 
     UserController::creaUserController($email, $usuario, $contraseña, $repContraseña);
+    
 }
 
 if(isset($_POST['completarLogin'])){
