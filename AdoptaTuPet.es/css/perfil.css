@@ -485,7 +485,7 @@ li{
     .inicio,.homeMovil,.adoptaMovil,.contactoMovil,.primerbannerMovil,.entraMovil{
         display: none;
     }
-    .home,.adopta,.contacto,.foto,.foro,.entra{
+    .home,.adopta,.contacto,.foro,.entra{
         display: block;
     }
     .titulo{

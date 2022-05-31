@@ -22,6 +22,7 @@ session_start();
     <?php
 
     require_once "../controller/ControllerUser.php";
+    require_once "../controller/CambiaDatos.php";
 
     if(isset($_POST['completarRegistro'])){
 
@@ -288,6 +289,7 @@ session_start();
         <div class="textoPie"><p>© 2022 AdoptaTuPet. Todos los derechos reservados. Aviso legal, Política de privacidad y protección de datos personales.</p></div>
     </footer>
 
+    <script src="../js/AjaxUsuario.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/expresionesRegulares.js"></script>
     <script src="../js/openDivs.js"></script>
