@@ -4,7 +4,7 @@ session_start();
 /*
 *Este archivo solo tiene como mision subir una imagen
 *
-/*
+*/
 
 $email = $_SESSION['email'];
 
