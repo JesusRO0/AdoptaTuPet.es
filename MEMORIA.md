@@ -121,7 +121,7 @@ Cuerpo: Raleway.
 - Vanilla javascript.
 - Solo perros y gatos, posible ampliación con más animales.
 - Foro y tienda serán posibles ampliaciónes.
-- Diseño de movil y cambios del desktop faltán aún, que sería lo ultimo más el tema de favoritos.
+- Diseño de movil y cambios del desktop hechos, el tema favoritos no ha dado tiempo.
 - Se ha utilizado una API de cursiosidades de gatos llamada API Facts Cats.
 
 Se ha realizado cambios en el color y la letra en algunos apartados tales como en el index y contacto, se ha terminado el header que compartirán todos los apartados más el footer, dentro del header se ha creado los bloques de iniciar sesión y regístrate mediante javascript.  
