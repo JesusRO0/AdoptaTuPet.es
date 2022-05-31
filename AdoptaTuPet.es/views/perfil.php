@@ -22,7 +22,6 @@ session_start();
     <?php
 
     require_once "../controller/ControllerUser.php";
-    require_once "../controller/CambiaDatos.php";
 
     if(isset($_POST['completarRegistro'])){
 
@@ -218,6 +217,7 @@ session_start();
 
                 <p>
                     <input type="button" name="Guardar" value="Guardar" class="guardar" id="Guardar" >
+                    <p id="mensaje"></p>
                 </p>
             
         </div>
