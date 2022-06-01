@@ -116,7 +116,7 @@ Cuerpo: Raleway.
 
 - Guía de Estilo.
 
-![Guía](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/GuiaDeEstilo.pdf)
+![Guía](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/Gu%C3%ADaDeEstilo.pdf)
 
 #### Análisis del proyecto
 
