@@ -85,7 +85,7 @@ if(isset($_POST['cerrarSesion'])){
                         <a href='./perfil.php' class='entraPerfilMovil' id='divEntradaPerfilMovil'>
                             <img src='./img/usuario.png'>
                             <h2 class="entraPerfilh2">Perfil<h2>
-                        </a>                      <a href='./perfil.php' class='entraMovil' id='divEntradaMovil'><img src='./views/img/usuario.png'>Entra</a>
+                        </a>
                     </div>
 
                     <a href="../index.php"><h2 class="home">Inicio</h2></a>
