@@ -114,6 +114,10 @@ Cuerpo: Raleway.
 
 ![Mockup](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/AdoptaTuPetes.pdf)
 
+- Guía de Estilo.
+
+![Guía](https://github.com/JesusRO0/AdoptaTuPet.es/blob/main/GuiaDeEstilo.pdf)
+
 #### Análisis del proyecto
 
 - No se va ha usar boostrap, solo vanilla css.
