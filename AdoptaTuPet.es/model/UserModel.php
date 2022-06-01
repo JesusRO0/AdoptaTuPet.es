@@ -204,17 +204,15 @@ ini_set("display_errors", 1);
         }
 
         //Seleccionamos los valores desde la base de datos para mostrarlos en la página
-        $datos = $db->query("SELECT usuario, fotoPerfil FROM usuario WHERE email = '$email'");
+        $datos = $db->query("SELECT usuario, email, localidad FROM usuario WHERE email = '$email'");
         
         if($res = $datos->fetch_object()){
             
-            //Almacenamos todos los valores en un array asociativo para devolverlos a la página desde la que se llama a la función para mostrar los datos
-            //Usar <img width='100' src='data:image/png;base64, ".base64_encode($res->fotoPerfil)."'></img> para visualizar la imagen+
-
+            
             $muestra = array(
                 "nombre" => $res->usuario,
-                "email" => $email,
-                'foto' => $res->fotoPerfil
+                "email" => $res ->$email,
+                'localidad' => $res->localidad
             );
 
             return $muestra;

@@ -81,6 +81,15 @@ class UserController{
         return $imagen;
     }
 
+    public static function MostrarInfo($email){
+        
+        $usuario = new User();
+
+        $datos = $usuario -> muestraDatosUsuario($email);
+
+        return $datos;
+    }
+
 }
 
 ?>
