@@ -179,7 +179,7 @@ session_start();
 
                 <p>
                     <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro">
-                    <div id="errorFormulario" class="hidden"><strong>Debe rellenar todos los campos correctamente.</strong></div>
+                    <div id="errorFormulario" class="hidden errorFormularioR"><strong>Debe rellenar todos los campos correctamente.</strong></div>
                     <div id="comprobacionEmail"></div>
                 </p>
 
@@ -200,6 +200,7 @@ session_start();
         <div class="perfil">
             <h1>Mi Perfil</h1>
             <hr>
+
                 <p>
                     <label for="usuario">Nombre de Usuario*</label>
                     <input type="text" name="usuario" placeholder="  Usuario" class="emailLogin" id="usuarioCambio">
@@ -237,7 +238,7 @@ session_start();
             ?>
             <form action="../model/FotoModel.php" method="POST" enctype="multipart/form-data">
 
-            <input type="file" name="image"/>
+            <input type="file" name="image" class="seleccionaImagen"/>
             <input type="submit" name="subirImagen" value="Cambiar Imagen" class="subirImagen" id="subirImagen">
 
             </form>

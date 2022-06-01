@@ -134,7 +134,7 @@ input{
 #divL{
     display: none;
     position: fixed;
-    top: 250px;
+    top: 200px;
     background-color: #87DDFF;
     text-align: center;
     width: 320px;
@@ -149,7 +149,7 @@ input{
 #divR{
     display: none;
     position: fixed;
-    top: 250px;
+    top: 200px;
     background-color: #87DDFF;
     text-align: center;
     width: 320px;
@@ -287,6 +287,9 @@ input{
     font-family: 'Fredoka', sans-serif;
     font-size: 1em;
 }
+.errorFormularioR{
+    margin-top: 10px;
+}
 
 /*-------------------------------- FIN HEADER ------------------------------*/
 
@@ -411,6 +414,10 @@ input::placeholder{
     margin-right: 5px;
     box-shadow: 0px 0px 2px black;
     margin-top: 15px;
+}
+.seleccionaImagen{
+    margin: 10px;
+    padding: 10px
 }
 
 /*-------------------------------- FOOTER ------------------------------*/
@@ -577,7 +584,7 @@ li{
     #divL{
         display: none;
         position: fixed;
-        top: 250px;
+        top: 200px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
@@ -591,7 +598,7 @@ li{
     #divR{
         display: none;
         position: fixed;
-        top: 250px;
+        top: 200px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
@@ -1007,7 +1014,7 @@ li{
     #divL{
         display: none;
         position: fixed;
-        top: 250px;
+        top: 200px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
@@ -1021,7 +1028,7 @@ li{
     #divR{
         display: none;
         position: fixed;
-        top: 250px;
+        top: 200px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;

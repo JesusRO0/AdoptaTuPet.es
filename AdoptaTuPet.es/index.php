@@ -187,7 +187,7 @@ session_start();
 
                 <p>
                     <input type="submit" name="completarRegistro" value="Regístrate" class="completaLogin" id="botonRegistro">
-                    <div id="errorFormulario" class="hidden"><strong>Debe rellenar todos los campos correctamente.</strong></div>
+                    <div id="errorFormulario" class="hidden errorFormularioR"><strong>Debe rellenar todos los campos correctamente.</strong></div>
                     <div id="comprobacionEmail"></div>
                 </p>
 

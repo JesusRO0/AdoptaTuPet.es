@@ -208,11 +208,10 @@ ini_set("display_errors", 1);
         
         if($res = $datos->fetch_object()){
             
-            
             $muestra = array(
                 "nombre" => $res->usuario,
-                "email" => $res ->$email,
-                'localidad' => $res->localidad
+                "email" => $res->email,
+                "localidad" => $res->localidad
             );
 
             return $muestra;
