@@ -135,7 +135,7 @@ input{
 #divL{
     display: none;
     position: fixed;
-    top: 200px;
+    top: 90px;
     background-color: #87DDFF;
     text-align: center;
     width: 320px;
@@ -150,7 +150,7 @@ input{
 #divR{
     display: none;
     position: fixed;
-    top: 200px;
+    top: 90px;
     background-color: #87DDFF;
     text-align: center;
     width: 320px;
@@ -506,7 +506,7 @@ li{
     #divL{
         display: none;
         position: fixed;
-        top: 200px;
+        top: 90px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
@@ -863,7 +863,7 @@ li{
     #divL{
         display: none;
         position: fixed;
-        top: 200px;
+        top: 90px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
@@ -877,7 +877,7 @@ li{
     #divR{
         display: none;
         position: fixed;
-        top: 200px;
+        top: 90px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;

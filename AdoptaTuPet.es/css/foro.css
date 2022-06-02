@@ -121,7 +121,7 @@ body{
     #divL{
         display: none;
         position: fixed;
-        top: 250px;
+        top: 90px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
@@ -135,7 +135,7 @@ body{
     #divR{
         display: none;
         position: fixed;
-        top: 250px;
+        top: 90px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
@@ -449,7 +449,7 @@ body{
     #divL{
         display: none;
         position: fixed;
-        top: 250px;
+        top: 90px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
@@ -463,7 +463,7 @@ body{
     #divR{
         display: none;
         position: fixed;
-        top: 250px;
+        top: 90px;
         background-color: #87DDFF;
         text-align: center;
         width: 410px;
