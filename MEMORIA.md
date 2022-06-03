@@ -144,6 +144,10 @@ Se ha conseguido crear un apartado especial en el perfil.php donde si se inicia 
 
 Cuando hacemos click en un animal podemos ver su perfil, con todas sus propiedades como nombre, localidad, tamaño etc. El botón de adoptar animal será solo un alert() de javascript, realmente te tendría que llegar un correo informándote de que protectora tiene la posesión de ese animal y se pondría en contacto con el usuario para llegar a la adopción. Más abajo después de la descripción del animal se ha utilizado una API de cursiosidad de gatos, llamada API Facts Cats, y lo que devulve es un json con un tip de nuestros amigos gatunos lamentablemente en inglés.  
 
+En el tema de diseño para todo se ha usado Flex, para el apartado de contacto se ha usado grid. Tanto el header como el footer se repiten en la mayoria de páginas aunque pueden cambiar en algunas como en el perfil. El diseño de móvil cumple bien auqnue faltan algunos botones por colocar como el de cerrar sesión.
+
 30/05 Se ha entregado el proyecto con el diseño de móvil terminado, para temas de ampliación se tendrá en cuenta el foro y la tienda, también se pueden añadir pequeñas modificaciones como ver tu usuario e email en tu perfil y poder darle me gusta a un animal y guardarlo en favoritos.  
+
+02/06 Fin del proyecto.  
 
 DOMINIO WEB: https://adoptatupet.000webhostapp.com/
